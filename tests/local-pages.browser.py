@@ -44,7 +44,7 @@ try:
                 assert page.locator('.contact-dock').is_visible()==(width<=650),(url,width)
                 if '/electricista/' in url:
                     assert page.locator('.local-service').count()==9,url
-                    assert page.locator('.local-faq details').count()==7,url
+                    assert page.locator('.local-faq details').count()==5,url
                     assert page.locator('.local-service h3').first.evaluate('(e)=>e.getBoundingClientRect().width')>180,(url,width)
                 checks+=1
         assert not errors,errors

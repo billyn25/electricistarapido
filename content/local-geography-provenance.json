@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://www.ign.es/resources/ane/Informacion_Geografica_Destacada/IGN_INFOGEO_MUNICIPIOS_ES-PV.json",
+    "file": "IGN_INFOGEO_MUNICIPIOS_ES-PV.json",
+    "bytes": 82077,
+    "records": 252,
+    "sha256": "cf09c4024434aa02a5a1556cf03e44804e68e71b94cf2e471a4d02f2c0f6620c"
+  },
+  {
+    "url": "https://www.ign.es/resources/ane/Informacion_Geografica_Destacada/IGN_INFOGEO_MUNICIPIOS_ES-CB.json",
+    "file": "IGN_INFOGEO_MUNICIPIOS_ES-CB.json",
+    "bytes": 33745,
+    "records": 102,
+    "sha256": "f29137de043aab0509b05f7f0104ad0715ec3c39d1b793b041a7308a2f315e7a"
+  },
+  {
+    "url": "https://www.ign.es/resources/ane/Informacion_Geografica_Destacada/IGN_INFOGEO_MUNICIPIOS_ES-MD.json",
+    "file": "IGN_INFOGEO_MUNICIPIOS_ES-MD.json",
+    "bytes": 59703,
+    "records": 179,
+    "sha256": "c278d8d42b39bc07b7379e8b69483afff2c450f351d56424f97f8e2d603c4631"
+  }
+]

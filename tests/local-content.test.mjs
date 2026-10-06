@@ -4,6 +4,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { townRecord, renderTown, linkHomeTowns } from '../scripts/local-pages.mjs';
 import { localServices } from '../content/local-services.mjs';
+import { intakeNotes } from '../content/local-intake.mjs';
 
 const dist = path.resolve('dist');
 const pages = [];
@@ -18,7 +19,7 @@ await walk(dist);
 const towns = pages.filter(p => p.html.includes('class="local-page"'));
 const schemas = html => [...html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].flatMap(m=> {const data=JSON.parse(m[1]);return data['@graph']||[data];});
 
-test('all existing town pages have nine substantive service explanations and seven FAQs', () => {
+test('all existing town pages have nine useful service summaries and five address/service FAQs', () => {
   assert.equal(towns.length,101);
   for(const p of towns) {
     assert.equal((p.html.match(/<article class="local-service"/g)||[]).length,9,p.file);
@@ -26,8 +27,8 @@ test('all existing town pages have nine substantive service explanations and sev
     assert.equal((p.html.match(/<h1>/g)||[]).length,1,p.file);
     assert.equal((p.html.match(/class="mobile-bar contact-dock"/g)||[]).length,1,p.file);
     const faq=p.html.match(/class="wrap section local-faq"[\s\S]*?<\/section>/)[0];
-    assert.equal((faq.match(/<details>/g)||[]).length,7,p.file);
-    for(const s of localServices) assert.ok(p.html.includes(s.review),`${p.file}: ${s.slug}`);
+    assert.equal((faq.match(/<details>/g)||[]).length,5,p.file);
+    for(const s of localServices) assert.ok(p.html.includes(intakeNotes[s.slug]),`${p.file}: ${s.slug}`);
     assert.doesNotMatch(p.html,/LOCALIDADES CERCANAS|AVERÍA HABITUAL/);
   }
 });

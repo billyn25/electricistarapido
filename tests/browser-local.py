@@ -38,7 +38,7 @@ try:
                 page.wait_for_timeout(150)
                 assert page.locator('.local-service').count() == 9
                 assert page.locator('.local-service-detail').count() == 9
-                assert page.locator('.local-faq details').count() == 7
+                assert page.locator('.local-faq details').count() == 5
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth + 1'), (engine,width,'overflow')
                 buttons=page.locator('.service-hero .actions')
                 assert buttons.is_visible() == (width > 650), (engine,width,'duplicate hero contact')
@@ -52,6 +52,8 @@ try:
                 first.locator('summary').click()
                 assert first.get_attribute('open') is not None
                 assert first.locator('p').first.is_visible()
+                first.locator('[data-intake-service]').click()
+                assert page.locator('[name=problem]').input_value() == 'Apagones y vivienda sin luz'
                 first.locator('summary').click()
                 if width in [320,390,1440]:
                     page.evaluate('scrollTo(0,0)')
@@ -60,11 +62,18 @@ try:
                     page.locator('#servicios-locales').scroll_into_view_if_needed()
                     page.wait_for_timeout(150)
                     page.screenshot(path=str(REPORTS/f'services-{engine}-{width}.png'), full_page=False)
+                # Validate the municipality reference and inspect it without opening an external map.
+                assert page.locator('[data-local-code]').get_attribute('data-local-code') == '48027'
+                assert page.locator('.local-place-reference a').get_attribute('href').startswith('https://signa.ign.es/')
+                if width in [390,1440]:
+                    page.locator('#ubicacion-local').scroll_into_view_if_needed()
+                    page.screenshot(path=str(REPORTS/f'place-{engine}-{width}.png'), full_page=False)
                 # Inspect generated URL instead of navigating to WhatsApp.
                 page.evaluate('() => {window.__opened=[];window.open=(url)=>{window.__opened.push(url);return null;};}')
                 form=page.locator('[data-whatsapp-form]')
                 form.locator('[name=problem]').select_option(label='Diferencial que salta o no sube')
                 form.locator('[name=name]').fill('Prueba')
+                form.locator('[name=area]').fill('Zona de prueba')
                 form.locator('[name=message]').fill('Salta al encender el termo.')
                 form.locator('button').click()
                 opened=page.evaluate('window.__opened')
@@ -72,6 +81,7 @@ try:
                 url=urlparse(opened[0]); text=parse_qs(url.query)['text'][0]
                 assert url.hostname=='wa.me' and url.path=='/34641589394'
                 assert 'Estoy en Durango.' in text and 'Salta al encender el termo.' in text
+                assert 'Provincia: Vizcaya.' in text and 'Barrio o núcleo: Zona de prueba.' in text
                 assert not errors, (engine,width,errors)
                 results.append({'engine':engine,'width':width,'town':'Durango','services':9,'form':'verified without sending','maxCardHeight':round(max(heights),1)})
                 page.close()

@@ -1,10 +1,6 @@
 name: Fuentes locales para revisión
 on:
   workflow_dispatch:
-  pull_request:
-    paths:
-      - '.github/workflows/local-evidence.yml'
-      - 'scripts/collect-local-evidence.py'
 permissions:
   contents: read
 jobs:
