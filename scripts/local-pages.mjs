@@ -92,7 +92,12 @@ export function linkHomeTowns(html, records) {
     const slug = body.match(/href="\/zonas\/([^/]+)\/"/)?.[1];
     if (!slug) throw new Error('Home province link missing');
     body = body.replace(/<span class="town-chip">([^<]+)<\/span>/g, (_, label) => {
-      const record = byKey.get(`${slug}|${normalize(decode(label))}`);
+      let record = byKey.get(`${slug}|${normalize(decode(label))}`);
+      if (!record) {
+        const wanted=normalize(decode(label));
+        const candidates=records.filter(r=>r.provinceSlug===slug);
+        record=candidates.find(r=>normalize(r.town).startsWith(wanted+' ') || wanted.startsWith(normalize(r.town)+' '));
+      }
       if (!record) throw new Error(`Missing municipal destination: ${slug}/${label}`);
       linked++;
       return `<a class="town-chip" href="${escape(record.route)}" aria-label="Electricista en ${escape(record.town)}">Electricista en ${escape(record.town)}</a>`;
