@@ -46,12 +46,12 @@ test('related links are ranked by geographic references, not alphabetically',()=
   }
   assert.equal(pointDistance({latitude:43,longitude:-2},{latitude:43,longitude:-2}),0);
 });
-test('long common technical paragraphs are not duplicated across local pages',()=>{
+test('municipal pages include useful technical detail and keep guides linked',()=>{
   for(const record of records){
     for(const service of localServices){
       assert.ok(record.html.includes(service.symptom));
-      assert.ok(!record.html.includes(service.review));
-      assert.ok(!record.html.includes(service.repair));
+      assert.ok(record.html.includes(service.review));
+      assert.ok(record.html.includes(service.repair));
       assert.ok(record.html.includes(`/servicios/${service.slug}/`));
     }
     assert.equal(contextQuestions(record,records).length,5);
