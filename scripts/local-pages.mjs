@@ -36,7 +36,7 @@ export function townRecord(html) {
 }
 
 function serviceGuide() {
-  return localServices.map((s, i) => `<article class="local-service" id="servicio-${escape(s.slug)}"><div class="local-service-heading"><span class="local-service-number" aria-hidden="true">${String(i+1).padStart(2,'0')}</span><h3>${escape(s.title)}</h3></div><p>${escape(s.symptom)}</p><details class="local-service-detail"><summary>Qué datos ayudan a preparar el aviso</summary><p>${escape(intakeNotes[s.slug])}</p><a class="local-prepare-link" href="#consulta-local" data-intake-service="${escape(s.title)}">Preparar este aviso ${arrow}</a></details><a class="local-guide-link" href="${href(s.slug)}">Diagnóstico y reparación ${arrow}</a></article>`).join('');
+  return localServices.map((s, i) => `<article class="local-service" id="servicio-${escape(s.slug)}"><div class="local-service-heading"><span class="local-service-number" aria-hidden="true">${String(i+1).padStart(2,'0')}</span><h3>${escape(s.title)}</h3></div><p>${escape(s.symptom)}</p><details class="local-service-detail"><summary>Qué datos ayudan a preparar el aviso</summary><p>${escape(intakeNotes[s.slug])}</p><a class="local-prepare-link" href="#consulta-local" data-intake-service="${escape(s.title)}">Preparar este aviso ${arrow}</a><a class="local-guide-link" href="${href(s.slug)}">Diagnóstico y reparación ${arrow}</a></details></article>`).join('');
 }
 
 function placeSection(record) {
