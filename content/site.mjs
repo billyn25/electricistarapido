@@ -1,12 +1,6 @@
 export const site = {
   name: 'Electricista Rápido', domain: 'https://electricistarapido.com',
   phone: '641 58 93 94', tel: '+34641589394', whatsapp: '34641589394',
-  // The first release is a review build. Do not invent the missing business data.
-  launchApproved: false,
-  legal: { holder: '', taxId: '', address: '', email: '', reviewed: false },
-  technicalReview: { name: '', date: '' },
-  // Add only municipalities with confirmed coverage and genuinely local editorial content.
-  localPages: {},
 };
 export const provinces = [
   ['48','Vizcaya','vizcaya'],
