@@ -133,3 +133,12 @@ test('every municipal service heading reinforces the real locality without dupli
     }
   }
 });
+
+test('municipal pages include useful review and repair detail for every service', () => {
+  for (const p of towns) {
+    for (const service of localServices) {
+      assert.ok(p.html.includes('<strong>Comprobación:</strong> '+service.review), p.file+': '+service.slug+' review');
+      assert.ok(p.html.includes('<strong>Reparación:</strong> '+service.repair), p.file+': '+service.slug+' repair');
+    }
+  }
+});
