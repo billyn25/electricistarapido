@@ -21,11 +21,11 @@ export const geography = {
   source: 'Code for Spain · ds-organizacion-administrativa (versión fijada)',
 };
 export const photos = {
-  hero: {id:'34054464',caption:'Diagnóstico de una avería eléctrica con equipo de medida',alt:'Primer plano de manos utilizando un multímetro en un cuadro eléctrico, sin mostrar el rostro del técnico',author:'Bulat843'},
+  hero: {id:'257736',caption:'Reparación de un cuadro eléctrico con cableado visible',alt:'Primer plano de las manos de un electricista trabajando sobre protecciones y cableado de un cuadro, sin mostrar el rostro',author:'Pixabay'},
   diferencial: {id:'34054464',caption:'Diagnóstico con multímetro',alt:'Electricista diagnosticando un cuadro eléctrico con un multímetro',author:'Bulat843'},
   corte: {id:'17842832',caption:'Revisión de cuadro y suministro',alt:'Profesional revisando un cuadro eléctrico',author:'Fatih Yurtman'},
   humedad: {id:'5691642',caption:'Cableado de una toma durante una reparación',alt:'Cableado eléctrico visible durante una reparación doméstica',author:'Ksenia Chernaya'},
-  cuadro: {id:'257736',caption:'Trabajo sobre un cuadro eléctrico',alt:'Manos de un electricista trabajando en un cuadro con protecciones y cableado',author:'Pixabay'},
+  cuadro: {id:'9679179',caption:'Revisión de protecciones y cableado',alt:'Técnico trabajando sobre interruptores y cableado de un cuadro eléctrico',author:'Aizat Ramlan'},
   mecanismos: {id:'5691590',caption:'Reparación de enchufes y mecanismos',alt:'Electricista reparando enchufes con alicates',author:'Ksenia Chernaya'},
   sobrecarga: {id:'14319099',caption:'Comprobación de circuitos',alt:'Electricista comprobando un cuadro con un multímetro',author:'Onics Energy'},
   intermitente: {id:'11679114',caption:'Equipo de medida eléctrica',alt:'Multímetro utilizado para localizar averías eléctricas',author:'Willquezada'},
