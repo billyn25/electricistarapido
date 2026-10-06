@@ -14,7 +14,7 @@ REPORTS=ROOT/'reports'
 REPORTS.mkdir(exist_ok=True)
 towns=sorted((DIST/'electricista').glob('*/*/index.html'))
 provinces=sorted((DIST/'zonas').glob('*/index.html'))
-assert len(towns)==101 and len(provinces)==5
+assert len(towns)==533 and len(provinces)==5
 class Quiet(SimpleHTTPRequestHandler):
     def log_message(self,*args): pass
 server=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(DIST)))
@@ -52,4 +52,4 @@ try:
 finally:
     server.shutdown()
 (REPORTS/'all-local-pages.json').write_text(json.dumps({'routes_checked':checks,'towns':len(towns),'provinces':len(provinces),'widths':8,'browser':'chromium'}))
-print(f'ALL LOCAL PAGES OK: {checks} route/viewport checks; 101 towns; 5 provinces; 8 widths')
+print(f'ALL LOCAL PAGES OK: {checks} route/viewport checks; 533 towns; 5 provinces; 8 widths')
