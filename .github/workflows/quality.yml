@@ -1,0 +1,44 @@
+name: Calidad y vista previa
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: calidad-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/cache@v4
+        with:
+          path: .cache
+          key: recursos-v1-${{ hashFiles('content/site.mjs') }}
+      - name: Construcción, pruebas y auditoría completa
+        run: npm run check
+      - name: Preparar navegador de pruebas
+        run: |
+          python -m pip install playwright==1.51.0
+          python -m playwright install --with-deps chromium
+      - name: Móvil, escritorio, fotos y navegación
+        run: python tests/browser.py
+      - name: Resumen de la revisión
+        if: always()
+        run: |
+          node -e "const fs=require('fs'); if(fs.existsSync('reports/build.json')) {const r=JSON.parse(fs.readFileSync('reports/build.json')); fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, '# Electricista Rápido\\n'+r.pages+' páginas · '+r.services+' servicios · '+r.towns+' municipios · '+r.provinces.length+' provincias\\n\\nModo: '+(r.preview?'revisión / noindex':'publicación')+'\\n')}"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: electricistarapido-web-y-revision
+          path: |
+            dist/
+            reports/
+          retention-days: 14

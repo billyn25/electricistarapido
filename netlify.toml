@@ -1,0 +1,18 @@
+[build]
+  command = "npm run check"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[context.deploy-preview.environment]
+  FORCE_NOINDEX = "true"
+
+[context.branch-deploy.environment]
+  FORCE_NOINDEX = "true"
+
+[[redirects]]
+  from = "https://www.electricistarapido.com/*"
+  to = "https://electricistarapido.com/:splat"
+  status = 301
+  force = true
