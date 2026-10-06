@@ -29,7 +29,7 @@ test('municipality, capital and bilingual names are not silently substituted',()
   assert.equal(getLocalContext(find('getxo')).capital,'Algorta');
   assert.equal(getLocalContext(find('las-rozas')).officialName,'Las Rozas de Madrid');
   assert.match(localIdentity(find('arrasate-mondragon')),/mismo municipio/);
-  assert.throws(()=>getLocalContext({provinceSlug:'madrid',route:'/electricista/madrid/no-revisado/'}),/Missing verified/);
+  assert.throws(()=>getLocalContext({provinceSlug:'madrid',route:'/electricista/madrid/no-revisado/'}),/Missing municipality/);
 });
 test('related links are ranked by geographic references, not alphabetically',()=>{
   for(const record of records){
