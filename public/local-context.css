@@ -1,0 +1,17 @@
+/* Geography informs the address of the request, never a claimed company location. */
+.local-place-section { display:grid; grid-template-columns:1.2fr .8fr; gap:30px; padding-block:38px; border-bottom:1px solid var(--local-line); align-items:start; }
+.local-place-section h2 { font-size:clamp(23px,2.6vw,30px); }
+.local-place-section p { font-size:15px; max-width:720px; }
+.local-place-reference { min-width:0; padding:18px 20px; background:#f4f8fb; border:1px solid #dce7ee; border-radius:14px; }
+.local-place-reference dl { display:grid; gap:10px; margin:0 0 14px; }
+.local-place-reference dl div { display:grid; grid-template-columns:140px minmax(0,1fr); gap:10px; font-size:13px; line-height:1.5; }
+.local-place-reference dt { color:#506a7d; }
+.local-place-reference dd { margin:0; font-weight:700; overflow-wrap:anywhere; }
+.local-place-reference a { display:inline-flex; align-items:center; gap:8px; min-height:44px; font-size:13px; font-weight:700; color:#08649e; }
+.local-place-reference small { display:block; color:#536b7d; font-size:11px; }
+.local-prepare-link { display:inline-flex; align-items:center; gap:10px; min-height:44px; font-size:14px; font-weight:700; color:#08649e; }
+.local-service > .local-guide-link { margin-top:0; }
+.local-place-section a:focus-visible { outline:3px solid #1679bc; outline-offset:3px; }
+@media(max-width:850px) { .local-place-section { grid-template-columns:minmax(0,1fr); gap:20px; padding-block:28px; } }
+@media(max-width:650px) { .local-place-section p { font-size:14px; } .local-place-reference { padding:15px 17px; } .local-place-reference dl div { grid-template-columns:125px minmax(0,1fr); } }
+@media(max-width:360px) { .local-service h3 { font-size:17px; } }

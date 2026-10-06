@@ -23,10 +23,14 @@
       if (!town || !problem) { form.reportValidity(); return; }
       const name = String(data.get('name') || '').trim();
       const detail = String(data.get('message') || '').trim();
+      const area = String(data.get('area') || '').trim();
+      const province = String(form.dataset.province || '').trim();
       const parts = [
         'Hola, contacto desde Electricista Rápido.',
         name ? `Me llamo ${name}.` : '',
         `Estoy en ${town}.`,
+        province ? `Provincia: ${province}.` : '',
+        area ? `Barrio o núcleo: ${area}.` : '',
         `Avería: ${problem}.`,
         detail ? `Detalle: ${detail}` : '',
         '¿Podéis indicarme disponibilidad?'
@@ -34,6 +38,16 @@
       const phone = String(form.dataset.phone || '').replace(/\D/g, '');
       if (!phone) return;
       window.open(`https://wa.me/${phone}?text=${encodeURIComponent(parts.join('\n'))}`, '_blank', 'noopener,noreferrer');
+    });
+  });
+
+  document.querySelectorAll('[data-intake-service]').forEach(link => {
+    link.addEventListener('click', () => {
+      const field = document.querySelector('[data-whatsapp-form] [name=problem]');
+      if (field && [...field.options].some(option => option.value === link.dataset.intakeService)) {
+        field.value = link.dataset.intakeService;
+        field.dispatchEvent(new Event('change', { bubbles: true }));
+      }
     });
   });
 

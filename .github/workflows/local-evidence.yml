@@ -1,0 +1,22 @@
+name: Fuentes locales para revisión
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Consultar fuentes geográficas oficiales sin publicar cambios
+        run: python scripts/collect-local-evidence.py
+      - name: Guardar versión fuente para pruebas reproducibles
+        run: git archive HEAD -o evidence/repository.tar.gz
+      - uses: actions/upload-artifact@v4
+        with:
+          name: local-evidence
+          path: evidence/
+          retention-days: 7
