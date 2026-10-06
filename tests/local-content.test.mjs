@@ -152,3 +152,16 @@ test('home labels towns as Electricista en, hides secondary towns accessibly and
   assert.match(home,/Resumen de pueblos y localidades/);
   for(const name of ['Vizcaya','Álava','Guipúzcoa','Madrid','Cantabria']) assert.ok(home.includes(`Electricista en ${name} ·`),name);
 });
+
+test('municipality catalogue uses natural article order in public URLs', async () => {
+  for (const route of [
+    '/electricista/madrid/las-rozas-de-madrid/',
+    '/electricista/madrid/el-escorial/',
+    '/electricista/madrid/el-alamo/',
+    '/electricista/cantabria/el-astillero/',
+    '/electricista/cantabria/los-corrales-de-buelna/'
+  ]) await fs.access(path.join(dist,route,'index.html'));
+  const home=await fs.readFile(path.join(dist,'index.html'),'utf8');
+  assert.match(home,/href="\/electricista\/madrid\/las-rozas-de-madrid\/"/);
+  assert.doesNotMatch(home,/roz-as-de-madrid-las|rozas-de-madrid-las/);
+});
