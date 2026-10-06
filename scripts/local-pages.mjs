@@ -93,13 +93,27 @@ export function linkHomeTowns(html, records) {
       const record = byKey.get(`${slug}|${normalize(decode(label))}`);
       if (!record) throw new Error(`Missing municipal destination: ${slug}/${label}`);
       linked++;
-      return `<a class="town-chip" href="${escape(record.route)}" aria-label="Electricista en ${escape(record.town)}">${label}</a>`;
+      return `<a class="town-chip" href="${escape(record.route)}" aria-label="Electricista en ${escape(record.town)}">Electricista en ${escape(record.town)}</a>`;
+    });
+    body = body.replace(/<div class="town-chips">([\s\S]*?)<\/div>/, (_, linksHtml) => {
+      const links=[...linksHtml.matchAll(/<a class="town-chip"[\s\S]*?<\/a>/g)].map(m=>m[0]);
+      const visible=links.slice(0,6).join('');
+      const hidden=links.slice(6).join('');
+      return `<div class="town-chips town-chips-featured">${visible}</div>${hidden?`<details class="town-more"><summary>Ver más localidades</summary><div class="town-chips town-chips-more">${hidden}</div></details>`:''}`;
     });
     return `<article class="town-group">${body}</article>`;
   });
-  html = html.replace('Mostramos más localidades de Vizcaya, Álava, Guipúzcoa, Madrid y Cantabria. Cuando publiquemos las páginas municipales, estos nombres pasarán a enlazar a contenido local específico y útil.', 'Selecciona tu localidad en Vizcaya, Álava, Guipúzcoa, Madrid o Cantabria. Cada nombre lleva directamente a su página de servicios y averías eléctricas.');
+  html = html.replace('Mostramos más localidades de Vizcaya, Álava, Guipúzcoa, Madrid y Cantabria. Cuando publiquemos las páginas municipales, estos nombres pasarán a enlazar a contenido local específico y útil.', 'Encuentra electricista en tu localidad para averías y reparaciones domésticas. Mostramos primero los pueblos principales y puedes desplegar el resto de localidades con servicio.');
   if (!linked && !/class="town-chip" href="\/electricista\//.test(html)) throw new Error('No home towns were linked');
   return { html, linked };
+}
+
+function homeCoverageSummary(records) {
+  const groups=provinces.map(province => {
+    const towns=records.filter(r=>r.provinceSlug===province.slug).sort((a,b)=>a.town.localeCompare(b.town,'es'));
+    return `<details class="coverage-summary-group"><summary>Electricista en ${escape(province.name)} · ${towns.length} localidades</summary><p>${towns.map(t=>escape(t.town)).join(' · ')}</p><a href="/zonas/${province.slug}/">Ver todos los pueblos de ${escape(province.name)} de la A a la Z ${arrow}</a></details>`;
+  }).join('');
+  return `<section class="coverage-summary"><div class="wrap section"><div class="eyebrow">ZONAS DONDE PRESTAMOS SERVICIO</div><h2>Resumen de pueblos y localidades</h2><p class="lead">Servicio de electricista para averías y arreglos puntuales en localidades de Vizcaya, Álava, Guipúzcoa, Madrid y Cantabria. Consulta tu pueblo y confirma disponibilidad y desplazamiento al solicitar el aviso.</p><div class="coverage-summary-grid">${groups}</div></div></section>`;
 }
 
 function addSchema(html, record) {
@@ -144,6 +158,7 @@ export async function enhanceLocalPages(directory = path.join(root, 'dist')) {
       html = addSchema(html, record);
     } else if (route === '/') {
       const result = linkHomeTowns(html, records); html = result.html; linked = result.linked;
+      html = html.replace('</main>', `${homeCoverageSummary(records)}</main>`);
     } else if (route.startsWith('/zonas/')) {
       const province = provincesBySlug.get(route.split('/')[2]);
       if (!province) throw new Error(`Unknown province: ${route}`);
