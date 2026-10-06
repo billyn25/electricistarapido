@@ -9,12 +9,11 @@ export const site = {
   localPages: {},
 };
 export const provinces = [
-  ['48','Bizkaia','bizkaia'],['20','Gipuzkoa','gipuzkoa'],['01','Álava','alava'],
-  ['39','Cantabria','cantabria'],['09','Burgos','burgos'],['31','Navarra','navarra'],
-  ['26','La Rioja','la-rioja'],['33','Asturias','asturias'],['34','Palencia','palencia'],
-  ['05','Ávila','avila'],['24','León','leon'],['49','Zamora','zamora'],
-  ['47','Valladolid','valladolid'],['40','Segovia','segovia'],['28','Madrid','madrid'],
-  ['42','Soria','soria'],['37','Salamanca','salamanca'],
+  ['48','Vizcaya','vizcaya'],
+  ['01','Álava','alava'],
+  ['20','Guipúzcoa','guipuzcoa'],
+  ['28','Madrid','madrid'],
+  ['39','Cantabria','cantabria'],
 ].map(([id,name,slug])=>({id,name,slug}));
 export const geography = {
   url: 'https://raw.githubusercontent.com/codeforspain/ds-organizacion-administrativa/1e9c99280ef4d7a12def33cafc3df59d9fc1f688/data/municipios.json',
@@ -22,7 +21,7 @@ export const geography = {
   source: 'Code for Spain · ds-organizacion-administrativa (versión fijada)',
 };
 export const photos = {
-  hero: {id:'35154098',caption:'Diagnóstico profesional de un cuadro eléctrico',alt:'Electricista con equipo de protección comprobando interruptores de un cuadro con un medidor',author:'Prashik Narnaware'},
+  hero: {id:'34054464',caption:'Diagnóstico de una avería eléctrica con equipo de medida',alt:'Primer plano de manos utilizando un multímetro en un cuadro eléctrico, sin mostrar el rostro del técnico',author:'Bulat843'},
   diferencial: {id:'34054464',caption:'Diagnóstico con multímetro',alt:'Electricista diagnosticando un cuadro eléctrico con un multímetro',author:'Bulat843'},
   corte: {id:'17842832',caption:'Revisión de cuadro y suministro',alt:'Profesional revisando un cuadro eléctrico',author:'Fatih Yurtman'},
   humedad: {id:'5691642',caption:'Cableado de una toma durante una reparación',alt:'Cableado eléctrico visible durante una reparación doméstica',author:'Ksenia Chernaya'},
