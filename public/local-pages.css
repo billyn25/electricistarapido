@@ -88,3 +88,9 @@ nav.alphabet a { min-width: 44px; height: 44px; }
   nav.alphabet { gap: 6px; }
   .demand { min-height: 52px; padding: 12px 14px; grid-template-columns: 28px minmax(0, 1fr) 20px; }
 }
+/* Compact small-phone spacing without shrinking readable body text. */
+@media (max-width: 360px) {
+  .local-service { padding: 16px; }
+  .local-service-heading { gap: 10px; margin-bottom: 10px; }
+  .local-service-detail { margin-top: 12px; }
+}
