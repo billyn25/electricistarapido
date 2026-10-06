@@ -22,7 +22,7 @@ export const geography = {
   source: 'Code for Spain · ds-organizacion-administrativa (versión fijada)',
 };
 export const photos = {
-  hero: {id:'27928762',caption:'Electricista trabajando sobre un cuadro eléctrico interior',alt:'Electricista trabajando con herramienta sobre un cuadro eléctrico de una vivienda',author:'ranjeet'},
+  hero: {id:'35154098',caption:'Diagnóstico profesional de un cuadro eléctrico',alt:'Electricista con equipo de protección comprobando interruptores de un cuadro con un medidor',author:'Prashik Narnaware'},
   diferencial: {id:'34054464',caption:'Diagnóstico con multímetro',alt:'Electricista diagnosticando un cuadro eléctrico con un multímetro',author:'Bulat843'},
   corte: {id:'17842832',caption:'Revisión de cuadro y suministro',alt:'Profesional revisando un cuadro eléctrico',author:'Fatih Yurtman'},
   humedad: {id:'5691642',caption:'Cableado de una toma durante una reparación',alt:'Cableado eléctrico visible durante una reparación doméstica',author:'Ksenia Chernaya'},
