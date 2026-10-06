@@ -1,0 +1,31 @@
+/* The desktop layout remains unchanged. The fixed bar starts hidden. */
+.mobile-bar[hidden]{display:none!important}
+@media(max-width:650px){
+  body{padding-bottom:0}
+  header nav{height:64px;width:calc(100% - 32px);gap:0}
+  header nav>.call{display:none}
+  header .brand{font-size:1.125rem;min-width:0}
+  header .brand b{flex-shrink:0;margin-right:11px}
+  header .brand small{font-size:.58rem;letter-spacing:.1em}
+  .top{padding:8px 12px;font-size:.65rem;line-height:1.45}
+  .top strong{letter-spacing:.045em}
+  .hero .wrap{padding-top:32px;padding-bottom:30px}
+  .hero h1{font-size:clamp(2.4rem,10.5vw,3.1rem)}
+  .hero .lead{line-height:1.65;margin-top:18px}
+  .hero .actions{margin-top:24px;gap:10px;grid-template-columns:1.12fr 1fr}
+  .hero .btn{min-width:0;min-height:62px;padding:11px 9px;line-height:1.35;box-shadow:none}
+  .primary-call-text{display:flex;flex-direction:column;align-items:center;gap:2px}
+  .primary-call-label{font-size:.66rem;letter-spacing:.025em}
+  .primary-call-separator{display:none}
+  .primary-call-number{font-size:1rem;white-space:nowrap}
+  .hero .btn:hover,.mobile-bar .btn:hover{transform:none}
+  .hero-pills{gap:6px}
+  .hero-pills span{padding:6px 9px}
+  .mobile-bar{grid-template-columns:1.1fr 1fr;gap:8px;padding:8px max(10px,env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));box-shadow:0 -6px 24px #071c2d10}
+  .mobile-bar .btn{min-width:0;min-height:52px;padding:7px 10px;border-radius:10px;box-shadow:none;line-height:1.25}
+  .mobile-bar .mobile-call{flex-direction:column;gap:3px}
+  .mobile-call-label{font-size:.65rem;letter-spacing:.025em}
+  .mobile-call-number{font-size:.94rem;white-space:nowrap}
+  .mobile-bar .wa{font-size:.9rem}
+  footer{padding-bottom:calc(100px + env(safe-area-inset-bottom))}
+}

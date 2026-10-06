@@ -1,0 +1,79 @@
+name: Revisar contacto móvil sin duplicados
+on:
+  push:
+    branches: [review/mobile-contact]
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Guardar referencia y aplicar cambios mínimos
+        run: |
+          npm run check
+          mkdir -p .quality
+          cp -R dist .quality/baseline
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('scripts/build.mjs');s=p.read_text()
+          def replace(a,b):
+              global s
+              assert s.count(a)==1,(a[:120],s.count(a))
+              s=s.replace(a,b)
+          replace('<style>${css}</style></head>', '<style>${css}</style><link rel="stylesheet" href="/mobile-contact.css?v=1"><script src="/mobile-contact.js?v=1" defer></script></head>')
+          replace('content="width=device-width,initial-scale=1"','content="width=device-width,initial-scale=1,viewport-fit=cover"')
+          replace('<a class="btn yellow" href="tel:${site.tel}">☎ URGENCIAS 24H · ${site.phone}</a>','<a class="btn yellow primary-call" href="tel:${site.tel}"><span class="primary-call-text"><span class="primary-call-label">☎ URGENCIAS 24H</span><span class="primary-call-separator"> · </span><span class="primary-call-number">${site.phone}</span></span></a>')
+          replace('<div class="mobile-bar"><a class="btn yellow" href="tel:${site.tel}">☎ Urgencias 24h · ${site.phone}</a><a class="btn wa" href="https://wa.me/${site.whatsapp}">WhatsApp</a></div>', '<div class="mobile-bar" hidden role="group" aria-label="Contacto rápido"><a class="btn yellow mobile-call" href="tel:${site.tel}"><span class="mobile-call-label">Llamar · 24h</span><strong class="mobile-call-number">${site.phone}</strong></a><a class="btn wa" href="https://wa.me/${site.whatsapp}">WhatsApp</a></div>')
+          s+='\n// Small local assets: no extra libraries or external requests.\nfor(const asset of ["mobile-contact.css","mobile-contact.js"])await fs.copyFile(path.resolve("public",asset),path.join(out,asset));\n'
+          p.write_text(s)
+          p=Path('package.json');d=json.loads(p.read_text());d['scripts']['check']='node --check scripts/build.mjs && node --check public/mobile-contact.js && npm run build && node --test tests/*.test.mjs';p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+          # Keep the normal quality workflow runnable with the supplied browser test.
+          p=Path('.github/workflows/quality.yml');s=p.read_text();s=s.replace('install --with-deps chromium','install --with-deps chromium webkit');p.write_text(s)
+          PY
+          git diff --check
+      - name: Construir y verificar conservación de SEO y destinos
+        run: |
+          npm run check | tee .quality/check.log
+          python3 - <<'PY'
+          import json,re
+          from pathlib import Path
+          old=Path('.quality/baseline');new=Path('dist')
+          files=sorted(p.relative_to(old) for p in old.rglob('*.html'))
+          assert files==sorted(p.relative_to(new) for p in new.rglob('*.html'))
+          patterns={'title':r'<title>.*?</title>','meta':r'<meta (?:name="(?:description|robots)"|property="og:[^"]+")[^>]*>','canonical':r'<link rel="canonical"[^>]*>','schema':r'<script type="application/ld\+json">.*?</script>','h1':r'<h1.*?</h1>','destinations':r'<a\b[^>]*href="([^"]+)"','photos':r'<img\b[^>]*src="([^"]+)"'}
+          for f in files:
+              a=(old/f).read_text();b=(new/f).read_text()
+              for name,pattern in patterns.items():assert re.findall(pattern,a,re.S)==re.findall(pattern,b,re.S),(str(f),name)
+          for name in ['sitemap.xml','robots.txt','_headers']:assert (old/name).read_bytes()==(new/name).read_bytes(),name
+          Path('reports').mkdir(exist_ok=True)
+          Path('reports/preservation.json').write_text(json.dumps({'passed':True,'pages':len(files),'unchanged':['URLs','titles','descriptions','H1','canonicals','robots','structured data','phone and WhatsApp destinations','photographs','sitemap']}))
+          PY
+      - name: Preparar navegadores
+        run: |
+          python3 -m pip install playwright==1.51.0
+          python3 -m playwright install --with-deps chromium webkit
+      - name: Comprobar móvil y escritorio
+        run: python3 -u tests/browser.py
+      - name: Guardar fuentes verificadas
+        run: |
+          git add scripts/build.mjs package.json .github/workflows/quality.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Conecta controles móviles y pruebas de regresión'
+          git push origin HEAD:review/mobile-contact
+          git rev-parse HEAD > reports/verified-commit.txt
+          tar --exclude=.git --exclude=.quality --exclude=dist --exclude=reports -czf reports/sources.tar.gz .
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: electricista-mobile-verified
+          path: |
+            reports/
+            .quality/check.log
+          include-hidden-files: true
