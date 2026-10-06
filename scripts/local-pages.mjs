@@ -110,7 +110,8 @@ export function linkHomeTowns(html, records) {
 function homeCoverageSummary(records) {
   const groups=provinces.map(province => {
     const towns=records.filter(r=>r.provinceSlug===province.slug).sort((a,b)=>a.town.localeCompare(b.town,'es'));
-    return `<details class="coverage-summary-group"><summary>Electricista en ${escape(province.name)} · ${towns.length} localidades</summary><p>${towns.map(t=>escape(t.town)).join(' · ')}</p><a href="/zonas/${province.slug}/">Ver todos los pueblos de ${escape(province.name)} de la A a la Z ${arrow}</a></details>`;
+    const townLabel=t=>{if(province.slug!=='madrid') return escape(t.town);const g=getLocalContext(t),cp=madridPostalCodesByIne[g.code]||[];return `${escape(t.town)}${cp.length?` (CP ${escape(cp.join(', '))})`:''}`};
+    return `<details class="coverage-summary-group"><summary>Electricista en ${escape(province.name)} · ${towns.length} localidades</summary><p>${towns.map(t=>townLabel(t)).join(' · ')}</p><a href="/zonas/${province.slug}/">Ver todos los pueblos de ${escape(province.name)} de la A a la Z ${arrow}</a></details>`;
   }).join('');
   return `<section class="coverage-summary"><div class="wrap section"><div class="eyebrow">ZONAS DONDE PRESTAMOS SERVICIO</div><h2>Resumen de pueblos y localidades</h2><p class="lead">Servicio de electricista para averías y arreglos puntuales en localidades de Vizcaya, Álava, Guipúzcoa, Madrid y Cantabria. Consulta tu pueblo y confirma disponibilidad y desplazamiento al solicitar el aviso.</p><div class="coverage-summary-grid">${groups}</div></div></section>`;
 }
