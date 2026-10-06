@@ -16,3 +16,9 @@
   to = "https://electricistarapido.com/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/electricista/madrid/las-rozas/"
+  to = "/electricista/madrid/las-rozas-de-madrid/"
+  status = 301
+  force = true
