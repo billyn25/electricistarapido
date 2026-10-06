@@ -86,32 +86,23 @@ ${localForm(record)}
 }
 
 export function linkHomeTowns(html, records) {
-  const byKey = new Map(records.map(t => [`${t.provinceSlug}|${normalize(t.town)}`, t]));
   let linked = 0;
   html = html.replace(/<article class="town-group">([\s\S]*?)<\/article>/g, (whole, body) => {
     const slug = body.match(/href="\/zonas\/([^/]+)\/"/)?.[1];
     if (!slug) throw new Error('Home province link missing');
-    body = body.replace(/<span class="town-chip">([^<]+)<\/span>/g, (_, label) => {
-      let record = byKey.get(`${slug}|${normalize(decode(label))}`);
-      if (!record) {
-        const wanted=normalize(decode(label));
-        const candidates=records.filter(r=>r.provinceSlug===slug);
-        record=candidates.find(r=>normalize(r.town).startsWith(wanted+' ') || wanted.startsWith(normalize(r.town)+' '));
-      }
-      if (!record) throw new Error(`Missing municipal destination: ${slug}/${label}`);
+    const provinceRecords=records.filter(r=>r.provinceSlug===slug).sort((a,b)=>a.town.localeCompare(b.town,'es'));
+    if(!provinceRecords.length) throw new Error(`No municipal records for ${slug}`);
+    const links=provinceRecords.map(record=>{
       linked++;
       return `<a class="town-chip" href="${escape(record.route)}" aria-label="Electricista en ${escape(record.town)}">Electricista en ${escape(record.town)}</a>`;
     });
-    body = body.replace(/<div class="town-chips">([\s\S]*?)<\/div>/, (_, linksHtml) => {
-      const links=[...linksHtml.matchAll(/<a class="town-chip"[\s\S]*?<\/a>/g)].map(m=>m[0]);
-      const visible=links.slice(0,6).join('');
-      const hidden=links.slice(6).join('');
-      return `<div class="town-chips town-chips-featured">${visible}</div>${hidden?`<details class="town-more"><summary>Ver más localidades</summary><div class="town-chips town-chips-more">${hidden}</div></details>`:''}`;
-    });
+    const visible=links.slice(0,6).join('');
+    const hidden=links.slice(6).join('');
+    body=body.replace(/<div class="town-chips(?: [^"]*)?">[\s\S]*?<\/div>(?:<details class="town-more">[\s\S]*?<\/details>)?/, `<div class="town-chips town-chips-featured">${visible}</div>${hidden?`<details class="town-more"><summary>Ver más localidades</summary><div class="town-chips town-chips-more">${hidden}</div></details>`:''}`);
     return `<article class="town-group">${body}</article>`;
   });
   html = html.replace('Mostramos más localidades de Vizcaya, Álava, Guipúzcoa, Madrid y Cantabria. Cuando publiquemos las páginas municipales, estos nombres pasarán a enlazar a contenido local específico y útil.', 'Encuentra electricista en tu localidad para averías y reparaciones domésticas. Mostramos primero los pueblos principales y puedes desplegar el resto de localidades con servicio.');
-  if (!linked && !/class="town-chip" href="\/electricista\//.test(html)) throw new Error('No home towns were linked');
+  if (linked !== records.length) throw new Error(`Home municipal links incomplete: ${linked}/${records.length}`);
   return { html, linked };
 }
 
