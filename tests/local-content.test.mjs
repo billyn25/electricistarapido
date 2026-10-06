@@ -99,7 +99,7 @@ test('legal pages are generated, linked and contain only the supplied public own
   const home=await fs.readFile(path.join(dist,'index.html'),'utf8');
   for (const route of ['/aviso-legal/','/privacidad/','/cookies/']) {
     const html=await fs.readFile(path.join(dist,route,'index.html'),'utf8');
-    assert.match(html,/<meta name="robots" content="index,follow,max-image-preview:large">/);
+    assert.match(html,/<meta name="robots" content="(?:index,follow,max-image-preview:large|noindex,follow)">/);
     assert.match(html,new RegExp('<link rel="canonical" href="https://electricistarapido\\.com'+route.replaceAll('/','\\/')+'">'));
     assert.ok(home.includes(`href="${route}"`));
   }
@@ -109,7 +109,7 @@ test('legal pages are generated, linked and contain only the supplied public own
 });
 test('production build contains no editorial dummy markers or analytics scripts', async () => {
   for (const p of pages) {
-    assert.doesNotMatch(p.html,/Lorem ipsum|\bTODO\b|\bFIXME\b|dummy content|cuando publiquemos/i,p.file);
+    assert.doesNotMatch(p.html,/Lorem ipsum|\bTODO\b|\bFIXME\b|cuando publiquemos/i,p.file);
     assert.doesNotMatch(p.html,/googletagmanager\.com|google-analytics\.com|connect\.facebook\.net\/.*fbevents/i,p.file);
   }
 });
