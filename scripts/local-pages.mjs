@@ -37,21 +37,22 @@ export function townRecord(html) {
 
 
 const madridPostalCodes = Object.freeze({
-  'alcala-de-henares':'28801–28807',
-  'alcobendas':'28100, 28108 y 28109',
-  'aranjuez':'28300',
-  'arganda-del-rey':'28500',
-  'boadilla-del-monte':'28660',
-  'collado-villalba':'28400',
-  'pinto':'28320',
-  'torrejon-de-ardoz':'28850'
+  'alcala-de-henares':['28801','28802','28803','28804','28805','28806','28807'],
+  'alcobendas':['28100','28108','28109'],
+  'aranjuez':['28300'],
+  'arganda-del-rey':['28500'],
+  'boadilla-del-monte':['28660'],
+  'collado-villalba':['28400'],
+  'pinto':['28320'],
+  'torrejon-de-ardoz':['28850']
 });
+const postalText = codes => codes.length===1 ? codes[0] : codes.join(', ');
 const madridPanelPhoto='https://images.pexels.com/photos/38171184/pexels-photo-38171184.jpeg?auto=compress&cs=tinysrgb&w=1400';
 function madridLocalExtra(record){
   if(record.provinceSlug!=='madrid') return '';
   const slug=record.route.split('/').filter(Boolean).at(-1);
-  const postal=madridPostalCodes[slug];
-  return `<section class="wrap madrid-local-extra" aria-labelledby="madrid-extra-title"><div><div class="eyebrow">REPARACIÓN ELÉCTRICA EN MADRID</div><h2 id="madrid-extra-title">Cuadros y averías eléctricas en ${escape(record.town)}</h2><p>Revisión de cuadros, diferenciales, automáticos, conexiones y circuitos de vivienda en ${escape(record.town)}. La fotografía es una referencia del tipo de trabajo y no una intervención atribuida a esta localidad.</p>${postal?`<p class="madrid-postal"><strong>Código postal de referencia:</strong> ${escape(postal)}. Indica la dirección o zona concreta al solicitar el aviso.</p>`:''}</div><img loading="lazy" decoding="async" src="${madridPanelPhoto}" alt="Protecciones de un cuadro eléctrico de vivienda" width="700" height="470"></section>`;
+  const postal=madridPostalCodes[slug] || [];
+  return `<section class="wrap madrid-local-extra" aria-labelledby="madrid-extra-title"><div><div class="eyebrow">REPARACIÓN ELÉCTRICA EN MADRID</div><h2 id="madrid-extra-title">Cuadros y averías eléctricas en ${escape(record.town)}</h2><p>Revisión de cuadros, diferenciales, automáticos, conexiones y circuitos de vivienda en ${escape(record.town)}. La fotografía es una referencia del tipo de trabajo y no una intervención atribuida a esta localidad.</p>${postal.length?`<p class="madrid-postal"><strong>Códigos postales asociados:</strong> ${escape(postalText(postal))}. El código postal depende de la dirección concreta; indícalo al solicitar el aviso.</p>`:`<p class="madrid-postal madrid-postal-pending"><strong>Código postal:</strong> no mostramos uno sin verificarlo para la dirección concreta. Indica tu código postal al solicitar el aviso.</p>`}</div><img loading="lazy" decoding="async" src="${madridPanelPhoto}" alt="Protecciones de un cuadro eléctrico de vivienda" width="700" height="470"></section>`;
 }
 
 function serviceGuide(record) {
