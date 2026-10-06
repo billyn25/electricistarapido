@@ -1,12 +1,14 @@
 {
   "name": "electricistarapido",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "description": "Web de Electricista Rápido: averías eléctricas domésticas y SEO local.",
   "engines": {"node": ">=22"},
   "scripts": {
-    "build": "node scripts/build.mjs",
-    "check": "node --check scripts/build.mjs && npm run build"
+    "build": "node scripts/build.mjs && node scripts/mobile-layout.mjs",
+    "test": "node --test tests/mobile-layout.test.mjs",
+    "check": "node --check scripts/build.mjs && npm run build && npm test",
+    "test:browser": "python tests/browser.py"
   }
 }
