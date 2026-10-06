@@ -30,6 +30,8 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Móvil, escritorio, fotos y navegación
         run: python tests/browser.py
+      - name: Pueblos y provincias - contacto único y filas legibles
+        run: python tests/local-pages.browser.py
       - name: Resumen de la revisión
         if: always()
         run: |
