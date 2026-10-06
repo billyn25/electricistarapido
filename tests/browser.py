@@ -34,9 +34,10 @@ def external(route):
  value=cache.get(route.request.url)
  if value:route.fulfill(body=value[0],content_type=value[1])
  else:route.abort()
-def load(page,url,ready=True):
+def load(page,url,ready=True,with_styles=True):
  r=page.goto(url,wait_until='domcontentloaded');assert r.status==200,url
- page.add_style_tag(content='html{scroll-behavior:auto!important}')
+ # add_style_tag waits for page-side handlers; skip it when JS is disabled.
+ if with_styles:page.add_style_tag(content='html{scroll-behavior:auto!important}')
  if ready:page.wait_for_function("document.documentElement.dataset.mobileContactReady === '1'")
 def no_overflow(page):assert page.evaluate('document.documentElement.scrollWidth <= innerWidth+1')
 try:
@@ -81,8 +82,10 @@ try:
     assert not errors,errors
     checks.append({'browser':engine.name,'width':width,'homeAndService':True,'passed':True})
     ctx.close()
+   print('Checking',engine.name,'without JavaScript',flush=True)
    ctx=browser.new_context(java_script_enabled=False,viewport={'width':390,'height':844});ctx.route('https://**/*',external)
-   page=ctx.new_page();load(page,base+'/dist/',ready=False)
+   ctx.set_default_timeout(6000);ctx.set_default_navigation_timeout(12000)
+   page=ctx.new_page();load(page,base+'/dist/',ready=False,with_styles=False)
    expect(page.locator('.mobile-bar')).to_be_hidden();expect(page.locator('.hero .actions')).to_be_visible();no_overflow(page)
    checks.append({'browser':engine.name,'javascript':False,'contactAccessible':True,'passed':True})
    ctx.close();browser.close()
