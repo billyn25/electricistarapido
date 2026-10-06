@@ -18,6 +18,11 @@ async function walk(dir) {
 await walk(dist);
 const towns = pages.filter(p => p.html.includes('class="local-page"'));
 const schemas = html => [...html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].flatMap(m=> {const data=JSON.parse(m[1]);return data['@graph']||[data];});
+const canonical = html => {
+  const value=html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
+  assert.ok(value,'canonical missing');
+  return value;
+};
 
 test('all existing town pages have nine useful service summaries and five address/service FAQs', () => {
   assert.equal(towns.length,533);
