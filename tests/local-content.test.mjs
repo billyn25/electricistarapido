@@ -86,7 +86,7 @@ test('forms retain the correct locality and never invent bookings', () => {
   }
 });
 test('broken home destinations are rejected rather than silently linked', () => {
-  assert.throws(()=>linkHomeTowns('<article class="town-group"><h3><a href="/zonas/vizcaya/">Vizcaya</a></h3><span class="town-chip">Missing</span></article>',[]),/Missing municipal/);
+  assert.throws(()=>linkHomeTowns('<article class="town-group"><h3><a href="/zonas/vizcaya/">Vizcaya</a></h3><span class="town-chip">Missing</span></article>',[]),/No municipal records|Home municipal links incomplete/);
 });
 test('enhancement stylesheet exists and favicon uses valid color values', async () => {
   await fs.access(path.join(dist,'assets/local-pages.css'));
