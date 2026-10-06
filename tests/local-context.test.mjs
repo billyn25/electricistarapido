@@ -24,10 +24,11 @@ test('101 existing local pages have uniquely matched official municipality refer
 });
 test('municipality, capital and bilingual names are not silently substituted',()=>{
   const find=slug=>records.find(r=>r.route.endsWith('/'+slug+'/'));
+  const lasRozas=find('las-rozas-de-madrid');
   assert.equal(getLocalContext(find('asparrena')).capital,'Araia');
   assert.equal(getLocalContext(find('camargo')).capital,'Muriedas');
   assert.equal(getLocalContext(find('getxo')).capital,'Algorta');
-  assert.equal(getLocalContext(find('las-rozas')).officialName,'Las Rozas de Madrid');
+  assert.equal(getLocalContext(lasRozas).officialName,'Las Rozas de Madrid');
   assert.match(localIdentity(find('arrasate-mondragon')),/mismo municipio/);
   assert.throws(()=>getLocalContext({provinceSlug:'madrid',route:'/electricista/madrid/no-revisado/'}),/Missing municipality/);
 });
