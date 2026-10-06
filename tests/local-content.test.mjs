@@ -20,7 +20,7 @@ const towns = pages.filter(p => p.html.includes('class="local-page"'));
 const schemas = html => [...html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].flatMap(m=> {const data=JSON.parse(m[1]);return data['@graph']||[data];});
 
 test('all existing town pages have nine useful service summaries and five address/service FAQs', () => {
-  assert.equal(towns.length,101);
+  assert.equal(towns.length,533);
   for(const p of towns) {
     assert.equal((p.html.match(/<article class="local-service"/g)||[]).length,9,p.file);
     assert.equal((p.html.match(/<details class="local-service-detail"/g)||[]).length,9,p.file);
@@ -35,7 +35,7 @@ test('all existing town pages have nine useful service summaries and five addres
 test('every home town links directly to an existing municipality', async () => {
   const home=await fs.readFile(path.join(dist,'index.html'),'utf8');
   const links=[...home.matchAll(/class="town-chip" href="([^"]+)"/g)];
-  assert.equal(links.length,101);
+  assert.equal(links.length,533);
   assert.doesNotMatch(home,/<span class="town-chip">/);
   for(const [,url] of links) {
     assert.match(url,/^\/electricista\/[^/]+\/[^/]+\/$/);
@@ -145,8 +145,8 @@ test('municipal pages include useful review and repair detail for every service'
 
 test('home labels towns as Electricista en, hides secondary towns accessibly and ends with coverage summary', async () => {
   const home=await fs.readFile(path.join(dist,'index.html'),'utf8');
-  assert.equal((home.match(/class="town-chip" href="\/electricista\//g)||[]).length,101);
-  assert.ok((home.match(/>Electricista en [^<]+<\/a>/g)||[]).length>=101);
+  assert.equal((home.match(/class="town-chip" href="\/electricista\//g)||[]).length,533);
+  assert.ok((home.match(/>Electricista en [^<]+<\/a>/g)||[]).length>=533);
   assert.equal((home.match(/<details class="town-more">/g)||[]).length,5);
   assert.match(home,/ZONAS DONDE PRESTAMOS SERVICIO/);
   assert.match(home,/Resumen de pueblos y localidades/);
