@@ -30,6 +30,8 @@ jobs:
           python -m playwright install --with-deps chromium webkit
       - name: Móvil, escritorio, fotos y navegación
         run: python tests/browser.py
+      - name: Todos los municipios y provincias - contenido y contacto único
+        run: python tests/local-pages.browser.py
       - name: Servicios municipales, enlaces y formulario (Chromium y WebKit)
         env:
           TEST_WEBKIT: '1'

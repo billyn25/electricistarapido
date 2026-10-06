@@ -1,7 +1,21 @@
-/* One dedicated mobile layout, after the existing desktop stylesheet. */
+/* Shared presentation fixes, loaded after the existing desktop stylesheet. */
 .mobile-menu { display: none; }
 .brand .brand-hours { display: inline; }
 .contact-icon { flex: none; }
+
+/* Both numbered home links and unnumbered local links share this component.
+   Flex layout avoids reserving the old 40px number column for a service name. */
+.demand-list { min-width: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.demand-list .demand { display: flex; align-items: center; gap: 12px; min-width: 0; min-height: 56px; padding: 14px 16px; border-radius: 12px; }
+.demand-list .demand > b { flex: 0 0 26px; }
+.demand-list .demand > span { flex: 1 1 0; min-width: 0; font-size: 14px; line-height: 1.45; white-space: normal; word-break: normal; overflow-wrap: anywhere; }
+.demand-list .demand > i { flex: 0 0 28px; width: 28px; height: 28px; margin-left: auto; display: grid; place-items: center; border-radius: 50%; background: #eef5fa; color: #0a69b2; font-size: 18px; line-height: 1; }
+.demand-list .demand:focus-visible { outline: 3px solid #0d78cf; outline-offset: 3px; }
+@media (hover: hover) {
+  .demand-list .demand:hover { background: #fffaf0; transform: translateY(-1px); }
+  .demand-list .demand:hover > i { background: var(--yellow); color: var(--navy); }
+}
+
 @media (max-width: 650px) {
   html { scroll-padding-top: 110px; scroll-padding-bottom: calc(var(--contactbar-height, 76px) + 16px); -webkit-text-size-adjust: 100%; }
   body { padding-bottom: calc(var(--contactbar-height, 76px) + 16px); }
@@ -22,7 +36,7 @@
   .mobile-menu-panel a:hover { background: #f2f7fa; }
   .hero .wrap { display: flex; flex-direction: column; align-items: stretch; min-height: 0; gap: 0; padding-top: 26px; padding-bottom: 24px; }
   .hero .hero-copy { display: contents; }
-  .hero .eyebrow, .hero .hero-pills, .hero .actions, .service .actions, .coverage-call, .final-actions { display: none; }
+  .hero .eyebrow, .hero .hero-pills, .hero .actions, .service .actions, .service-hero .actions, .coverage-call, .final-actions { display: none; }
   .hero .lead > strong { display: none; }
   .hero h1 { order: 1; font-size: clamp(32px, 8.65vw, 40px); line-height: 1.08; letter-spacing: -.045em; margin: 0; }
   .hero .lead { order: 2; font-size: 15px; line-height: 1.6; margin: 15px 0 0; }
@@ -36,6 +50,18 @@
   .hero::after { display: none; }
   .service h1 { font-size: clamp(30px, 8vw, 40px); line-height: 1.1; overflow-wrap: anywhere; }
   .service .lead { font-size: 16px; line-height: 1.6; }
+
+  /* Provincial and municipal heroes: keep the title and SEO, use only the dock. */
+  .service-hero .section { padding-top: 28px; padding-bottom: 30px; }
+  .service-hero .eyebrow { display: none; }
+  .service-hero h1 { font-size: clamp(30px, 8vw, 38px); line-height: 1.12; overflow-wrap: anywhere; }
+  .service-hero .lead { font-size: 15px; line-height: 1.6; margin-top: 14px; }
+  .service-hero .breadcrumbs { margin-bottom: 14px; font-size: 11px; line-height: 1.5; color: #bed0de; }
+  .service-hero .breadcrumbs a { color: #d2e5f2; }
+  .service-hero + .wrap.section { padding-top: 32px; padding-bottom: 36px; }
+  .demand-list { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .demand-list .demand { min-height: 56px; padding: 12px 14px; }
+
   .quick-item { min-width: 0; padding: 17px 7px; gap: 9px; }
   .quick-icon { flex: none; }
   .quick-item b { font-size: 12px; line-height: 1.3; }
