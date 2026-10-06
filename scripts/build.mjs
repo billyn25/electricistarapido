@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {site,provinces,services,photos} from '../content/site.mjs';
+import {allMunicipalities} from '../content/all-municipalities.mjs';
 const out=path.resolve('dist');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const townSlug=value=>String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
@@ -68,6 +69,11 @@ const provincePages={
  madrid:{name:'Madrid',towns:['Madrid','Móstoles','Alcalá de Henares','Fuenlabrada','Leganés','Getafe','Alcorcón','Torrejón de Ardoz','Parla','Alcobendas','Las Rozas','San Sebastián de los Reyes','Pozuelo de Alarcón','Rivas-Vaciamadrid','Coslada','Valdemoro','Majadahonda','Collado Villalba','Aranjuez','Arganda del Rey','Boadilla del Monte','Pinto'],intro:'Atención de averías eléctricas en Madrid capital y municipios del área metropolitana. Indica la localidad y qué está ocurriendo para confirmar disponibilidad antes del desplazamiento.'},
  cantabria:{name:'Cantabria',towns:['Santander','Torrelavega','Castro-Urdiales','Camargo','Piélagos','El Astillero','Santa Cruz de Bezana','Laredo','Santoña','Reinosa','Suances','Colindres','Medio Cudeyo','Marina de Cudeyo','Cabezón de la Sal','Los Corrales de Buelna','Santa María de Cayón','Noja','Comillas','Potes'],intro:'Reparación de averías eléctricas en Santander, Torrelavega, costa oriental y otras localidades de Cantabria. Consulta urgencias 24 horas indicando municipio, tipo de corte y protección que actúa si la conoces.'}
 };
+for (const [slug,p] of Object.entries(provincePages)) {
+  const complete=allMunicipalities.filter(x=>x.provinceSlug===slug).map(x=>x.name);
+  if (!complete.length) throw new Error(`No municipality catalogue for ${slug}`);
+  p.towns=complete;
+}
 const townUrls=[];
 const localFocus=[
  ['sin-luz-en-casa','¿Te has quedado sin luz?','Un corte total o parcial puede tener su origen en la instalación particular, un circuito o la alimentación. La posición de los automáticos no basta para identificar la causa.'],
