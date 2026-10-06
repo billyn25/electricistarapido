@@ -60,6 +60,7 @@ nav.alphabet a { min-width: 44px; height: 44px; }
 .demand > i:last-child { grid-column: 3; justify-self: end; }
 .local-page a:focus-visible, .local-page summary:focus-visible, .town-chip[href]:focus-visible { outline: 3px solid #1679bc; outline-offset: 3px; }
 @media (max-width: 950px) {
+  .local-services-grid { grid-template-columns: minmax(0, 1fr); }
   .local-process { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 760px) {
