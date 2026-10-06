@@ -114,11 +114,11 @@ test('production build contains no editorial dummy markers or analytics scripts'
   }
 });
 
-test('home service cards use reviewed, non-placeholder photos', async () => {
+test('home keeps original service photos except the reviewed differential image', async () => {
   const home=await fs.readFile(path.join(dist,'index.html'),'utf8');
   const ids=[...home.matchAll(/images\.pexels\.com\/photos\/(\d+)\//g)].map(m=>m[1]);
-  for(const id of ['38171184','32497160','7937307','9679179','5691590','28950842','35154098','4792521','27928760','257736']) assert.ok(ids.includes(id),id);
-  for(const old of ['35138694','5691642','14319099','11679114','442160','7359566','7647233']) assert.ok(!ids.includes(old),old);
+  for(const id of ['38171184','17842832','5691642','9679179','5691590','14319099','11679114','442160','7359566','7647233']) assert.ok(ids.includes(id),id);
+  assert.ok(!ids.includes('35138694'),'old differential image must not return');
   assert.match(home,/fetchpriority="high" decoding="async"/);
   assert.doesNotMatch(home,/Electricidad doméstica, sin rodeos/);
   assert.match(home,/Cuando falla la luz,[\s\S]*vamos rápido a la avería/);
