@@ -142,3 +142,13 @@ test('municipal pages include useful review and repair detail for every service'
     }
   }
 });
+
+test('home labels towns as Electricista en, hides secondary towns accessibly and ends with coverage summary', async () => {
+  const home=await fs.readFile(path.join(dist,'index.html'),'utf8');
+  assert.equal((home.match(/class="town-chip" href="\/electricista\//g)||[]).length,101);
+  assert.ok((home.match(/>Electricista en [^<]+<\/a>/g)||[]).length>=101);
+  assert.equal((home.match(/<details class="town-more">/g)||[]).length,5);
+  assert.match(home,/ZONAS DONDE PRESTAMOS SERVICIO/);
+  assert.match(home,/Resumen de pueblos y localidades/);
+  for(const name of ['Vizcaya','Álava','Guipúzcoa','Madrid','Cantabria']) assert.ok(home.includes(`Electricista en ${name} ·`),name);
+});
