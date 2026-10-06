@@ -128,7 +128,7 @@ test('every municipal service heading reinforces the real locality without dupli
   for (const p of towns) {
     const record=townRecord(p.html);
     for (const service of localServices) {
-      assert.ok(p.html.includes(`<h3>${service.title} en ${record.town}</h3>`), `${p.file}: ${service.slug}`);
+      assert.match(p.html,new RegExp(`<h3>${service.title.replace(/[.*+?^${}()|[\\]\\]/g,'\\assert.ok(p.html.includes(`<h3>${service.title} en ${record.town}</h3>`), `${p.file}: ${service.slug}`);')} en ${record.town.replace(/[.*+?^${}()|[\\]\\]/g,'\\assert.ok(p.html.includes(`<h3>${service.title} en ${record.town}</h3>`), `${p.file}: ${service.slug}`);')}</h3>`), `${p.file}: ${service.slug}`);
       assert.ok(p.html.includes(`aria-label="${service.title} en ${record.town}: diagnóstico y reparación"`), `${p.file}: local guide label`);
     }
   }
