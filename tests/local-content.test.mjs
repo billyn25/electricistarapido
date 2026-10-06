@@ -166,12 +166,16 @@ test('municipality catalogue uses natural article order in public URLs', async (
   assert.doesNotMatch(home,/roz-as-de-madrid-las|rozas-de-madrid-las/);
 });
 
-test('Madrid postal copy never presents an unverified single code as universal', async () => {
+test('all 179 Madrid municipalities publish their INE-derived postal codes', async () => {
+  const madrid=towns.filter(x=>x.file.includes('/electricista/madrid/'));
+  assert.equal(madrid.length,179);
+  for(const p of madrid){
+    assert.match(p.html,/Códigos? postales? asociados?:<\/strong> 28\d{3}/,p.file);
+    assert.match(p.html,/Callejero del Censo Electoral \(INE\), edición 2026-01/,p.file);
+    assert.doesNotMatch(p.html,/no mostramos uno sin verificarlo/,p.file);
+  }
   const alcala=await fs.readFile(path.join(dist,'electricista/madrid/alcala-de-henares/index.html'),'utf8');
-  assert.match(alcala,/Códigos postales asociados:<\/strong> 28801, 28802, 28803, 28804, 28805, 28806, 28807/);
-  const pinto=await fs.readFile(path.join(dist,'electricista/madrid/pinto/index.html'),'utf8');
-  assert.match(pinto,/Códigos postales asociados:<\/strong> 28320/);
+  assert.match(alcala,/28801, 28802, 28803, 28804, 28805, 28806, 28807/);
   const algete=await fs.readFile(path.join(dist,'electricista/madrid/algete/index.html'),'utf8');
-  assert.match(algete,/no mostramos uno sin verificarlo para la dirección concreta/);
-  for(const p of towns.filter(x=>x.file.includes('/electricista/madrid/'))) assert.doesNotMatch(p.html,/Código postal de referencia:/);
+  assert.match(algete,/28110, 28120/);
 });
