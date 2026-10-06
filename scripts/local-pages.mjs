@@ -171,7 +171,33 @@ export async function enhanceLocalPages(directory = path.join(root, 'dist')) {
     urls.push(url);
   }
   if (new Set(urls).size !== urls.length) throw new Error('Duplicate canonical URLs');
-  await fs.writeFile(path.join(directory,'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.sort().map(url => `  <url><loc>${escape(url)}</loc></url>`).join('\n')}\n</urlset>\n`);
+  // Igual que Antenas Rapid: sitemap index pequeño + sitemaps por provincia y núcleo.
+  // Esto facilita la lectura/diagnóstico en Search Console y mantiene cada grupo auditable.
+  const sitemapDir=path.join(directory,'sitemaps');
+  await fs.rm(sitemapDir,{recursive:true,force:true});
+  await fs.mkdir(sitemapDir,{recursive:true});
+  const groups=new Map([['core',[]],...provinces.map(p=>[p.slug,[]])]);
+  for(const url of urls.sort()){
+    const pathname=new URL(url).pathname;
+    const provinceMatch=pathname.match(/^\/(?:electricista|zonas)\/([^/]+)\//);
+    const key=provinceMatch && groups.has(provinceMatch[1]) ? provinceMatch[1] : 'core';
+    groups.get(key).push(url);
+  }
+  const childUrls=[];
+  for(const [key,groupUrls] of groups){
+    if(!groupUrls.length) continue;
+    const filename=`sitemap-${key}.xml`;
+    const xml=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${groupUrls.map(url=>`  <url><loc>${escape(url)}</loc></url>`).join('\n')}\n</urlset>\n`;
+    await fs.writeFile(path.join(sitemapDir,filename),xml);
+    childUrls.push(`${site.domain}/sitemaps/${filename}`);
+  }
+  const sitemapIndex=`<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${childUrls.map(url=>`  <sitemap><loc>${escape(url)}</loc></sitemap>`).join('\n')}\n</sitemapindex>\n`;
+  await fs.writeFile(path.join(directory,'sitemap.xml'),sitemapIndex);
+  await fs.writeFile(path.join(directory,'robots.txt'),`User-agent: *\nAllow: /\n\nSitemap: ${site.domain}/sitemap.xml\n`);
+  const headerFile=path.join(directory,'_headers');
+  let headerText=await fs.readFile(headerFile,'utf8');
+  if(!headerText.includes('/sitemap.xml\n')) headerText += '\n/sitemap.xml\n  Content-Type: application/xml; charset=UTF-8\n  Cache-Control: public, max-age=0, must-revalidate\n/sitemaps/*.xml\n  Content-Type: application/xml; charset=UTF-8\n  Cache-Control: public, max-age=0, must-revalidate\n/robots.txt\n  Content-Type: text/plain; charset=UTF-8\n  Cache-Control: public, max-age=0, must-revalidate\n';
+  await fs.writeFile(headerFile,headerText);
   await fs.writeFile(path.join(directory,'favicon.svg'), '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#ffd22e"/><path d="M36 5 17 35h13l-3 24 20-34H34z" fill="#071c2d"/></svg>');
   if (preview) {
     const headerFile = path.join(directory,'_headers');
