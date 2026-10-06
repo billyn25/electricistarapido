@@ -1,13 +1,14 @@
-"""Local-page regressions in Chromium and WebKit; never sends calls/messages.
+"""Local-page regressions; never sends calls/messages.
 
-Checks every generated municipality, plus responsive samples in all provinces.
-Uses geometry, not just element existence, to catch narrow-column regressions.
+Checks every municipality and responsive samples in all provinces.
+LAYOUT_BROWSERS=chromium,webkit also runs WebKit when it is installed.
 """
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from threading import Thread
 import json
+import os
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -15,6 +16,8 @@ DIST = ROOT / 'dist'
 REPORTS = ROOT / 'reports'
 REPORTS.mkdir(exist_ok=True)
 WIDTHS = [320, 375, 390, 430, 650, 768, 1280, 1440]
+ENGINES = [s.strip() for s in os.environ.get('LAYOUT_BROWSERS', 'chromium').split(',')]
+assert ENGINES and all(s in ['chromium', 'webkit'] for s in ENGINES)
 TOWN_FILES = sorted((DIST / 'electricista').glob('*/*/index.html'))
 PROVINCE_FILES = sorted((DIST / 'zonas').glob('*/index.html'))
 assert len(TOWN_FILES) >= 101, 'Missing the municipal build'
@@ -83,7 +86,7 @@ def check_local(page, url, width):
 
 try:
     with sync_playwright() as p:
-        for engine in ['chromium', 'webkit']:
+        for engine in ENGINES:
             browser = getattr(p, engine).launch()
             for width in WIDTHS:
                 context = browser.new_context(viewport={'width': width, 'height': 844 if width <= 650 else 1000},
@@ -113,7 +116,7 @@ try:
             page.on('pageerror', lambda error: errors.append(str(error)))
             for file in TOWN_FILES:
                 check_local(page, route(file), 390)
-            # Check actual internal navigation without following tel:/WhatsApp links.
+            # Check internal navigation without following tel:/WhatsApp links.
             page.locator('.demand-list .demand').first.click()
             assert '/servicios/' in page.url
             assert page.locator('.service .actions:visible').count() == 0
@@ -133,4 +136,4 @@ try:
 finally:
     server.shutdown()
     (REPORTS / 'local-pages-layout.json').write_text(json.dumps(results, ensure_ascii=False, indent=2))
-print(f'LOCAL BROWSER OK: {len(results)} groups; {len(TOWN_FILES)} municipalities; 5 provinces; 8 widths; Chromium + WebKit. No calls/messages sent.')
+print(f'LOCAL BROWSER OK: {len(results)} groups; {len(TOWN_FILES)} municipalities; 5 provinces; 8 widths; {ENGINES}. No calls/messages sent.')
