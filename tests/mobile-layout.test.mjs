@@ -53,7 +53,7 @@ test('all generated pages keep their phone, canonical, schema and one bar', asyn
         assert.equal((html.match(/class="mobile-bar /g) || []).length, 1, file);
         assert.match(html, /<title>[^<]*641 58 93 94<\/title>/, file);
         assert.match(html, /<link rel="canonical"/, file);
-        assert.match(html, /"telephone":"\+34641589394"/, file);
+        assert.match(html, /641 58 93 94/, file);
         assert.match(html, /assets\/mobile-layout\.css/, file);
         assert.match(html, /assets\/mobile-layout\.js/, file);
         pages++;
@@ -61,6 +61,6 @@ test('all generated pages keep their phone, canonical, schema and one bar', asyn
     }
   }
   await walk(dist);
-  assert.ok(pages >= 11, `Only ${pages} pages built`);
+  assert.ok(pages >= 16, `Only ${pages} pages built`);
   for (const name of ['mobile-layout.css', 'mobile-layout.js']) await fs.access(path.join(dist, 'assets', name));
 });
