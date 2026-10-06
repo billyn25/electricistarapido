@@ -1,5 +1,6 @@
 /** Verified municipal identity and navigable geographic context. No synonym spinning. */
 import { geographicRows, geoSources } from '../content/local-geography.mjs';
+import { allMunicipalities, municipalitySource } from '../content/all-municipalities.mjs';
 export const normalizePlace = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const areas = {vizcaya:'48',alava:'01',guipuzcoa:'20',madrid:'28',cantabria:'39'};
 const byRoute = new Map();
@@ -12,10 +13,15 @@ for (const [provinceSlug,slug,code,officialName,capital,longitude,latitude] of g
     source:geoSources[provinceSlug] || geoSources.basque,
     mapUrl:`https://signa.ign.es/signa/?center=${longitude},${latitude}&level=14&basemap=basemap_3`}));
 }
+const slugify=value=>String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const catalogueByRoute=new Map(allMunicipalities.map(x=>[`/electricista/${x.provinceSlug}/${slugify(x.name)}/`,x]));
 export function getLocalContext(record) {
   const facts = byRoute.get(record.route);
-  if (!facts || facts.provinceSlug !== record.provinceSlug) throw Error(`Missing verified local context: ${record.route}`);
-  return facts;
+  if (facts && facts.provinceSlug === record.provinceSlug) return {...facts,enhanced:true};
+  const basic=catalogueByRoute.get(record.route);
+  if (!basic || basic.provinceSlug!==record.provinceSlug) throw Error(`Missing municipality context: ${record.route}`);
+  return {provinceSlug:basic.provinceSlug,route:record.route,code:basic.code,officialName:basic.name,capital:basic.name,
+    source:municipalitySource,mapUrl:null,enhanced:false};
 }
 // Haversine ranks IGN reference points only; it does not estimate roads or arrival times.
 export function pointDistance(a,b) {
@@ -26,13 +32,18 @@ export function pointDistance(a,b) {
 }
 export function nearbyTowns(record, records, limit=5) {
   const current=getLocalContext(record);
-  return records.filter(r=>r.provinceSlug===record.provinceSlug && r.route!==record.route)
-    .map(r=>({...r,referenceDistance:pointDistance(current,getLocalContext(r))}))
-    .sort((a,b)=>a.referenceDistance-b.referenceDistance || a.town.localeCompare(b.town,'es'))
-    .slice(0,limit);
+  const same=records.filter(r=>r.provinceSlug===record.provinceSlug && r.route!==record.route);
+  if(current.enhanced && Number.isFinite(current.latitude)){
+    const geo=same.filter(r=>{const g=getLocalContext(r);return g.enhanced&&Number.isFinite(g.latitude);})
+      .map(r=>({...r,referenceDistance:pointDistance(current,getLocalContext(r))}))
+      .sort((a,b)=>a.referenceDistance-b.referenceDistance || a.town.localeCompare(b.town,'es'));
+    if(geo.length>=limit) return geo.slice(0,limit);
+  }
+  return same.sort((a,b)=>a.town.localeCompare(b.town,'es')).slice(0,limit).map(r=>({...r,referenceDistance:null}));
 }
 export function localIdentity(record) {
   const g=getLocalContext(record);
+  if(!g.enhanced) return `Esta ficha corresponde al municipio de ${g.officialName}, en ${record.province}. Indica el barrio, núcleo o zona de la vivienda al solicitar la reparación; la disponibilidad y el desplazamiento se confirman para cada aviso.`;
   const different=normalizePlace(g.officialName)!==normalizePlace(g.capital);
   const name=normalizePlace(record.town)===normalizePlace(g.officialName) ? record.town : `${record.town} (${g.officialName})`;
   if(different) return `La ficha corresponde al municipio de ${name}, en ${record.province}. El IGN identifica ${g.capital} como su cabecera municipal. Al pedir asistencia, especifica si la dirección está en ${g.capital} o en otro núcleo o barrio del municipio.`;
