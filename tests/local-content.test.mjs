@@ -58,12 +58,27 @@ test('canonical, phone and breadcrumb data identify the correct town', () => {
     assert.equal(main,renderTown(record,towns.map(t=>townRecord(t.html)).filter(t=>t.provinceSlug===record.provinceSlug).sort((a,b)=>a.town.localeCompare(b.town,'es'))));
   }
 });
-test('sitemap has one entry per generated page and no literal newline escapes', async () => {
-  const xml=await fs.readFile(path.join(dist,'sitemap.xml'),'utf8');
-  assert.doesNotMatch(xml,/\\n/);
-  const urls=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
-  assert.equal(urls.length,pages.length);
-  assert.equal(new Set(urls).size,pages.length);
+test('sitemap index and province children cover every generated canonical once', async () => {
+  const index=await fs.readFile(path.join(dist,'sitemap.xml'),'utf8');
+  assert.match(index,/<sitemapindex xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">/);
+  const children=[...index.matchAll(/<sitemap><loc>([^<]+)<\/loc><\/sitemap>/g)].map(m=>m[1]);
+  assert.equal(children.length,6);
+  const seen=[];
+  for(const child of children){
+    assert.ok(child.startsWith('https://electricistarapido.com/sitemaps/sitemap-'));
+    const file=path.join(dist,new URL(child).pathname);
+    const xml=await fs.readFile(file,'utf8');
+    assert.match(xml,/<urlset xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">/);
+    assert.doesNotMatch(xml,/\\\\n/);
+    seen.push(...[...xml.matchAll(/<url><loc>([^<]+)<\/loc><\/url>/g)].map(m=>m[1]));
+  }
+  const canonicals=pages.map(p=>canonical(p.html)).sort();
+  assert.equal(seen.length,canonicals.length);
+  assert.deepEqual([...seen].sort(),canonicals);
+  assert.equal(new Set(seen).size,seen.length);
+  const robots=await fs.readFile(path.join(dist,'robots.txt'),'utf8');
+  assert.match(robots,/User-agent: \*\nAllow: \/\n/);
+  assert.match(robots,/Sitemap: https:\/\/electricistarapido\.com\/sitemap\.xml/);
 });
 test('all local internal destinations and anchors exist', async () => {
   for(const p of pages) {
