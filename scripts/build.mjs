@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {site,provinces,services,photos} from '../content/site.mjs';
 import {allMunicipalities} from '../content/all-municipalities.mjs';
+import {madridPostalCodesByIne} from '../content/madrid-postal-codes.mjs';
 const out=path.resolve('dist');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const townSlug=value=>String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
@@ -87,7 +88,7 @@ for(const [slug,p] of Object.entries(provincePages)){
  const groups={}; for(const town of sorted){const l=initial(town);(groups[l]??=[]).push(town);}
  const letters=Object.keys(groups).sort((x,y)=>x.localeCompare(y,'es'));
  const alphabet=letters.map(l=>`<a href="#letra-${l}">${l}</a>`).join('');
- const directory=letters.map(l=>`<section class="letter-group" id="letra-${l}"><h3 class="letter-title">${l}</h3><div class="town-link-grid">${groups[l].map(t=>`<a class="town-link" href="/electricista/${slug}/${townSlug(t)}/"><span>Electricista en ${esc(t)}</span><span>→</span></a>`).join('')}</div></section>`).join('');
+ const directory=letters.map(l=>`<section class="letter-group" id="letra-${l}"><h3 class="letter-title">${l}</h3><div class="town-link-grid">${groups[l].map(t=>{const m=allMunicipalities.find(x=>x.provinceSlug===slug&&x.name===t);const cp=slug==='madrid'&&m?(madridPostalCodesByIne[m.code]||[]):[];return `<a class="town-link" href="/electricista/${slug}/${townSlug(t)}/"><span>Electricista en ${esc(t)}${cp.length?` <small>· CP ${esc(cp.join(', '))}</small>`:''}</span><span>→</span></a>`}).join('')}</div></section>`).join('');
  const url=`/zonas/${slug}/`;
  await write(url,page(`Electricista 24 horas en ${p.name} | ${site.phone}`,`Urgencias eléctricas 24 horas en ${p.name}: apagones, diferenciales, cuadros y cortocircuitos. Teléfono ${site.phone}.`,`<main><section class="service-hero"><div class="wrap section"><div class="breadcrumbs"><a href="/">Inicio</a><span>›</span><span>${esc(p.name)}</span></div><div class="eyebrow">ZONA DE SERVICIO · ${esc(p.name)}</div><h1>Electricista 24 horas en ${esc(p.name)}</h1><p class="lead">${esc(p.intro)}</p><div class="actions"><a class="btn yellow" href="tel:${site.tel}">☎ ${site.phone}</a><a class="btn wa" href="https://wa.me/${site.whatsapp}">WhatsApp</a></div></div></section><section class="towns-featured"><div class="wrap section"><div class="eyebrow">MUNICIPIOS</div><h2>Localidades de ${esc(p.name)} por orden alfabético</h2><p>Selecciona una localidad para consultar la página de asistencia eléctrica correspondiente.</p><nav class="alphabet" aria-label="Índice alfabético">${alphabet}</nav>${directory}</div></section></main>`,url));
  for(let i=0;i<sorted.length;i++){
