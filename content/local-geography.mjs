@@ -76,7 +76,7 @@ export const geographicRows = [
   ["madrid","coslada","28049","Coslada","Coslada",-3.565560449,40.42627874],
   ["madrid","fuenlabrada","28058","Fuenlabrada","Fuenlabrada",-3.799802615,40.2840315],
   ["madrid","getafe","28065","Getafe","Getafe",-3.732332146,40.30555125],
-  ["madrid","las-rozas","28127","Las Rozas de Madrid","Las Rozas de Madrid",-3.874368545,40.49313057],
+  ["madrid","las-rozas-de-madrid","28127","Las Rozas de Madrid","Las Rozas de Madrid",-3.874368545,40.49313057],
   ["madrid","leganes","28074","Leganés","Leganés",-3.758378081,40.32705474],
   ["madrid","madrid","28079","Madrid","Madrid",-3.691978194,40.41902552],
   ["madrid","majadahonda","28080","Majadahonda","Majadahonda",-3.872524621,40.47286293],
