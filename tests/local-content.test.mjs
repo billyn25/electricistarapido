@@ -123,3 +123,13 @@ test('home service cards use reviewed, non-placeholder photos', async () => {
   assert.doesNotMatch(home,/Electricidad doméstica, sin rodeos/);
   assert.match(home,/Cuando falla la luz,[\s\S]*vamos rápido a la avería/);
 });
+
+test('every municipal service heading reinforces the real locality without duplicating service pages', () => {
+  for (const p of towns) {
+    const record=townRecord(p.html);
+    for (const service of localServices) {
+      assert.ok(p.html.includes(`<h3>${service.title} en ${record.town}</h3>`), `${p.file}: ${service.slug}`);
+      assert.ok(p.html.includes(`aria-label="${service.title} en ${record.town}: diagnóstico y reparación"`), `${p.file}: local guide label`);
+    }
+  }
+});
