@@ -24,12 +24,14 @@ jobs:
           key: recursos-v1-${{ hashFiles('content/site.mjs') }}
       - name: Construcción, pruebas y auditoría completa
         run: npm run check
-      - name: Preparar navegador de pruebas
+      - name: Preparar navegadores de pruebas
         run: |
           python -m pip install playwright==1.51.0
-          python -m playwright install --with-deps chromium
+          python -m playwright install --with-deps chromium webkit
       - name: Móvil, escritorio, fotos y navegación
         run: python tests/browser.py
+      - name: Pueblos y provincias en Chromium y WebKit
+        run: python tests/local-pages.browser.py
       - name: Resumen de la revisión
         if: always()
         run: |
