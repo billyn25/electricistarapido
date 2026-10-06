@@ -113,3 +113,13 @@ test('production build contains no editorial dummy markers or analytics scripts'
     assert.doesNotMatch(p.html,/googletagmanager\.com|google-analytics\.com|connect\.facebook\.net\/.*fbevents/i,p.file);
   }
 });
+
+test('home service cards use reviewed, non-placeholder photos', async () => {
+  const home=await fs.readFile(path.join(dist,'index.html'),'utf8');
+  const ids=[...home.matchAll(/images\.pexels\.com\/photos\/(\d+)\//g)].map(m=>m[1]);
+  for(const id of ['38171184','32497160','7937307','9679179','5691590','28950842','35154098','4792521','27928760','257736']) assert.ok(ids.includes(id),id);
+  for(const old of ['35138694','5691642','14319099','11679114','442160','7359566','7647233']) assert.ok(!ids.includes(old),old);
+  assert.match(home,/fetchpriority="high" decoding="async"/);
+  assert.doesNotMatch(home,/Electricidad doméstica, sin rodeos/);
+  assert.match(home,/Cuando falla la luz,[\s\S]*vamos rápido a la avería/);
+});
