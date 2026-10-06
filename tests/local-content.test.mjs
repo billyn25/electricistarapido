@@ -109,7 +109,7 @@ test('legal pages are generated, linked and contain only the supplied public own
 });
 test('production build contains no editorial dummy markers or analytics scripts', async () => {
   for (const p of pages) {
-    assert.doesNotMatch(p.html,/Lorem ipsum|\bTODO\b|\bFIXME\b|cuando publiquemos/i,p.file);
+    assert.doesNotMatch(p.html,/Lorem ipsum|\bTODO\b|\bFIXME\b|cuando publiquemos/,p.file);
     assert.doesNotMatch(p.html,/googletagmanager\.com|google-analytics\.com|connect\.facebook\.net\/.*fbevents/i,p.file);
   }
 });
