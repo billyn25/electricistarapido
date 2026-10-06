@@ -170,7 +170,7 @@ test('all 179 Madrid municipalities publish their INE-derived postal codes', asy
   const madrid=towns.filter(x=>x.file.includes('/electricista/madrid/'));
   assert.equal(madrid.length,179);
   for(const p of madrid){
-    assert.match(p.html,/Códigos? postales? asociados?:<\/strong>\s*28\d{3}/,p.file);
+    assert.match(p.html,/C(?:ódigo|ódigos) postal(?:es)? asociado(?:s)?:<\/strong>\s*28\d{3}/,p.file);
     assert.match(p.html,/Callejero del Censo Electoral \(INE\), edición 2026-01/,p.file);
     assert.doesNotMatch(p.html,/no mostramos uno sin verificarlo/,p.file);
   }
