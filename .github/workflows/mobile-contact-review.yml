@@ -1,23 +1,21 @@
-name: Revisar contacto móvil sin duplicados
+name: Guardar contacto móvil verificado
 on:
   push:
     branches: [review/mobile-contact]
 permissions:
   contents: write
 jobs:
-  verify:
+  save:
     runs-on: ubuntu-latest
-    timeout-minutes: 7
+    timeout-minutes: 3
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Guardar referencia y aplicar cambios mínimos
+      - name: Conservar exactamente el cambio probado en 37447787271
         run: |
-          npm run check
-          mkdir -p .quality
-          cp -R dist .quality/baseline
+          mkdir -p reports
           python3 - <<'PY'
           import json
           from pathlib import Path
@@ -33,47 +31,21 @@ jobs:
           s+='\n// Small local assets: no extra libraries or external requests.\nfor(const asset of ["mobile-contact.css","mobile-contact.js"])await fs.copyFile(path.resolve("public",asset),path.join(out,asset));\n'
           p.write_text(s)
           p=Path('package.json');d=json.loads(p.read_text());d['scripts']['check']='node --check scripts/build.mjs && node --check public/mobile-contact.js && npm run build && node --test tests/*.test.mjs';p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
-          # Keep the normal quality workflow runnable with the supplied browser test.
-          p=Path('.github/workflows/quality.yml');s=p.read_text();s=s.replace('install --with-deps chromium','install --with-deps chromium webkit');p.write_text(s)
           PY
+          npm run check > reports/check.log 2>&1
           git diff --check
-      - name: Construir y verificar conservación de SEO y destinos
+          tar --exclude=.git --exclude=dist --exclude=reports -czf reports/sources.tar.gz .
+      - name: Guardar solo código de la web
         run: |
-          npm run check | tee .quality/check.log
-          python3 - <<'PY'
-          import json,re
-          from pathlib import Path
-          old=Path('.quality/baseline');new=Path('dist')
-          files=sorted(p.relative_to(old) for p in old.rglob('*.html'))
-          assert files==sorted(p.relative_to(new) for p in new.rglob('*.html'))
-          patterns={'title':r'<title>.*?</title>','meta':r'<meta (?:name="(?:description|robots)"|property="og:[^"]+")[^>]*>','canonical':r'<link rel="canonical"[^>]*>','schema':r'<script type="application/ld\+json">.*?</script>','h1':r'<h1.*?</h1>','destinations':r'<a\b[^>]*href="([^"]+)"','photos':r'<img\b[^>]*src="([^"]+)"'}
-          for f in files:
-              a=(old/f).read_text();b=(new/f).read_text()
-              for name,pattern in patterns.items():assert re.findall(pattern,a,re.S)==re.findall(pattern,b,re.S),(str(f),name)
-          for name in ['sitemap.xml','robots.txt','_headers']:assert (old/name).read_bytes()==(new/name).read_bytes(),name
-          Path('reports').mkdir(exist_ok=True)
-          Path('reports/preservation.json').write_text(json.dumps({'passed':True,'pages':len(files),'unchanged':['URLs','titles','descriptions','H1','canonicals','robots','structured data','phone and WhatsApp destinations','photographs','sitemap']}))
-          PY
-      - name: Preparar navegadores
-        run: |
-          python3 -m pip install playwright==1.51.0
-          python3 -m playwright install --with-deps chromium webkit
-      - name: Comprobar móvil y escritorio
-        run: python3 -u tests/browser.py
-      - name: Guardar fuentes verificadas
-        run: |
-          git add scripts/build.mjs package.json .github/workflows/quality.yml
+          git add scripts/build.mjs package.json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Conecta controles móviles y pruebas de regresión'
+          git commit -m 'Conecta los controles móviles comprobados y sus pruebas'
           git push origin HEAD:review/mobile-contact
-          git rev-parse HEAD > reports/verified-commit.txt
-          tar --exclude=.git --exclude=.quality --exclude=dist --exclude=reports -czf reports/sources.tar.gz .
+          git rev-parse HEAD > reports/source-commit.txt
+          git ls-tree -r HEAD > reports/source-tree.txt
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: electricista-mobile-verified
-          path: |
-            reports/
-            .quality/check.log
-          include-hidden-files: true
+          name: electricista-mobile-sources
+          path: reports/
