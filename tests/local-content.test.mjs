@@ -94,3 +94,22 @@ test('enhancement stylesheet exists and favicon uses valid color values', async 
   assert.doesNotMatch(favicon,/%23/);
   for (const p of pages) assert.equal((p.html.match(/href="\/assets\/local-pages\.css/g)||[]).length,1);
 });
+
+test('legal pages are generated, linked and contain only the supplied public owner identity', async () => {
+  const home=await fs.readFile(path.join(dist,'index.html'),'utf8');
+  for (const route of ['/aviso-legal/','/privacidad/','/cookies/']) {
+    const html=await fs.readFile(path.join(dist,route,'index.html'),'utf8');
+    assert.match(html,/<meta name="robots" content="(?:index,follow,max-image-preview:large|noindex,follow)">/);
+    assert.match(html,new RegExp('<link rel="canonical" href="https://electricistarapido\\.com'+route.replaceAll('/','\\/')+'">'));
+    assert.ok(home.includes(`href="${route}"`));
+  }
+  const legal=await fs.readFile(path.join(dist,'aviso-legal','index.html'),'utf8');
+  assert.match(legal,/R\.F\.G\./);
+  assert.doesNotMatch(legal,/CIF|NIF|DNI|domicilio fiscal/i);
+});
+test('production build contains no editorial dummy markers or analytics scripts', async () => {
+  for (const p of pages) {
+    assert.doesNotMatch(p.html,/Lorem ipsum|\bTODO\b|\bFIXME\b|cuando publiquemos/,p.file);
+    assert.doesNotMatch(p.html,/googletagmanager\.com|google-analytics\.com|connect\.facebook\.net\/.*fbevents/i,p.file);
+  }
+});

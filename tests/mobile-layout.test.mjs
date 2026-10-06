@@ -51,7 +51,7 @@ test('all generated pages keep their phone, canonical, schema and one bar', asyn
       else if (file.endsWith('.html')) {
         const html = await fs.readFile(file, 'utf8');
         assert.equal((html.match(/class="mobile-bar /g) || []).length, 1, file);
-        assert.match(html, /<title>[^<]*641 58 93 94<\/title>/, file);
+        if (!/\/(aviso-legal|privacidad|cookies)\//.test(file)) assert.match(html, /<title>[^<]*641 58 93 94<\/title>/, file);
         assert.match(html, /<link rel="canonical"/, file);
         assert.match(html, /641 58 93 94/, file);
         assert.match(html, /assets\/mobile-layout\.css/, file);

@@ -41,3 +41,7 @@ Antes de una expansión masiva, añadir información operativa verificada (cober
 Referencias editoriales:
 - https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=es
 - https://developers.google.com/search/docs/essentials/spam-policies?hl=es
+
+
+## Prepublicación 2026-10-06
+Se revisa el tono para averías y arreglos eléctricos puntuales en vivienda. Se conservan las estrellas como recurso visual sin presentarlas como puntuación o reseñas. Se corrige la fotografía de diferencial por una imagen de diagnóstico eléctrico con multímetro. Las previews continúan en noindex,follow de forma intencionada.
