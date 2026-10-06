@@ -30,7 +30,7 @@ export function townRecord(html) {
   const match = new URL(url).pathname.match(/^\/electricista\/([^/]+)\/([^/]+)\/$/);
   if (!match) return null;
   const province = provincesBySlug.get(match[1]);
-  const town = plain(html.match(/<h1>([\s\S]*?)<\/h1>/)?.[1] || '').replace(/^Electricista 24 horas en /, '');
+  const town = plain(html.match(/<meta name="locality" content="([^"]+)"/)?.[1] || '');
   if (!province || !town || town.includes('<')) throw new Error(`Invalid municipality: ${url}`);
   return { town, province: province.name, provinceSlug: province.slug, url, route: new URL(url).pathname };
 }
