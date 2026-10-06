@@ -702,7 +702,7 @@ export const allMunicipalities=[
   {
     "provinceSlug": "madrid",
     "code": "28001",
-    "name": "Acebeda, La"
+    "name": "La Acebeda"
   },
   {
     "provinceSlug": "madrid",
@@ -717,7 +717,7 @@ export const allMunicipalities=[
   {
     "provinceSlug": "madrid",
     "code": "28004",
-    "name": "Álamo, El"
+    "name": "El Álamo"
   },
   {
     "provinceSlug": "madrid",
@@ -777,7 +777,7 @@ export const allMunicipalities=[
   {
     "provinceSlug": "madrid",
     "code": "28016",
-    "name": "Atazar, El"
+    "name": "El Atazar"
   },
   {
     "provinceSlug": "madrid",
@@ -797,7 +797,7 @@ export const allMunicipalities=[
   {
     "provinceSlug": "madrid",
     "code": "28021",
-    "name": "Berrueco, El"
+    "name": "El Berrueco"
   },
   {
     "provinceSlug": "madrid",
@@ -812,7 +812,7 @@ export const allMunicipalities=[
   {
     "provinceSlug": "madrid",
     "code": "28023",
-    "name": "Boalo, El"
+    "name": "El Boalo"
   },
   {
     "provinceSlug": "madrid",
@@ -847,7 +847,7 @@ export const allMunicipalities=[
   {
     "provinceSlug": "madrid",
     "code": "28030",
-    "name": "Cabrera, La"
+    "name": "La Cabrera"
   },
   {
     "provinceSlug": "madrid",
@@ -967,7 +967,7 @@ export const allMunicipalities=[
   {
     "provinceSlug": "madrid",
     "code": "28054",
-    "name": "Escorial, El"
+    "name": "El Escorial"
   },
   {
     "provinceSlug": "madrid",
@@ -1042,7 +1042,7 @@ export const allMunicipalities=[
   {
     "provinceSlug": "madrid",
     "code": "28069",
-    "name": "Hiruela, La"
+    "name": "La Hiruela"
   },
   {
     "provinceSlug": "madrid",
@@ -1122,12 +1122,12 @@ export const allMunicipalities=[
   {
     "provinceSlug": "madrid",
     "code": "28086",
-    "name": "Molar, El"
+    "name": "El Molar"
   },
   {
     "provinceSlug": "madrid",
     "code": "28087",
-    "name": "Molinos, Los"
+    "name": "Los Molinos"
   },
   {
     "provinceSlug": "madrid",
@@ -1317,7 +1317,7 @@ export const allMunicipalities=[
   {
     "provinceSlug": "madrid",
     "code": "28127",
-    "name": "Rozas de Madrid, Las"
+    "name": "Las Rozas de Madrid"
   },
   {
     "provinceSlug": "madrid",
@@ -1367,12 +1367,12 @@ export const allMunicipalities=[
   {
     "provinceSlug": "madrid",
     "code": "28137",
-    "name": "Santos de la Humosa, Los"
+    "name": "Los Santos de la Humosa"
   },
   {
     "provinceSlug": "madrid",
     "code": "28138",
-    "name": "Serna del Monte, La"
+    "name": "La Serna del Monte"
   },
   {
     "provinceSlug": "madrid",
@@ -1517,7 +1517,7 @@ export const allMunicipalities=[
   {
     "provinceSlug": "madrid",
     "code": "28168",
-    "name": "Vellón, El"
+    "name": "El Vellón"
   },
   {
     "provinceSlug": "madrid",
@@ -1632,7 +1632,7 @@ export const allMunicipalities=[
   {
     "provinceSlug": "cantabria",
     "code": "39008",
-    "name": "Astillero, El"
+    "name": "El Astillero"
   },
   {
     "provinceSlug": "cantabria",
@@ -1722,7 +1722,7 @@ export const allMunicipalities=[
   {
     "provinceSlug": "cantabria",
     "code": "39025",
-    "name": "Corrales de Buelna, Los"
+    "name": "Los Corrales de Buelna"
   },
   {
     "provinceSlug": "cantabria",
@@ -1917,7 +1917,7 @@ export const allMunicipalities=[
   {
     "provinceSlug": "cantabria",
     "code": "39065",
-    "name": "Rozas de Valdearroyo, Las"
+    "name": "Las Rozas de Valdearroyo"
   },
   {
     "provinceSlug": "cantabria",
@@ -2022,7 +2022,7 @@ export const allMunicipalities=[
   {
     "provinceSlug": "cantabria",
     "code": "39086",
-    "name": "Tojos, Los"
+    "name": "Los Tojos"
   },
   {
     "provinceSlug": "cantabria",
