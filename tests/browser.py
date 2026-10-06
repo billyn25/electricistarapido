@@ -10,6 +10,11 @@ def stop(*args):raise TimeoutError('Browser verification exceeded 120 seconds')
 signal.signal(signal.SIGALRM,stop);signal.alarm(120)
 class Handler(http.server.SimpleHTTPRequestHandler):
  def __init__(self,*args,**kwargs):super().__init__(*args,directory=str(ROOT),**kwargs)
+ def do_GET(self):
+  # Both builds share an origin in this test; absolute production asset URLs
+  # must resolve to dist, not to the repository root.
+  if self.path.startswith(('/mobile-contact.css','/mobile-contact.js')):self.path='/dist'+self.path
+  super().do_GET()
  def log_message(self,*args):pass
 server=http.server.ThreadingHTTPServer(('127.0.0.1',0),Handler)
 threading.Thread(target=server.serve_forever,daemon=True).start()
