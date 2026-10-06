@@ -15,3 +15,10 @@
 @media(max-width:850px) { .local-place-section { grid-template-columns:minmax(0,1fr); gap:20px; padding-block:28px; } }
 @media(max-width:650px) { .local-place-section p { font-size:14px; } .local-place-reference { padding:15px 17px; } .local-place-reference dl div { grid-template-columns:125px minmax(0,1fr); } }
 @media(max-width:360px) { .local-service h3 { font-size:17px; } }
+
+.madrid-local-extra{display:grid;grid-template-columns:1fr .82fr;gap:30px;align-items:center;padding-block:38px;border-bottom:1px solid var(--local-line)}
+.madrid-local-extra h2{font-size:clamp(23px,2.6vw,31px);margin-bottom:12px}
+.madrid-local-extra p{font-size:15px;max-width:700px}
+.madrid-local-extra img{width:100%;height:300px;object-fit:cover;border-radius:16px;border:1px solid #dce7ee}
+.madrid-postal{margin-top:14px;padding:12px 14px;background:#fff7d7;border:1px solid #ead27a;border-radius:10px}
+@media(max-width:850px){.madrid-local-extra{grid-template-columns:1fr;gap:20px;padding-block:28px}.madrid-local-extra img{height:260px}}
