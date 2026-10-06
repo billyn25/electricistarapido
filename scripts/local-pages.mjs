@@ -35,6 +35,25 @@ export function townRecord(html) {
   return { town, province: province.name, provinceSlug: province.slug, url, route: new URL(url).pathname };
 }
 
+
+const madridPostalCodes = Object.freeze({
+  'alcala-de-henares':'28801–28807',
+  'alcobendas':'28100, 28108 y 28109',
+  'aranjuez':'28300',
+  'arganda-del-rey':'28500',
+  'boadilla-del-monte':'28660',
+  'collado-villalba':'28400',
+  'pinto':'28320',
+  'torrejon-de-ardoz':'28850'
+});
+const madridPanelPhoto='https://images.pexels.com/photos/38171184/pexels-photo-38171184.jpeg?auto=compress&cs=tinysrgb&w=1400';
+function madridLocalExtra(record){
+  if(record.provinceSlug!=='madrid') return '';
+  const slug=record.route.split('/').filter(Boolean).at(-1);
+  const postal=madridPostalCodes[slug];
+  return `<section class="wrap madrid-local-extra" aria-labelledby="madrid-extra-title"><div><div class="eyebrow">REPARACIÓN ELÉCTRICA EN MADRID</div><h2 id="madrid-extra-title">Cuadros y averías eléctricas en ${escape(record.town)}</h2><p>Revisión de cuadros, diferenciales, automáticos, conexiones y circuitos de vivienda en ${escape(record.town)}. La fotografía es una referencia del tipo de trabajo y no una intervención atribuida a esta localidad.</p>${postal?`<p class="madrid-postal"><strong>Código postal de referencia:</strong> ${escape(postal)}. Indica la dirección o zona concreta al solicitar el aviso.</p>`:''}</div><img loading="lazy" decoding="async" src="${madridPanelPhoto}" alt="Protecciones de un cuadro eléctrico de vivienda" width="700" height="470"></section>`;
+}
+
 function serviceGuide(record) {
   const town=escape(record.town);
   return localServices.map((s, i) => `<article class="local-service" id="servicio-${escape(s.slug)}"><div class="local-service-heading"><span class="local-service-number" aria-hidden="true">${String(i+1).padStart(2,'0')}</span><h3>${escape(s.title)} en ${town}</h3></div><p>${escape(s.symptom)}</p><details class="local-service-detail"><summary>Qué revisamos en esta avería</summary><p><strong>Comprobación:</strong> ${escape(s.review)}</p><p><strong>Reparación:</strong> ${escape(s.repair)}</p><p><strong>Para preparar el aviso:</strong> ${escape(intakeNotes[s.slug])}</p><a class="local-prepare-link" href="#consulta-local" data-intake-service="${escape(s.title)}">Preparar este aviso en ${town} ${arrow}</a><a class="local-guide-link" href="${href(s.slug)}" aria-label="${escape(s.title)} en ${town}: diagnóstico y reparación">Ver diagnóstico y reparación ${arrow}</a></details></article>`).join('');
@@ -56,6 +75,7 @@ export function renderTown(record, otherTowns) {
   const others = nearbyTowns(record, otherTowns);
   return `<main class="local-page" data-local-content="1"><section class="service-hero"><div class="wrap section"><div class="breadcrumbs" aria-label="Ruta de navegación"><a href="/">Inicio</a><span aria-hidden="true">›</span><a href="/zonas/${record.provinceSlug}/">${province}</a><span aria-hidden="true">›</span><span>${town}</span></div><div class="eyebrow">ELECTRICISTA EN ${town.toUpperCase()} · ${province}</div><h1>Electricista 24 horas en ${town}</h1><p class="lead">Electricista para averías y arreglos puntuales en ${town}, ${province}: vivienda sin luz, diferencial que salta, automáticos, cuadro eléctrico, enchufes, alumbrado y fallos por humedad. Cuéntanos qué ocurre para confirmar disponibilidad.</p><div class="actions"><a class="btn yellow" href="tel:${e(site.tel)}">${e(site.phone)}</a><a class="btn wa" href="https://wa.me/${e(site.whatsapp)}?text=${encodeURIComponent(`Hola, necesito consultar una avería eléctrica en ${record.town}, ${record.province}.`)}">WhatsApp</a></div><a class="local-hero-link" href="#servicios-locales">Ver servicios y averías <span aria-hidden="true">↓</span></a></div></section>
 ${placeSection(record)}
+${madridLocalExtra(record)}
 <section class="wrap section local-services-section" id="servicios-locales" aria-labelledby="servicios-title"><div class="local-section-heading"><div class="eyebrow">QUÉ PODEMOS REVISAR</div><h2 id="servicios-title">Servicios de reparación eléctrica en ${town}</h2><p class="lead">Averías y reparaciones eléctricas habituales en ${town}. Abre cada servicio para ver qué se comprueba, qué puede repararse y qué información ayuda antes de solicitar asistencia.</p></div><div class="local-services-grid">${serviceGuide(record)}</div></section>
 <section class="soft" id="atencion-local"><div class="wrap section"><div class="local-section-heading"><div class="eyebrow">DEL AVISO A LA REPARACIÓN</div><h2>Cómo se organiza la asistencia en ${town}</h2><p>Para preparar un aviso en ${town} no necesitas identificar la avería por tu cuenta. Estos datos ayudan a valorar el servicio sin exponerte a una instalación dañada.</p></div><div class="local-process"><article><span>01</span><h3>Localidad y acceso</h3><p>Indica ${town} y el tipo de inmueble. La dirección y las indicaciones de acceso se facilitan al concertar la visita, no en una reseña pública.</p></article><article><span>02</span><h3>Alcance del fallo</h3><p>Explica si falta luz en toda la vivienda, en una zona o en un equipo. Añade cuándo empezó y si coincide con lluvia o con el uso de algún aparato.</p></article><article><span>03</span><h3>Diagnóstico y condiciones</h3><p>Consulta disponibilidad, desplazamiento, diagnóstico y posibles suplementos antes de aceptar el aviso. La reparación se acuerda según el problema localizado.</p></article><article><span>04</span><h3>Trabajo y comprobación</h3><p>El alcance debe aclarar qué se repara o sustituye y qué comprobaciones se realizan al terminar. No todos los avisos requieren renovar el cuadro completo.</p></article></div><aside class="local-safety"><strong>Sin manipulaciones para pedir ayuda.</strong> No retires tapas, no anules protecciones y no toques elementos mojados o deteriorados. Con humo, fuego, una descarga o peligro inmediato, aléjate y solicita asistencia de emergencia; un aviso comercial no la sustituye.</aside></div></section>
 <section class="wrap section local-faq" id="preguntas-locales" aria-labelledby="faq-title"><div class="eyebrow">ANTES DE SOLICITAR LA VISITA</div><h2 id="faq-title">Preguntas sobre el servicio en ${town}</h2>${questions}</section>
