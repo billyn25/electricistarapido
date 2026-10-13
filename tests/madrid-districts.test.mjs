@@ -31,7 +31,7 @@ test('cada distrito tiene página indexable, canonical propio y contenido eléct
     assert.ok(html.includes(`Electricista 24 horas en ${d.name}, Madrid`),d.name);
     assert.ok(html.includes('<meta name="robots" content="index,follow,max-image-preview:large">')||html.includes('<meta name="robots" content="index,follow">'),d.name);
     assert.ok(html.includes(`<link rel="canonical" href="${domain+route}"`),d.name);
-    assert.ok(html.includes('no representa una oficina física'),d.name);
+    assert.ok(html.toLowerCase().includes('no representa una oficina física'),d.name);
   }
 });
 
