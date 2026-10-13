@@ -8,6 +8,7 @@ import { localServices, technicalSources } from '../content/local-services.mjs';
 import { intakeNotes } from '../content/local-intake.mjs';
 import { getLocalContext, nearbyTowns, localIdentity, contextQuestions } from './local-context.mjs';
 import { madridPostalCodesByIne, madridPostalSource } from '../content/madrid-postal-codes.mjs';
+import { madridDistricts, madridDistrictRoute } from '../content/madrid-districts.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -39,6 +40,9 @@ export function townRecord(html) {
 
 const postalText = codes => codes.join(', ');
 const madridPanelPhoto='https://images.pexels.com/photos/38171184/pexels-photo-38171184.jpeg?auto=compress&cs=tinysrgb&w=1400';
+function madridDistrictDirectory(){
+  return `<section class="wrap section madrid-districts" id="distritos-madrid"><div class="eyebrow">MADRID CAPITAL</div><h2>Distritos de Madrid capital</h2><p class="lead">Elige tu distrito para consultar urgencias eléctricas y reparación de averías dentro de Madrid capital.</p><div class="town-link-grid">${madridDistricts.map(d=>`<a class="town-link" href="${madridDistrictRoute(d)}"><span>Electricista en ${escape(d.name)}</span><span>→</span></a>`).join('')}</div></section>`;
+}
 function madridLocalExtra(record){
   if(record.provinceSlug!=='madrid') return '';
   const geography=getLocalContext(record);
@@ -79,6 +83,7 @@ export function renderTown(record, otherTowns) {
   return `<main class="local-page" data-local-content="1"><section class="service-hero"><div class="wrap section"><div class="breadcrumbs" aria-label="Ruta de navegación"><a href="/">Inicio</a><span aria-hidden="true">›</span><a href="/zonas/${record.provinceSlug}/">${province}</a><span aria-hidden="true">›</span><span>${town}</span></div><div class="eyebrow">ELECTRICISTA EN ${town.toUpperCase()} · ${province}</div><h1>${intentText(intent.hero,record)}</h1><p class="lead">${intentText(intent.lead,record)}</p><div class="actions"><a class="btn yellow" href="tel:${e(site.tel)}">${e(site.phone)}</a><a class="btn wa" href="https://wa.me/${e(site.whatsapp)}?text=${encodeURIComponent(`Hola, necesito consultar una avería eléctrica en ${record.town}, ${record.province}.`)}">WhatsApp</a></div><a class="local-hero-link" href="#servicios-locales">Ver servicios y averías <span aria-hidden="true">↓</span></a></div></section>
 ${placeSection(record)}
 ${madridLocalExtra(record)}
+${record.provinceSlug==='madrid'&&normalize(record.town)==='madrid'?madridDistrictDirectory():''}
 <section class="wrap section local-services-section" id="servicios-locales" aria-labelledby="servicios-title"><div class="local-section-heading"><div class="eyebrow">QUÉ PODEMOS REVISAR</div><h2 id="servicios-title">${intentText(intent.services,record)}</h2><p class="lead">Averías y reparaciones eléctricas habituales en ${town}. Abre cada servicio para ver qué se comprueba, qué puede repararse y qué información ayuda antes de solicitar asistencia.</p></div><div class="local-services-grid">${serviceGuide(record)}</div></section>
 <section class="soft" id="atencion-local"><div class="wrap section"><div class="local-section-heading"><div class="eyebrow">DEL AVISO A LA REPARACIÓN</div><h2>Cómo se organiza la asistencia en ${town}</h2><p>Para preparar un aviso en ${town} no necesitas identificar la avería por tu cuenta. Estos datos ayudan a valorar el servicio sin exponerte a una instalación dañada.</p></div><div class="local-process"><article><span>01</span><h3>Localidad y acceso</h3><p>Indica ${town} y el tipo de inmueble. La dirección y las indicaciones de acceso se facilitan al concertar la visita, no en una reseña pública.</p></article><article><span>02</span><h3>Alcance del fallo</h3><p>Explica si falta luz en toda la vivienda, en una zona o en un equipo. Añade cuándo empezó y si coincide con lluvia o con el uso de algún aparato.</p></article><article><span>03</span><h3>Diagnóstico y condiciones</h3><p>Consulta disponibilidad, desplazamiento, diagnóstico y posibles suplementos antes de aceptar el aviso. La reparación se acuerda según el problema localizado.</p></article><article><span>04</span><h3>Trabajo y comprobación</h3><p>El alcance debe aclarar qué se repara o sustituye y qué comprobaciones se realizan al terminar. No todos los avisos requieren renovar el cuadro completo.</p></article></div><aside class="local-safety"><strong>Sin manipulaciones para pedir ayuda.</strong> No retires tapas, no anules protecciones y no toques elementos mojados o deteriorados. Con humo, fuego, una descarga o peligro inmediato, aléjate y solicita asistencia de emergencia; un aviso comercial no la sustituye.</aside></div></section>
 <section class="wrap section local-faq" id="preguntas-locales" aria-labelledby="faq-title"><div class="eyebrow">ANTES DE SOLICITAR LA VISITA</div><h2 id="faq-title">Preguntas sobre el servicio en ${town}</h2>${questions}</section>
@@ -180,7 +185,7 @@ export async function enhanceLocalPages(directory = path.join(root, 'dist')) {
   for(const url of urls.sort()){
     const pathname=new URL(url).pathname;
     const provinceMatch=pathname.match(/^\/(?:electricista|zonas)\/([^/]+)\//);
-    const key=provinceMatch && groups.has(provinceMatch[1]) ? provinceMatch[1] : 'core';
+    const key=pathname.startsWith('/electricista-madrid/') ? 'madrid' : (provinceMatch && groups.has(provinceMatch[1]) ? provinceMatch[1] : 'core');
     groups.get(key).push(url);
   }
   const childUrls=[];
