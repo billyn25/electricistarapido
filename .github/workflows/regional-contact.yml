@@ -1,0 +1,38 @@
+name: Verificar contactos regionales publicados
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/regional-contact.*', 'netlify.toml', '.github/workflows/regional-contact.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: regional-contact-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CONTEXT: production
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Generar y auditar sin cambiar rutas
+        run: npm run check && node scripts/regional-contact.mjs
+      - name: Preparar muestra visual
+        run: zip -q .cache/regional-sample.zip dist/index.html dist/assets/*.css dist/assets/*.js
+      - name: Verificar todas las paginas centrales publicadas y controles norte
+        run: node scripts/regional-contact.mjs --live
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: contactos-regionales-verificados
+          path: .cache/regional-*
+          include-hidden-files: true
+          retention-days: 7
+          if-no-files-found: warn

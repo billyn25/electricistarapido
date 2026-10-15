@@ -1,0 +1,10 @@
+{
+  "root": "dist",
+  "domain": "https://electricistarapido.com",
+  "central": ["madrid"],
+  "centralLabel": "Madrid",
+  "northLabel": "Zona norte",
+  "northPhone": "641 58 93 94",
+  "expected": {"madrid": 201},
+  "formProvinces": ["Vizcaya", "Álava", "Guipúzcoa", "Madrid", "Cantabria"]
+}
