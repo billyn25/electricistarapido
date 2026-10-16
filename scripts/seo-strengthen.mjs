@@ -22,6 +22,16 @@ const serviceLink=s=>`<a class="er-guide-link" href="/servicios/${s.slug}/">${e(
 export const CSS=`/* SEO navigation uses the current Electricista Rápido palette; scope only new blocks. */
 body[data-er-seo] main.wrap.section>section.grid .card h2{font-size:22px;line-height:1.3;margin:0 0 14px}.er-seo{margin-top:28px;margin-bottom:28px;scroll-margin-top:110px}.er-seo h2{font-size:clamp(23px,3vw,31px);line-height:1.2;margin:0 0 14px}.er-seo h3{font-size:18px;line-height:1.35;margin:0 0 10px}.er-seo p{line-height:1.65}.er-seo .er-intro{max-width:850px}.er-seo .er-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.er-seo .er-card{min-width:0;border:1px solid #d7dce2;border-top:3px solid #f4cb36;padding:20px;border-radius:12px;background:#fff;color:#172533;overflow-wrap:anywhere}.er-seo .er-card p{margin:10px 0}.er-seo .er-card h3{color:#172533}.er-seo .er-card>a{display:block;font-weight:700;min-height:44px;padding:10px 0;color:#123b60}.er-seo .er-card small{display:block;color:#465768}.er-seo .er-links{display:flex;flex-wrap:wrap;gap:10px}.er-seo .er-links a{display:inline-flex;align-items:center;min-height:44px;padding:10px 14px;border:1px solid #d7dce2;border-radius:8px;background:#fff;color:#123b60;font-weight:650;overflow-wrap:anywhere;max-width:100%;line-height:1.4;box-sizing:border-box}.er-seo .er-note{background:#f4f7fa;border-left:3px solid #f4cb36;padding:16px 18px;margin-top:18px}.er-seo a:focus-visible,.local-guide-link:focus-visible{outline:3px solid #b88400;outline-offset:3px}.local-service>.local-guide-link{display:block;line-height:1.5;padding:12px 0;margin-top:8px}.er-seo .er-city-label{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#465768}.er-seo .er-region-links{margin-top:10px}.er-seo .er-region-links a{display:block;min-height:36px;padding:6px 0}.er-seo .er-emergency{font-weight:600}.er-seo .er-subtitle{font-size:18px!important}.er-seo+.local-services-section{padding-top:28px}
 @media(max-width:850px){.er-seo .er-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:540px){.er-seo .er-grid{grid-template-columns:minmax(0,1fr)}.er-seo .er-card{padding:18px}.er-seo .er-links a{flex:1 1 180px}.er-seo{margin-top:24px;margin-bottom:24px}}
+/* Content navigation must not inherit the masthead's fixed nav height. */
+.er-seo .er-links{width:100%;max-width:100%;height:auto;min-height:0;margin:0;padding:0;position:static;align-items:stretch;align-content:start;justify-content:flex-start;box-sizing:border-box}
+.er-seo .er-links a{gap:8px;min-width:0;white-space:normal}
+.er-seo .er-links a>span[aria-hidden]{flex-shrink:0}
+#ciudades-destacadas>.er-intro{margin:0 0 22px}
+#ciudades-destacadas>nav.er-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+#ciudades-destacadas>nav.er-links>a{width:100%;min-height:52px;margin:0;padding:12px 16px;justify-content:flex-start;flex:none}
+#ciudades-destacadas>.er-subtitle{margin:28px 0 16px;padding-top:24px;border-top:1px solid var(--line,#dce7ee)}
+@media(max-width:1000px){#ciudades-destacadas>nav.er-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:540px){#ciudades-destacadas>nav.er-links{grid-template-columns:minmax(0,1fr)}}
 `;
 export const CSS_PATH='/assets/seo-navigation.'+sha(CSS).slice(0,12)+'.css';
 const marker=`data-er-seo="${VERSION}"`;
