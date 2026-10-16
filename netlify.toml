@@ -1,5 +1,5 @@
 [build]
-  command = "npm run check && node scripts/regional-contact.mjs"
+  command = "npm run build:release"
   publish = "dist"
 
 [build.environment]
