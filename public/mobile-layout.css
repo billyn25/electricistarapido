@@ -97,3 +97,9 @@
   .service-hero .notice { margin-top: 20px; padding: 16px 18px; font-size: 13px; line-height: 1.65; }
   main section[id] { scroll-margin-top: 120px; }
 }
+
+/* Keep symptom cards and the following service links visually distinct. */
+.situation-grid + .demand-list { margin-top: 28px; }
+@media (max-width: 650px) {
+  .situation-grid + .demand-list { margin-top: 24px; gap: 10px; }
+}
