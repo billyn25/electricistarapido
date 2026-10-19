@@ -90,3 +90,10 @@
   html { scroll-behavior: auto; }
   .btn, .card, .demand { transition: none; }
 }
+
+/* Separate coverage notices from the introductory copy on all local heroes. */
+.service-hero .notice { margin-top: 22px; max-width: 810px; font-size: 14px; line-height: 1.65; }
+@media (max-width: 650px) {
+  .service-hero .notice { margin-top: 20px; padding: 16px 18px; font-size: 13px; line-height: 1.65; }
+  main section[id] { scroll-margin-top: 120px; }
+}
