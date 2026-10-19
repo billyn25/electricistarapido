@@ -103,3 +103,10 @@
 @media (max-width: 650px) {
   .situation-grid + .demand-list { margin-top: 24px; gap: 10px; }
 }
+
+/* Shared content rhythm: text must not touch navigation or following copy. */
+main p + p { margin-top: 14px; }
+main p + :is(.town-link-grid, .town-chips, .town-groups, .coverage-summary-grid, .local-other-towns, .demand-list, .grid, .wa-benefits),
+main h3 + :is(.town-link-grid, .town-chips) { margin-top: 24px; }
+main p + :is(ul, ol) { margin-top: 16px; }
+main :is(.town-link-grid, .town-chips, .demand-list) + p { margin-top: 20px; }
