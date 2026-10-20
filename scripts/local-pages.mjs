@@ -114,15 +114,6 @@ export function linkHomeTowns(html, records) {
   return { html, linked };
 }
 
-function homeCoverageSummary(records) {
-  const groups=provinces.map(province => {
-    const towns=records.filter(r=>r.provinceSlug===province.slug).sort((a,b)=>a.town.localeCompare(b.town,'es'));
-    const townLabel=t=>{if(province.slug!=='madrid') return escape(t.town);const g=getLocalContext(t),cp=madridPostalCodesByIne[g.code]||[];return `${escape(t.town)}${cp.length?` (CP ${escape(cp.join(', '))})`:''}`};
-    return `<details class="coverage-summary-group"><summary>Electricista en ${escape(province.name)} · ${towns.length} localidades</summary><p>${towns.map(t=>townLabel(t)).join(' · ')}</p><a href="/zonas/${province.slug}/">Ver todos los pueblos de ${escape(province.name)} de la A a la Z ${arrow}</a></details>`;
-  }).join('');
-  return `<section class="coverage-summary"><div class="wrap section"><div class="eyebrow">ZONAS DONDE PRESTAMOS SERVICIO</div><h2>Resumen de pueblos y localidades</h2><p class="lead">Servicio de electricista para averías y arreglos puntuales en localidades de Vizcaya, Álava, Guipúzcoa, Madrid y Cantabria. Consulta tu pueblo y confirma disponibilidad y desplazamiento al solicitar el aviso.</p><div class="coverage-summary-grid">${groups}</div></div></section>`;
-}
-
 function addSchema(html, record) {
   html = html.replace(/<script type="application\/ld\+json" data-local-schema="1">[\s\S]*?<\/script>/g, '');
   const crumb = [{ '@type':'ListItem', position:1, name:'Inicio', item:`${site.domain}/` }, { '@type':'ListItem', position:2, name:record.province, item:`${site.domain}/zonas/${record.provinceSlug}/` }];
@@ -165,7 +156,7 @@ export async function enhanceLocalPages(directory = path.join(root, 'dist')) {
       html = addSchema(html, record);
     } else if (route === '/') {
       const result = linkHomeTowns(html, records); html = result.html; linked = result.linked;
-      html = html.replace('</main>', `${symptomDirectory()}${homeCoverageSummary(records)}</main>`);
+      html = exactlyOnce(html, /<section class="diagnosis">/, `${symptomDirectory()}<section class="diagnosis">`, 'home diagnosis');
     } else if (route.startsWith('/zonas/')) {
       const province = provincesBySlug.get(route.split('/')[2]);
       if (!province) throw new Error(`Unknown province: ${route}`);

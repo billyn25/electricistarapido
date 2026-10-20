@@ -141,7 +141,7 @@ test('home keeps original service photos except the reviewed differential image'
   assert.ok(!ids.includes('35138694'),'old differential image must not return');
   assert.match(home,/fetchpriority="high" decoding="async"/);
   assert.doesNotMatch(home,/Electricidad doméstica, sin rodeos/);
-  assert.match(home,/Cuando falla la luz,[\s\S]*vamos rápido a la avería/);
+  assert.match(home,/Electricista urgente <span class="hero-yellow">24 horas<\/span>/);
 });
 
 test('every municipal service heading reinforces the real locality without duplicating service pages', () => {
@@ -163,14 +163,14 @@ test('municipal pages include useful review and repair detail for every service'
   }
 });
 
-test('home labels towns as Electricista en, hides secondary towns accessibly and ends with coverage summary', async () => {
+test('home retains all town links in one accessible directory without a duplicate coverage summary', async () => {
   const home=await fs.readFile(path.join(dist,'index.html'),'utf8');
   assert.equal((home.match(/class="town-chip" href="\/electricista\//g)||[]).length,533);
   assert.ok((home.match(/>Electricista en [^<]+<\/a>/g)||[]).length>=533);
   assert.equal((home.match(/<details class="town-more">/g)||[]).length,5);
-  assert.match(home,/ZONAS DONDE PRESTAMOS SERVICIO/);
-  assert.match(home,/Resumen de pueblos y localidades/);
-  for(const name of ['Vizcaya','Álava','Guipúzcoa','Madrid','Cantabria']) assert.ok(home.includes(`Electricista en ${name} ·`),name);
+  assert.match(home,/Encuentra electricista en tu pueblo/);
+  assert.doesNotMatch(home,/Resumen de pueblos y localidades/);
+  for(const slug of ['vizcaya','alava','guipuzcoa','madrid','cantabria']) assert.ok(home.includes(`/zonas/${slug}/`),slug);
 });
 
 test('municipality catalogue uses natural article order in public URLs', async () => {
@@ -199,3 +199,4 @@ test('all 179 Madrid municipalities publish their INE-derived postal codes', asy
   const algete=await fs.readFile(path.join(dist,'electricista/madrid/algete/index.html'),'utf8');
   assert.match(algete,/28110, 28120/);
 });
+

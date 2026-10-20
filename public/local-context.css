@@ -34,3 +34,15 @@
 .coverage-summary-group p{padding:0 0 12px;font-size:13px;line-height:1.75}
 .coverage-summary-group a{display:inline-flex;min-height:44px;align-items:center;color:#08649e;font-size:13px;font-weight:800;margin-bottom:12px}
 @media(max-width:700px){.coverage-summary-grid{grid-template-columns:1fr}.coverage-summary-group{padding-inline:15px}}
+
+
+/* Home: concise coverage before the enquiry, detailed directory at the end. */
+#electricista-en-tu-ciudad .home-coverage-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-top:24px}
+#electricista-en-tu-ciudad .home-coverage-card{min-width:0;padding:20px 16px;border:1px solid var(--line,#dce7ee);border-top:3px solid #ffd22e;border-radius:12px;background:#fff}
+#electricista-en-tu-ciudad .home-coverage-card h3{font-size:18px;line-height:1.35;margin:0 0 12px}
+#electricista-en-tu-ciudad .home-coverage-card>a{display:flex;align-items:center;gap:8px;min-height:44px;padding:8px 0;font-size:13px;font-weight:650;line-height:1.5;color:#123b60}
+.hero+.quick-strip .quick-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+.hero+.quick-strip .quick-item{min-width:0}
+#averias{scroll-margin-top:110px}
+@media(max-width:1000px){#electricista-en-tu-ciudad .home-coverage-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero+.quick-strip .quick-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:650px){#electricista-en-tu-ciudad .home-coverage-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}#electricista-en-tu-ciudad .home-coverage-card{padding:16px 12px}#electricista-en-tu-ciudad .home-coverage-card h3{font-size:16px}.hero+.quick-strip .quick-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero+.quick-strip .quick-item{padding:16px 8px;min-height:78px;border-bottom:1px solid var(--line)}.hero+.quick-strip .quick-item:last-child{grid-column:1/-1;border-bottom:0}.hero+.quick-strip .quick-item:nth-child(2n){border-right:0}}

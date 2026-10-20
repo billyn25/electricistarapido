@@ -105,8 +105,8 @@ export function transform(html,record,byRoute){
   html=html.replace(getMain(html),()=>main);
   html=metadata(html,`Electricistas en ${p.name}: ciudades y pueblos | ${phone}`,`Servicio de electricista en ${p.name}. Elige tu ciudad o pueblo para consultar apagones, diferenciales, cuadros y reparaciones. ${phone}.`,`Electricistas en ${p.name}: ciudades y pueblos`);
  }else if(record.type==='home'){
-  const cityNav=wrap(section('electricista-en-tu-ciudad','Electricista en tu ciudad y en tu pueblo',`<p class="er-intro">Consulta averías eléctricas en Madrid y en la zona norte. Selecciona tu ciudad o abre el directorio de tu provincia para ver todas las localidades.</p>${capitals(byRoute)}`));
-  const pos=main.indexOf('<section class="wrap section demand-section"');assert(pos>=0,'Sección de portada no reconocida');main=main.slice(0,pos)+cityNav+main.slice(pos);html=html.replace(getMain(html),()=>main);
+  const cityNav=wrap(section('electricista-en-tu-ciudad','¿Dónde necesitas un electricista?',`<p class="er-intro">Elige tu provincia o consulta la capital. La disponibilidad y el desplazamiento se confirman para tu localidad.</p><div class="home-coverage-grid">${config.provinces.map(p=>`<article class="home-coverage-card"><h3><a href="/zonas/${p.slug}/">${e(p.name)}</a></h3><a href="${cityURL(p,p.capital)}">Electricista en ${e(byRoute.get(cityURL(p,p.capital)).name)}</a><a href="/zonas/${p.slug}/">Ver todos los pueblos <span aria-hidden="true">→</span></a></article>`).join('')}</div>`));
+  assert(main.includes('<section class="wrap section demand-section"'),'Sección de servicios no reconocida');const pos=main.indexOf('<section class="wa-form-section"');assert(pos>=0,'Formulario de portada no reconocido');main=main.slice(0,pos)+cityNav+main.slice(pos);html=html.replace(getMain(html),()=>main);
  }else if(record.type==='district'){
   const nav=wrap(section('guias-del-distrito',`Averías eléctricas en ${record.name}: guías de consulta`,`<p class="er-intro">Estas guías explican los síntomas y la información que ayuda al técnico. No requieren abrir el cuadro ni manipular la instalación.</p><nav class="er-links" aria-label="Guías de averías para el distrito">${config.services.slice(0,6).map(serviceLink).join('')}</nav><p><a href="/electricista/madrid/madrid/">Electricista en Madrid capital</a> <a href="/zonas/madrid/">Municipios de la Comunidad de Madrid</a></p>`));
   main=main.replace('</main>',nav+'</main>');html=html.replace(getMain(html),()=>main);
@@ -162,3 +162,4 @@ export function build(root='dist'){
  fs.mkdirSync('reports',{recursive:true});fs.writeFileSync('reports/seo-five-provinces-build.json',JSON.stringify(report,null,2));console.log('SEO CINCO PROVINCIAS OK:',JSON.stringify(report));return report;
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(path.resolve(process.argv[1])).href){if(process.argv.includes('--audit'))console.log(JSON.stringify(audit(),null,2));else build();}
+
