@@ -46,3 +46,4 @@
 #averias{scroll-margin-top:110px}
 @media(max-width:1000px){#electricista-en-tu-ciudad .home-coverage-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero+.quick-strip .quick-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:650px){#electricista-en-tu-ciudad .home-coverage-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}#electricista-en-tu-ciudad .home-coverage-card{padding:16px 12px}#electricista-en-tu-ciudad .home-coverage-card h3{font-size:16px}.hero+.quick-strip .quick-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero+.quick-strip .quick-item{padding:16px 8px;min-height:78px;border-bottom:1px solid var(--line)}.hero+.quick-strip .quick-item:last-child{grid-column:1/-1;border-bottom:0}.hero+.quick-strip .quick-item:nth-child(2n){border-right:0}}
+.wa-form-section form.wa-form>.field{margin-bottom:20px}
