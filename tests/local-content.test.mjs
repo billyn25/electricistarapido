@@ -59,7 +59,10 @@ test('canonical, phone and breadcrumb data identify the correct town', () => {
     assert.equal(breadcrumb.itemListElement[2].name,record.town);
     assert.ok(graph.some(g=>g['@type']==='Service'&&g.areaServed.name===`${record.town}, ${record.province}`));
     assert.ok(!graph.some(g=>['Review','AggregateRating'].includes(g['@type'])));
-    const main=p.html.match(/<main[\s\S]*?<\/main>/)[0];
+    // The additive manufacturer pass has independent tests; preserve exact parity of the base municipal content.
+    const fullMain=p.html.match(/<main[\s\S]*?<\/main>/)[0];
+    assert.equal((fullMain.match(/<!-- local-materials:start -->/g)||[]).length,1,p.file);
+    const main=fullMain.replace(/<!-- local-materials:start -->[\s\S]*?<!-- local-materials:end -->/,'');
     assert.equal(main,renderTown(record,towns.map(t=>townRecord(t.html)).filter(t=>t.provinceSlug===record.provinceSlug).sort((a,b)=>a.town.localeCompare(b.town,'es'))));
   }
 });
