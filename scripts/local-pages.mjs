@@ -4,6 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { site, provinces } from '../content/site.mjs';
+import { localScenarios, symptomDirectory, serviceScenarios } from './fault-scenarios.mjs';
 import { localServices, technicalSources } from '../content/local-services.mjs';
 import { intakeNotes } from '../content/local-intake.mjs';
 import { getLocalContext, nearbyTowns, localIdentity, contextQuestions } from './local-context.mjs';
@@ -82,6 +83,7 @@ export function renderTown(record, otherTowns) {
   const others = nearbyTowns(record, otherTowns);
   return `<main class="local-page" data-local-content="1"><section class="service-hero"><div class="wrap section"><div class="breadcrumbs" aria-label="Ruta de navegación"><a href="/">Inicio</a><span aria-hidden="true">›</span><a href="/zonas/${record.provinceSlug}/">${province}</a><span aria-hidden="true">›</span><span>${town}</span></div><div class="eyebrow">ELECTRICISTA EN ${town.toUpperCase()} · ${province}</div><h1>${intentText(intent.hero,record)}</h1><p class="lead">${intentText(intent.lead,record)}</p><div class="actions"><a class="btn yellow" href="tel:${e(site.tel)}">${e(site.phone)}</a><a class="btn wa" href="https://wa.me/${e(site.whatsapp)}?text=${encodeURIComponent(`Hola, necesito consultar una avería eléctrica en ${record.town}, ${record.province}.`)}">WhatsApp</a></div><a class="local-hero-link" href="#servicios-locales">Ver servicios y averías <span aria-hidden="true">↓</span></a></div></section>
 ${placeSection(record)}
+${localScenarios(record)}
 ${madridLocalExtra(record)}
 ${record.provinceSlug==='madrid'&&normalize(record.town)==='madrid'?madridDistrictDirectory():''}
 <section class="wrap section local-services-section" id="servicios-locales" aria-labelledby="servicios-title"><div class="local-section-heading"><div class="eyebrow">QUÉ PODEMOS REVISAR</div><h2 id="servicios-title">${intentText(intent.services,record)}</h2><p class="lead">Averías y reparaciones eléctricas habituales en ${town}. Abre cada servicio para ver qué se comprueba, qué puede repararse y qué información ayuda antes de solicitar asistencia.</p></div><div class="local-services-grid">${serviceGuide(record)}</div></section>
@@ -145,7 +147,7 @@ export async function enhanceLocalPages(directory = path.join(root, 'dist')) {
   const records = pages.filter(p => /\/electricista\//.test(canonical(p.html))).map(p => townRecord(p.html));
   if (!records.length) throw new Error('No municipal pages to enrich');
   for (const record of records) getLocalContext(record); // New towns need reviewed geographic evidence, not just a new name.
-  const css = Buffer.concat([await fs.readFile(path.join(root, 'public/local-pages.css')), Buffer.from('\n'), await fs.readFile(path.join(root, 'public/local-context.css'))]);
+  const css = Buffer.concat([await fs.readFile(path.join(root, 'public/local-pages.css')), Buffer.from('\n'), await fs.readFile(path.join(root, 'public/local-context.css')), Buffer.from('\n'), await fs.readFile(path.join(root, 'public/fault-scenarios.css'))]);
   const version = createHash('sha256').update(css).digest('hex').slice(0,10);
   await fs.mkdir(path.join(directory,'assets'), {recursive:true});
   await fs.writeFile(path.join(directory,'assets/local-pages.css'), css);
@@ -163,11 +165,17 @@ export async function enhanceLocalPages(directory = path.join(root, 'dist')) {
       html = addSchema(html, record);
     } else if (route === '/') {
       const result = linkHomeTowns(html, records); html = result.html; linked = result.linked;
-      html = html.replace('</main>', `${homeCoverageSummary(records)}</main>`);
+      html = html.replace('</main>', `${symptomDirectory()}${homeCoverageSummary(records)}</main>`);
     } else if (route.startsWith('/zonas/')) {
       const province = provincesBySlug.get(route.split('/')[2]);
       if (!province) throw new Error(`Unknown province: ${route}`);
       html = addSchema(html, {province:province.name, provinceSlug:province.slug, url});
+      html = html.replace('</main>', `${symptomDirectory()}</main>`);
+    } else if (route.startsWith('/servicios/')) {
+      html = html.replace('</main>', `${serviceScenarios(route.split('/')[2])}</main>`);
+    } else if (route.startsWith('/electricista-madrid/')) {
+      const town = plain(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] || '').replace(/^Electricista 24 horas en /, '').replace(/, Madrid$/, '');
+      html = html.replace('</main>', `${localScenarios({town,route}).replace('href="#servicios-locales"','href="/#buscar-averia"').replace('href="#consulta-local"','href="/#contacto"')}</main>`);
     }
     html = html.replace(/<link rel="stylesheet" href="\/assets\/local-pages\.css[^>]*>/g, '');
     html = html.replace('</head>', `<link rel="stylesheet" href="/assets/local-pages.css?v=${version}"></head>`);
@@ -215,3 +223,4 @@ export async function enhanceLocalPages(directory = path.join(root, 'dist')) {
   console.log(`LOCAL OK: ${records.length} municipios · ${localServices.length} servicios desarrollados · ${linked} enlaces directos desde inicio`);
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) await enhanceLocalPages();
+
