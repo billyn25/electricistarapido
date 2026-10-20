@@ -1,0 +1,50 @@
+name: Portada - logos y build de producción
+on:
+  pull_request:
+    paths:
+      - 'scripts/home-brands.mjs'
+      - 'tests/home-brands*'
+      - 'package.json'
+      - '.github/workflows/home-brands.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/home-brands.mjs'
+      - 'tests/home-brands*'
+      - 'package.json'
+      - '.github/workflows/home-brands.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: home-brands-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  production-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/cache@v4
+        with:
+          path: .cache
+          key: home-brands-v1-${{ hashFiles('scripts/home-brands.mjs', 'content/site.mjs') }}
+      - name: Mismo comando de producción que Netlify
+        run: npm run build:release
+      - name: Preparar Chromium
+        run: |
+          python -m pip install playwright==1.51.0
+          python -m playwright install --with-deps chromium
+      - name: Cinco logos reales y diseño de 320 a 1440 px
+        run: python tests/home-brands.browser.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: home-brands-production-preview
+          path: |
+            dist/
+            reports/
+          retention-days: 7
