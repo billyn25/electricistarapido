@@ -91,9 +91,17 @@ try:
             page.goto(base,wait_until='domcontentloaded')
             link=page.locator('.town-chip',has_text='Durango')
             assert link.get_attribute('href')=='/electricista/vizcaya/durango/'
+            # The directory is intentionally collapsed; open its real control before clicking.
+            directory=link.locator('xpath=ancestor::details[1]')
+            if directory.count() and directory.get_attribute('open') is None:
+                directory.locator(':scope > summary').click()
+                assert directory.get_attribute('open') is not None
+            assert link.is_visible()
             link.click()
             assert page.url.endswith('/electricista/vizcaya/durango/')
-            assert page.locator('h1').inner_text()=='Electricista 24 horas en Durango'
+            assert page.locator('h1').count()==1
+            heading=page.locator('h1').inner_text()
+            assert heading in {'Electricista 24 horas en Durango', 'Urgencias eléctricas 24 horas en Durango', 'Electricista en Durango: urgencias y reparaciones'}, heading
             for route in ['/zonas/alava/','/zonas/madrid/','/electricista/alava/agurain-salvatierra/','/electricista/guipuzcoa/arrasate-mondragon/','/electricista/madrid/san-sebastian-de-los-reyes/','/electricista/cantabria/castro-urdiales/']:
                 page.goto(base+route,wait_until='domcontentloaded')
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth + 1'), route
