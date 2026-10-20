@@ -4,9 +4,11 @@
   "private": true,
   "type": "module",
   "description": "Web de Electricista Rápido: averías eléctricas domésticas y SEO local.",
-  "engines": {"node": ">=22"},
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
-    "build": "node scripts/build.mjs && node scripts/mobile-layout.mjs && node scripts/local-pages.mjs",
+    "build": "node scripts/build.mjs && node scripts/mobile-layout.mjs && node scripts/local-pages.mjs && node scripts/home-brands.mjs",
     "test": "node --test tests/*.test.mjs",
     "check": "node --check scripts/build.mjs && node --check scripts/local-pages.mjs && node --check public/mobile-layout.js && npm run build && npm test",
     "test:browser": "python tests/browser.py && python tests/browser-local.py",
