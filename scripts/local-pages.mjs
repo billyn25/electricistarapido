@@ -156,7 +156,7 @@ export async function enhanceLocalPages(directory = path.join(root, 'dist')) {
       html = addSchema(html, record);
     } else if (route === '/') {
       const result = linkHomeTowns(html, records); html = result.html; linked = result.linked;
-      html = exactlyOnce(html, /<section class="diagnosis">/, `${symptomDirectory()}<section class="diagnosis">`, 'home diagnosis');
+      html = exactlyOnce(html, /<section class="wa-form-section"/, `${symptomDirectory()}<section class="wa-form-section"`, 'home enquiry');
     } else if (route.startsWith('/zonas/')) {
       const province = provincesBySlug.get(route.split('/')[2]);
       if (!province) throw new Error(`Unknown province: ${route}`);
