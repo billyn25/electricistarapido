@@ -1,0 +1,55 @@
+name: Footer móvil y marcas locales
+on:
+  pull_request:
+    paths:
+      - 'scripts/local-materials.mjs'
+      - 'tests/local-materials*'
+      - 'package.json'
+      - '.github/workflows/local-materials.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/local-materials.mjs'
+      - 'tests/local-materials*'
+      - 'package.json'
+      - '.github/workflows/local-materials.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: local-materials-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  production-and-mobile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/cache@v4
+        with:
+          path: .cache
+          key: local-materials-v1-${{ hashFiles('scripts/local-materials.mjs', 'scripts/home-brands.mjs') }}
+      - name: Compilación completa de producción
+        run: npm run build:release
+      - name: Navegadores Chromium y WebKit
+        run: |
+          python -m pip install playwright==1.51.0
+          python -m playwright install --with-deps chromium webkit
+      - name: Móvil, escritorio, fotos y footer sin desbordamiento
+        run: python tests/local-materials.browser.py
+      - name: Conservar evidencia y fuentes reproducibles
+        if: always()
+        run: |
+          mkdir -p reports
+          zip -qr reports/source-for-verification.zip content scripts public tests package.json netlify.toml
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: local-materials-production-preview
+          path: |
+            dist/
+            reports/
+          retention-days: 7
