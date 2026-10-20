@@ -4,8 +4,9 @@ const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&g
 const digest=s=>createHash('sha256').update(s).digest('hex');
 export function selectScenarios(route){
  const ranked=[...faultScenarios].sort((a,b)=>digest(route+a.id).localeCompare(digest(route+b.id)));
- const selected=[],services=new Set();
- for(const item of ranked){if(services.has(item.service))continue;selected.push(item);services.add(item.service);if(selected.length===4)break;}
+ const selected=[],services=new Set(),topics=new Set();
+ const topic=item=>item.id.startsWith('cuadro-')?'cuadros':item.id.startsWith('recarga-')?'recarga':item.id.includes('diferencial')?'diferenciales':item.service;
+ for(const item of ranked){const t=topic(item);if(services.has(item.service)||topics.has(t))continue;selected.push(item);services.add(item.service);topics.add(t);if(selected.length===4)break;}
  return selected;
 }
 const guide=s=>`/servicios/${s.service}/#caso-${s.id}`;
