@@ -4,6 +4,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from threading import Thread
 import json
+from time import monotonic
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -26,13 +27,18 @@ try:
             page.on('pageerror', lambda err: errors.append(str(err)))
             page.goto(base + '/#marcas-electricas', wait_until='domcontentloaded')
             section = page.locator('#marcas-electricas')
-            section.scroll_into_view_if_needed()
+            section.evaluate("node => node.scrollIntoView({behavior: 'instant', block: 'center'})")
             images = section.locator('img')
             assert images.count() == 5
             for image in images.all():
-                image.scroll_into_view_if_needed()
+                image.evaluate("node => node.scrollIntoView({behavior: 'instant', block: 'center'})")
                 image.evaluate("img => img.loading = 'eager'")
-            page.wait_for_function("[...document.querySelectorAll('#marcas-electricas img')].every(img => img.complete && img.naturalWidth > 10 && img.naturalHeight > 10)", timeout=40000)
+            # Poll from Python: Playwright's RAF-based stability checks do not run
+            # reliably in a page with JavaScript disabled. Keep the same image assertions.
+            deadline = monotonic() + 40
+            while not page.evaluate("[...document.querySelectorAll('#marcas-electricas img')].every(img => img.complete && img.naturalWidth > 10 && img.naturalHeight > 10)"):
+                assert monotonic() < deadline, 'One or more manufacturer logos did not load'
+                page.wait_for_timeout(100)
             assert page.evaluate('document.documentElement.scrollWidth <= innerWidth + 1'), f'Overflow at {width}'
             assert section.locator('a.er-brand-card').count() == 5
             for card in section.locator('a.er-brand-card').all():
