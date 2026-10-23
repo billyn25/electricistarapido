@@ -160,3 +160,35 @@ main :is(.town-link-grid, .town-chips, .demand-list) + p { margin-top: 20px; }
 @media (max-width: 650px) {
   .local-services-section > nav.er-links { grid-template-columns: minmax(0, 1fr); gap: 10px; margin-block: 22px 26px; }
 }
+
+/* One mobile reading scale across homepage and municipal content. */
+@media (max-width: 650px) {
+  body main {
+    --text-intro: 16px;
+    --text-copy: 15px;
+    --text-label: 11px;
+  }
+  body main :is(
+    .card p, .situation-grid p, .step small,
+    .fault-card p, .fault-contact p, .fault-more,
+    .local-service > p, .local-service-detail p,
+    .local-process p, .local-faq details p, .local-safety,
+    .er-card p, .er-seo p, .faq p
+  ) { font-size: var(--text-copy); line-height: 1.6; }
+  body main :is(
+    .lead, .fault-intro, .er-intro,
+    .local-section-heading > p, .local-directory > p
+  ) { font-size: var(--text-intro); line-height: 1.6; }
+  body main :is(
+    .local-service-detail > summary, .local-faq summary,
+    .local-guide-link, .fault-card summary, .fault-directory summary,
+    .fault-card > a, .fault-contact > a, .fault-directory a,
+    .home-coverage-card > a, .local-other-towns a,
+    .local-services-section > nav.er-links > a,
+    .er-links a, .demand-list .demand > span, .card .more
+  ) { font-size: var(--text-copy); line-height: 1.6; }
+  body main :is(.eyebrow, .card small) {
+    font-size: var(--text-label);
+    line-height: 1.5;
+  }
+}
