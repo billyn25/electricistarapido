@@ -110,3 +110,19 @@ main p + :is(.town-link-grid, .town-chips, .town-groups, .coverage-summary-grid,
 main h3 + :is(.town-link-grid, .town-chips) { margin-top: 24px; }
 main p + :is(ul, ol) { margin-top: 16px; }
 main :is(.town-link-grid, .town-chips, .demand-list) + p { margin-top: 20px; }
+
+/* Provincial shortcuts shared by the consolidated homepage coverage section. */
+.home-coverage-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-block: 28px; }
+.home-coverage-card { min-width: 0; padding: 24px; background: #fff; border: 1px solid var(--line); border-radius: 16px; }
+.home-coverage-card h3 { font-size: 21px; line-height: 1.25; letter-spacing: -.025em; margin: 0 0 14px; }
+.home-coverage-card > a { display: flex; align-items: center; gap: 12px; min-height: 44px; font-size: 15px; line-height: 1.5; overflow-wrap: anywhere; }
+.home-coverage-card > a:last-child { justify-content: space-between; margin-top: 10px; padding-top: 14px; border-top: 1px solid var(--line); color: #08649e; font-weight: 750; }
+.home-coverage-card a:focus-visible { outline: 3px solid #0d78cf; outline-offset: 3px; }
+@media (max-width: 950px) {
+  .home-coverage-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 650px) {
+  .home-coverage-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; margin-block: 26px 30px; }
+  .home-coverage-card { padding: 20px; }
+  .home-coverage-card h3 { font-size: 20px; }
+}
