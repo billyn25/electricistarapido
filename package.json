@@ -12,6 +12,6 @@
     "test": "node --test tests/*.test.mjs",
     "check": "node --check scripts/build.mjs && node --check scripts/local-pages.mjs && node --check scripts/local-materials.mjs && node --check public/mobile-layout.js && npm run build && npm test",
     "test:browser": "python tests/browser.py && python tests/browser-local.py",
-    "build:release": "npm run check && node --test tests/seo-strengthen.unit.mjs && node scripts/seo-strengthen.mjs && node scripts/regional-contact.mjs && node scripts/seo-strengthen.mjs --audit"
+    "build:release": "npm run check && node --test tests/seo-strengthen.unit.mjs && node scripts/seo-strengthen.mjs && node scripts/regional-contact.mjs && node scripts/seo-strengthen.mjs --audit && node scripts/structure.mjs"
   }
 }
