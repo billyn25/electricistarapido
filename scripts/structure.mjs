@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
 function blocks(main){
  const result=[];let depth=0,start=0;
  for(const m of main.matchAll(/<\/?section\b[^>]*>/g)){
@@ -52,5 +53,15 @@ export function structure(html){
  }
  return result;
 }
-function walk(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isDirectory())walk(file);else if(entry.name==='index.html'){const before=fs.readFileSync(file,'utf8'),after=structure(before);if(before!==after)fs.writeFileSync(file,after);}}}
-if(process.argv[1]===new URL(import.meta.url).pathname)walk('dist');
+function walk(dir, stylesheet){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isDirectory())walk(file,stylesheet);else if(entry.name==='index.html'){
+ const before=fs.readFileSync(file,'utf8');
+ const after=structure(before).replace(/<link rel="stylesheet" href="\/assets\/identity\.[a-f0-9]+\.css">/g,'').replace('</head>',`<link rel="stylesheet" href="${stylesheet}"></head>`);
+ if(before!==after)fs.writeFileSync(file,after);
+}}}
+if(process.argv[1]===new URL(import.meta.url).pathname){
+ const css=fs.readFileSync(new URL('../public/identity.css',import.meta.url),'utf8');
+ const stylesheet='/assets/identity.'+createHash('sha256').update(css).digest('hex').slice(0,12)+'.css';
+ fs.mkdirSync('dist/assets',{recursive:true});
+ fs.writeFileSync('dist'+stylesheet,css);
+ walk('dist',stylesheet);
+}
