@@ -1,6 +1,7 @@
 /** Verified municipal identity and navigable geographic context. No synonym spinning. */
 import { geographicRows, geoSources } from '../content/local-geography.mjs';
 import { allMunicipalities, municipalitySource } from '../content/all-municipalities.mjs';
+import { municipalityNavigationPoints } from '../content/municipality-navigation.mjs';
 export const normalizePlace = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const areas = {vizcaya:'48',alava:'01',guipuzcoa:'20',madrid:'28',cantabria:'39'};
 const byRoute = new Map();
@@ -15,6 +16,26 @@ for (const [provinceSlug,slug,code,officialName,capital,longitude,latitude] of g
 }
 const slugify=value=>String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const catalogueByRoute=new Map(allMunicipalities.map(x=>[`/electricista/${x.provinceSlug}/${slugify(x.name)}/`,x]));
+// Navigation has complete municipal coverage, independently of the smaller
+// reviewed editorial context. Missing source data must fail a build rather
+// than silently link every town to the first alphabetic entries.
+export function navigationPointIndex(rows, catalogue=allMunicipalities) {
+  const municipalities=new Map(catalogue.map(r=>[r.code,r]));
+  const points=new Map();
+  for(const [code,longitude,latitude] of rows) {
+    const municipality=municipalities.get(code);
+    if(!municipality || points.has(code) || !/^[0-9]{5}$/.test(code) || !code.startsWith(areas[municipality.provinceSlug]) || !Number.isFinite(latitude) || !Number.isFinite(longitude) || latitude<39 || latitude>44 || longitude<-5 || longitude>-1) throw Error(`Invalid municipal navigation point: ${code}`);
+    points.set(code,Object.freeze({code,provinceSlug:municipality.provinceSlug,longitude,latitude}));
+  }
+  for(const municipality of catalogue) if(!points.has(municipality.code)) throw Error(`Missing municipal navigation point: ${municipality.code}`);
+  return points;
+}
+const navigationPoints=navigationPointIndex(municipalityNavigationPoints);
+function navigationPoint(record) {
+  const municipality=catalogueByRoute.get(record.route);
+  if(!municipality || municipality.provinceSlug!==record.provinceSlug) throw Error(`Missing municipality navigation context: ${record.route}`);
+  return navigationPoints.get(municipality.code);
+}
 export function getLocalContext(record) {
   const facts = byRoute.get(record.route);
   if (facts && facts.provinceSlug === record.provinceSlug) return {...facts,enhanced:true};
@@ -31,15 +52,11 @@ export function pointDistance(a,b) {
   return 6371 * 2 * Math.asin(Math.sqrt(Math.min(1,h)));
 }
 export function nearbyTowns(record, records, limit=5) {
-  const current=getLocalContext(record);
+  const current=navigationPoint(record);
   const same=records.filter(r=>r.provinceSlug===record.provinceSlug && r.route!==record.route);
-  if(current.enhanced && Number.isFinite(current.latitude)){
-    const geo=same.filter(r=>{const g=getLocalContext(r);return g.enhanced&&Number.isFinite(g.latitude);})
-      .map(r=>({...r,referenceDistance:pointDistance(current,getLocalContext(r))}))
-      .sort((a,b)=>a.referenceDistance-b.referenceDistance || a.town.localeCompare(b.town,'es'));
-    if(geo.length>=limit) return geo.slice(0,limit);
-  }
-  return same.sort((a,b)=>a.town.localeCompare(b.town,'es')).slice(0,limit).map(r=>({...r,referenceDistance:null}));
+  return same.map(r=>({...r,referenceDistance:pointDistance(current,navigationPoint(r))}))
+    .sort((a,b)=>a.referenceDistance-b.referenceDistance || a.town.localeCompare(b.town,'es'))
+    .slice(0,limit);
 }
 export function localIdentity(record) {
   const g=getLocalContext(record);

@@ -1,0 +1,24 @@
+{
+  "retrievedAt": "2026-10-30",
+  "purpose": "Related municipality links only; preserves existing editorial context and public URLs.",
+  "joinKey": "Five-digit INE municipality code; no name matching or inferred coordinates.",
+  "coordinates": "Longitude and latitude parsed from the center query parameter in each official IGN map URL. Geographic reference points, not travel distances or service locations.",
+  "sources": [
+    {
+      "url": "https://www.ign.es/resources/ane/Informacion_Geografica_Destacada/IGN_INFOGEO_MUNICIPIOS_ES-PV.json",
+      "sha256": "cf09c4024434aa02a5a1556cf03e44804e68e71b94cf2e471a4d02f2c0f6620c",
+      "records": 252
+    },
+    {
+      "url": "https://www.ign.es/resources/ane/Informacion_Geografica_Destacada/IGN_INFOGEO_MUNICIPIOS_ES-CB.json",
+      "sha256": "f29137de043aab0509b05f7f0104ad0715ec3c39d1b793b041a7308a2f315e7a",
+      "records": 102
+    },
+    {
+      "url": "https://www.ign.es/resources/ane/Informacion_Geografica_Destacada/IGN_INFOGEO_MUNICIPIOS_ES-MD.json",
+      "sha256": "c278d8d42b39bc07b7379e8b69483afff2c450f351d56424f97f8e2d603c4631",
+      "records": 179
+    }
+  ],
+  "records": 533
+}
