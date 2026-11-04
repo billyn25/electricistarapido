@@ -27,7 +27,7 @@ try:
      page.locator('#cobertura-'+row['code']).wait_for()
      page.wait_for_function('(name)=>document.querySelector(\'[data-whatsapp-form] input[name="town"]\').value===name',arg=row['name'])
      assert 'Electricista urgente 24 horas en' in page.locator('h1').inner_text()
-     assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
+     assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1'),(engine,width,row['name'],page.evaluate('Array.from(document.querySelectorAll("body *")).filter(e=>e.getBoundingClientRect().right>innerWidth+1).map(e=>[e.tagName,e.className,e.getBoundingClientRect().right]).slice(0,15)'))
     page.close()
    browser.close()
  print('NAVEGADORES OK: búsqueda, pueblo agrupado, formulario y anchuras 320/390/768/1440; Chromium y WebKit.')
