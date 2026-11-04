@@ -1,0 +1,534 @@
+code,name,province,provinceSlug,population,original,destination,hub,url,distanceKm
+01059,Vitoria-Gasteiz,Álava,alava,257407,/electricista/alava/vitoria-gasteiz/,/electricista/alava/vitoria-gasteiz/,Vitoria-Gasteiz,/electricista/alava/vitoria-gasteiz/,0
+01036,Laudio/Llodio,Álava,alava,17970,/electricista/alava/laudio-llodio/,/electricista/alava/laudio-llodio/,Laudio/Llodio,/electricista/alava/laudio-llodio/,0
+01002,Amurrio,Álava,alava,10312,/electricista/alava/amurrio/,/electricista/alava/amurrio/,Amurrio,/electricista/alava/amurrio/,0
+01051,Agurain/Salvatierra,Álava,alava,5147,/electricista/alava/agurain-salvatierra/,/electricista/alava/agurain-salvatierra/,Agurain/Salvatierra,/electricista/alava/agurain-salvatierra/,0
+01901,Iruña Oka/Iruña de Oca,Álava,alava,3610,/electricista/alava/iruna-oka-iruna-de-oca/,/electricista/alava/iruna-oka-iruna-de-oca/,Iruña Oka/Iruña de Oca,/electricista/alava/iruna-oka-iruna-de-oca/,0
+01043,Oyón-Oion,Álava,alava,3456,/electricista/alava/oyon-oion/,/electricista/alava/oyon-oion/,Oyón-Oion,/electricista/alava/oyon-oion/,0
+01001,Alegría-Dulantzi,Álava,alava,2965,/electricista/alava/alegria-dulantzi/,/electricista/alava/alegria-dulantzi/,Alegría-Dulantzi,/electricista/alava/alegria-dulantzi/,0
+01010,Ayala/Aiara,Álava,alava,2939,/electricista/alava/ayala-aiara/,/electricista/alava/ayala-aiara/,Ayala/Aiara,/electricista/alava/ayala-aiara/,0
+01063,Zuia,Álava,alava,2391,/electricista/alava/zuia/,/electricista/alava/iruna-oka-iruna-de-oca/,Iruña Oka/Iruña de Oca,/electricista/alava/iruna-oka-iruna-de-oca/#cobertura-01063,15.404
+01058,Legutio,Álava,alava,2082,/electricista/alava/legutio/,/electricista/alava/vitoria-gasteiz/,Vitoria-Gasteiz,/electricista/alava/vitoria-gasteiz/#cobertura-01058,14.766
+01004,Artziniega,Álava,alava,1856,/electricista/alava/artziniega/,/electricista/alava/ayala-aiara/,Ayala/Aiara,/electricista/alava/ayala-aiara/#cobertura-01004,8.64
+01018,Zigoitia,Álava,alava,1845,/electricista/alava/zigoitia/,/electricista/alava/vitoria-gasteiz/,Vitoria-Gasteiz,/electricista/alava/vitoria-gasteiz/#cobertura-01018,13.187
+01009,Asparrena,Álava,alava,1613,/electricista/alava/asparrena/,/electricista/alava/agurain-salvatierra/,Agurain/Salvatierra,/electricista/alava/agurain-salvatierra/#cobertura-01009,7.329
+01028,Labastida/Bastida,Álava,alava,1571,/electricista/alava/labastida-bastida/,/electricista/alava/labastida-bastida/,Labastida/Bastida,/electricista/alava/labastida-bastida/,0
+01031,Laguardia,Álava,alava,1491,/electricista/alava/laguardia/,/electricista/alava/oyon-oion/,Oyón-Oion,/electricista/alava/oyon-oion/#cobertura-01031,13.236
+01054,Urkabustaiz,Álava,alava,1459,/electricista/alava/urkabustaiz/,/electricista/alava/amurrio/,Amurrio,/electricista/alava/amurrio/#cobertura-01054,13.831
+01047,Ribera Baja/Erriberabeitia,Álava,alava,1441,/electricista/alava/ribera-baja-erriberabeitia/,/electricista/alava/iruna-oka-iruna-de-oca/,Iruña Oka/Iruña de Oca,/electricista/alava/iruna-oka-iruna-de-oca/#cobertura-01047,14.813
+01003,Aramaio,Álava,alava,1380,/electricista/alava/aramaio/,/electricista/alava/alegria-dulantzi/,Alegría-Dulantzi,/electricista/alava/alegria-dulantzi/#cobertura-01003,23.969
+01042,Okondo,Álava,alava,1190,/electricista/alava/okondo/,/electricista/alava/laudio-llodio/,Laudio/Llodio,/electricista/alava/laudio-llodio/#cobertura-01042,4.996
+01017,Campezo/Kanpezu,Álava,alava,1088,/electricista/alava/campezo-kanpezu/,/electricista/alava/oyon-oion/,Oyón-Oion,/electricista/alava/oyon-oion/#cobertura-01017,19.529
+01055,Valdegovía/Gaubea,Álava,alava,1071,/electricista/alava/valdegovia-gaubea/,/electricista/alava/iruna-oka-iruna-de-oca/,Iruña Oka/Iruña de Oca,/electricista/alava/iruna-oka-iruna-de-oca/#cobertura-01055,23.869
+01008,Arratzua-Ubarrundia,Álava,alava,1046,/electricista/alava/arratzua-ubarrundia/,/electricista/alava/vitoria-gasteiz/,Vitoria-Gasteiz,/electricista/alava/vitoria-gasteiz/#cobertura-01008,5.46
+01022,Elciego,Álava,alava,953,/electricista/alava/elciego/,/electricista/alava/oyon-oion/,Oyón-Oion,/electricista/alava/oyon-oion/#cobertura-01022,14.901
+01902,Lantarón,Álava,alava,926,/electricista/alava/lantaron/,/electricista/alava/iruna-oka-iruna-de-oca/,Iruña Oka/Iruña de Oca,/electricista/alava/iruna-oka-iruna-de-oca/#cobertura-01902,17.145
+01013,Barrundia,Álava,alava,879,/electricista/alava/barrundia/,/electricista/alava/alegria-dulantzi/,Alegría-Dulantzi,/electricista/alava/alegria-dulantzi/#cobertura-01013,8.676
+01033,Lapuebla de Labarca,Álava,alava,856,/electricista/alava/lapuebla-de-labarca/,/electricista/alava/oyon-oion/,Oyón-Oion,/electricista/alava/oyon-oion/#cobertura-01033,11.246
+01046,Erriberagoitia/Ribera Alta,Álava,alava,844,/electricista/alava/erriberagoitia-ribera-alta/,/electricista/alava/iruna-oka-iruna-de-oca/,Iruña Oka/Iruña de Oca,/electricista/alava/iruna-oka-iruna-de-oca/#cobertura-01046,8.196
+01037,Arraia-Maeztu,Álava,alava,823,/electricista/alava/arraia-maeztu/,/electricista/alava/alegria-dulantzi/,Alegría-Dulantzi,/electricista/alava/alegria-dulantzi/#cobertura-01037,12.627
+01053,San Millán/Donemiliaga,Álava,alava,721,/electricista/alava/san-millan-donemiliaga/,/electricista/alava/agurain-salvatierra/,Agurain/Salvatierra,/electricista/alava/agurain-salvatierra/#cobertura-01053,2.655
+01032,Lanciego/Lantziego,Álava,alava,689,/electricista/alava/lanciego-lantziego/,/electricista/alava/oyon-oion/,Oyón-Oion,/electricista/alava/oyon-oion/#cobertura-01032,8.816
+01021,Elburgo/Burgelu,Álava,alava,641,/electricista/alava/elburgo-burgelu/,/electricista/alava/alegria-dulantzi/,Alegría-Dulantzi,/electricista/alava/alegria-dulantzi/#cobertura-01021,2.936
+01027,Iruraiz-Gauna,Álava,alava,550,/electricista/alava/iruraiz-gauna/,/electricista/alava/alegria-dulantzi/,Alegría-Dulantzi,/electricista/alava/alegria-dulantzi/#cobertura-01027,3.146
+01016,Bernedo,Álava,alava,544,/electricista/alava/bernedo/,/electricista/alava/oyon-oion/,Oyón-Oion,/electricista/alava/oyon-oion/#cobertura-01016,14.319
+01014,Berantevilla,Álava,alava,468,/electricista/alava/berantevilla/,/electricista/alava/labastida-bastida/,Labastida/Bastida,/electricista/alava/labastida-bastida/#cobertura-01014,11.62
+01062,Zambrana,Álava,alava,438,/electricista/alava/zambrana/,/electricista/alava/labastida-bastida/,Labastida/Bastida,/electricista/alava/labastida-bastida/#cobertura-01062,10.486
+01020,Kuartango,Álava,alava,409,/electricista/alava/kuartango/,/electricista/alava/iruna-oka-iruna-de-oca/,Iruña Oka/Iruña de Oca,/electricista/alava/iruna-oka-iruna-de-oca/#cobertura-01020,8.655
+01023,Elvillar/Bilar,Álava,alava,320,/electricista/alava/elvillar-bilar/,/electricista/alava/oyon-oion/,Oyón-Oion,/electricista/alava/oyon-oion/#cobertura-01023,11.303
+01044,Peñacerrada-Urizaharra,Álava,alava,302,/electricista/alava/penacerrada-urizaharra/,/electricista/alava/labastida-bastida/,Labastida/Bastida,/electricista/alava/labastida-bastida/#cobertura-01044,8.871
+01011,Baños de Ebro/Mañueta,Álava,alava,292,/electricista/alava/banos-de-ebro-manueta/,/electricista/alava/labastida-bastida/,Labastida/Bastida,/electricista/alava/labastida-bastida/#cobertura-01011,11.45
+01052,Samaniego,Álava,alava,290,/electricista/alava/samaniego/,/electricista/alava/labastida-bastida/,Labastida/Bastida,/electricista/alava/labastida-bastida/#cobertura-01052,9.65
+01057,Villabuena de Álava/Eskuernaga,Álava,alava,282,/electricista/alava/villabuena-de-alava-eskuernaga/,/electricista/alava/labastida-bastida/,Labastida/Bastida,/electricista/alava/labastida-bastida/#cobertura-01057,11.426
+01060,Yécora/Iekora,Álava,alava,264,/electricista/alava/yecora-iekora/,/electricista/alava/oyon-oion/,Oyón-Oion,/electricista/alava/oyon-oion/#cobertura-01060,7.541
+01006,Armiñón,Álava,alava,246,/electricista/alava/arminon/,/electricista/alava/iruna-oka-iruna-de-oca/,Iruña Oka/Iruña de Oca,/electricista/alava/iruna-oka-iruna-de-oca/#cobertura-01006,11.745
+01039,Moreda de Álava/Moreda Araba,Álava,alava,215,/electricista/alava/moreda-de-alava-moreda-araba/,/electricista/alava/oyon-oion/,Oyón-Oion,/electricista/alava/oyon-oion/#cobertura-01039,3.064
+01056,Harana/Valle de Arana,Álava,alava,214,/electricista/alava/harana-valle-de-arana/,/electricista/alava/agurain-salvatierra/,Agurain/Salvatierra,/electricista/alava/agurain-salvatierra/#cobertura-01056,11.676
+01034,Leza,Álava,alava,210,/electricista/alava/leza/,/electricista/alava/labastida-bastida/,Labastida/Bastida,/electricista/alava/labastida-bastida/#cobertura-01034,13.262
+01041,Navaridas,Álava,alava,203,/electricista/alava/navaridas/,/electricista/alava/labastida-bastida/,Labastida/Bastida,/electricista/alava/labastida-bastida/#cobertura-01041,14.747
+01061,Zalduondo,Álava,alava,194,/electricista/alava/zalduondo/,/electricista/alava/agurain-salvatierra/,Agurain/Salvatierra,/electricista/alava/agurain-salvatierra/#cobertura-01061,5.176
+01019,Kripan,Álava,alava,178,/electricista/alava/kripan/,/electricista/alava/oyon-oion/,Oyón-Oion,/electricista/alava/oyon-oion/#cobertura-01019,11.504
+01030,Lagrán,Álava,alava,170,/electricista/alava/lagran/,/electricista/alava/labastida-bastida/,Labastida/Bastida,/electricista/alava/labastida-bastida/#cobertura-01030,17.552
+01049,Añana,Álava,alava,143,/electricista/alava/anana/,/electricista/alava/iruna-oka-iruna-de-oca/,Iruña Oka/Iruña de Oca,/electricista/alava/iruna-oka-iruna-de-oca/#cobertura-01049,14.639
+20069,Donostia/San Sebastián,Guipúzcoa,guipuzcoa,188487,/electricista/guipuzcoa/donostia-san-sebastian/,/electricista/guipuzcoa/donostia-san-sebastian/,Donostia/San Sebastián,/electricista/guipuzcoa/donostia-san-sebastian/,0
+20045,Irun,Guipúzcoa,guipuzcoa,63298,/electricista/guipuzcoa/irun/,/electricista/guipuzcoa/irun/,Irun,/electricista/guipuzcoa/irun/,0
+20067,Errenteria,Guipúzcoa,guipuzcoa,39310,/electricista/guipuzcoa/errenteria/,/electricista/guipuzcoa/errenteria/,Errenteria,/electricista/guipuzcoa/errenteria/,0
+20030,Eibar,Guipúzcoa,guipuzcoa,27299,/electricista/guipuzcoa/eibar/,/electricista/guipuzcoa/eibar/,Eibar,/electricista/guipuzcoa/eibar/,0
+20079,Zarautz,Guipúzcoa,guipuzcoa,23337,/electricista/guipuzcoa/zarautz/,/electricista/guipuzcoa/zarautz/,Zarautz,/electricista/guipuzcoa/zarautz/,0
+20055,Arrasate/Mondragón,Guipúzcoa,guipuzcoa,22076,/electricista/guipuzcoa/arrasate-mondragon/,/electricista/guipuzcoa/arrasate-mondragon/,Arrasate/Mondragón,/electricista/guipuzcoa/arrasate-mondragon/,0
+20040,Hernani,Guipúzcoa,guipuzcoa,20345,/electricista/guipuzcoa/hernani/,/electricista/guipuzcoa/hernani/,Hernani,/electricista/guipuzcoa/hernani/,0
+20071,Tolosa,Guipúzcoa,guipuzcoa,20099,/electricista/guipuzcoa/tolosa/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/,0
+20902,Lasarte-Oria,Guipúzcoa,guipuzcoa,19239,/electricista/guipuzcoa/lasarte-oria/,/electricista/guipuzcoa/lasarte-oria/,Lasarte-Oria,/electricista/guipuzcoa/lasarte-oria/,0
+20036,Hondarribia,Guipúzcoa,guipuzcoa,16934,/electricista/guipuzcoa/hondarribia/,/electricista/guipuzcoa/hondarribia/,Hondarribia,/electricista/guipuzcoa/hondarribia/,0
+20064,Pasaia,Guipúzcoa,guipuzcoa,16255,/electricista/guipuzcoa/pasaia/,/electricista/guipuzcoa/pasaia/,Pasaia,/electricista/guipuzcoa/pasaia/,0
+20018,Azpeitia,Guipúzcoa,guipuzcoa,15169,/electricista/guipuzcoa/azpeitia/,/electricista/guipuzcoa/azpeitia/,Azpeitia,/electricista/guipuzcoa/azpeitia/,0
+20009,Andoain,Guipúzcoa,guipuzcoa,14546,/electricista/guipuzcoa/andoain/,/electricista/guipuzcoa/andoain/,Andoain,/electricista/guipuzcoa/andoain/,0
+20074,Bergara,Guipúzcoa,guipuzcoa,14474,/electricista/guipuzcoa/bergara/,/electricista/guipuzcoa/bergara/,Bergara,/electricista/guipuzcoa/bergara/,0
+20019,Beasain,Guipúzcoa,guipuzcoa,13924,/electricista/guipuzcoa/beasain/,/electricista/guipuzcoa/beasain/,Beasain,/electricista/guipuzcoa/beasain/,0
+20017,Azkoitia,Guipúzcoa,guipuzcoa,11674,/electricista/guipuzcoa/azkoitia/,/electricista/guipuzcoa/azkoitia/,Azkoitia,/electricista/guipuzcoa/azkoitia/,0
+20032,Elgoibar,Guipúzcoa,guipuzcoa,11574,/electricista/guipuzcoa/elgoibar/,/electricista/guipuzcoa/elgoibar/,Elgoibar,/electricista/guipuzcoa/elgoibar/,0
+20059,Oñati,Guipúzcoa,guipuzcoa,11500,/electricista/guipuzcoa/onati/,/electricista/guipuzcoa/onati/,Oñati,/electricista/guipuzcoa/onati/,0
+20076,Ordizia,Guipúzcoa,guipuzcoa,10616,/electricista/guipuzcoa/ordizia/,/electricista/guipuzcoa/ordizia/,Ordizia,/electricista/guipuzcoa/ordizia/,0
+20063,Oiartzun,Guipúzcoa,guipuzcoa,10349,/electricista/guipuzcoa/oiartzun/,/electricista/guipuzcoa/oiartzun/,Oiartzun,/electricista/guipuzcoa/oiartzun/,0
+20081,Zumaia,Guipúzcoa,guipuzcoa,10250,/electricista/guipuzcoa/zumaia/,/electricista/guipuzcoa/zumaia/,Zumaia,/electricista/guipuzcoa/zumaia/,0
+20080,Zumarraga,Guipúzcoa,guipuzcoa,9688,/electricista/guipuzcoa/zumarraga/,/electricista/guipuzcoa/zumarraga/,Zumarraga,/electricista/guipuzcoa/zumarraga/,0
+20051,Legazpi,Guipúzcoa,guipuzcoa,8379,/electricista/guipuzcoa/legazpi/,/electricista/guipuzcoa/legazpi/,Legazpi,/electricista/guipuzcoa/legazpi/,0
+20903,Astigarraga,Guipúzcoa,guipuzcoa,7748,/electricista/guipuzcoa/astigarraga/,/electricista/guipuzcoa/astigarraga/,Astigarraga,/electricista/guipuzcoa/astigarraga/,0
+20013,Aretxabaleta,Guipúzcoa,guipuzcoa,7187,/electricista/guipuzcoa/aretxabaleta/,/electricista/guipuzcoa/aretxabaleta/,Aretxabaleta,/electricista/guipuzcoa/aretxabaleta/,0
+20077,Urretxu,Guipúzcoa,guipuzcoa,6758,/electricista/guipuzcoa/urretxu/,/electricista/guipuzcoa/urretxu/,Urretxu,/electricista/guipuzcoa/urretxu/,0
+20073,Usurbil,Guipúzcoa,guipuzcoa,6430,/electricista/guipuzcoa/usurbil/,/electricista/guipuzcoa/usurbil/,Usurbil,/electricista/guipuzcoa/usurbil/,0
+20072,Urnieta,Guipúzcoa,guipuzcoa,6249,/electricista/guipuzcoa/urnieta/,/electricista/guipuzcoa/urnieta/,Urnieta,/electricista/guipuzcoa/urnieta/,0
+20061,Orio,Guipúzcoa,guipuzcoa,6170,/electricista/guipuzcoa/orio/,/electricista/guipuzcoa/orio/,Orio,/electricista/guipuzcoa/orio/,0
+20049,Lazkao,Guipúzcoa,guipuzcoa,6037,/electricista/guipuzcoa/lazkao/,/electricista/guipuzcoa/lazkao/,Lazkao,/electricista/guipuzcoa/lazkao/,0
+20053,Lezo,Guipúzcoa,guipuzcoa,6004,/electricista/guipuzcoa/lezo/,/electricista/guipuzcoa/lezo/,Lezo,/electricista/guipuzcoa/lezo/,0
+20075,Villabona,Guipúzcoa,guipuzcoa,5850,/electricista/guipuzcoa/villabona/,/electricista/guipuzcoa/villabona/,Villabona,/electricista/guipuzcoa/villabona/,0
+20029,Deba,Guipúzcoa,guipuzcoa,5397,/electricista/guipuzcoa/deba/,/electricista/guipuzcoa/deba/,Deba,/electricista/guipuzcoa/deba/,0
+20056,Mutriku,Guipúzcoa,guipuzcoa,5273,/electricista/guipuzcoa/mutriku/,/electricista/guipuzcoa/mutriku/,Mutriku,/electricista/guipuzcoa/mutriku/,0
+20034,Eskoriatza,Guipúzcoa,guipuzcoa,4227,/electricista/guipuzcoa/eskoriatza/,/electricista/guipuzcoa/aretxabaleta/,Aretxabaleta,/electricista/guipuzcoa/aretxabaleta/#cobertura-20034,2.798
+20042,Ibarra,Guipúzcoa,guipuzcoa,4106,/electricista/guipuzcoa/ibarra/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/#cobertura-20042,1.077
+20027,Zestoa,Guipúzcoa,guipuzcoa,3842,/electricista/guipuzcoa/zestoa/,/electricista/guipuzcoa/azpeitia/,Azpeitia,/electricista/guipuzcoa/azpeitia/#cobertura-20027,6.244
+20065,Soraluze-Placencia de las Armas,Guipúzcoa,guipuzcoa,3789,/electricista/guipuzcoa/soraluze-placencia-de-las-armas/,/electricista/guipuzcoa/elgoibar/,Elgoibar,/electricista/guipuzcoa/elgoibar/#cobertura-20065,4.469
+20028,Zizurkil,Guipúzcoa,guipuzcoa,2966,/electricista/guipuzcoa/zizurkil/,/electricista/guipuzcoa/villabona/,Villabona,/electricista/guipuzcoa/villabona/#cobertura-20028,1.983
+20039,Getaria,Guipúzcoa,guipuzcoa,2914,/electricista/guipuzcoa/getaria/,/electricista/guipuzcoa/zarautz/,Zarautz,/electricista/guipuzcoa/zarautz/#cobertura-20039,3.09
+20043,Idiazabal,Guipúzcoa,guipuzcoa,2270,/electricista/guipuzcoa/idiazabal/,/electricista/guipuzcoa/lazkao/,Lazkao,/electricista/guipuzcoa/lazkao/#cobertura-20043,4.509
+20016,Aia,Guipúzcoa,guipuzcoa,2139,/electricista/guipuzcoa/aia/,/electricista/guipuzcoa/orio/,Orio,/electricista/guipuzcoa/orio/#cobertura-20016,4.718
+20010,Anoeta,Guipúzcoa,guipuzcoa,2082,/electricista/guipuzcoa/anoeta/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/#cobertura-20010,2.594
+20011,Antzuola,Guipúzcoa,guipuzcoa,2070,/electricista/guipuzcoa/antzuola/,/electricista/guipuzcoa/bergara/,Bergara,/electricista/guipuzcoa/bergara/#cobertura-20011,3.33
+20901,Mendaro,Guipúzcoa,guipuzcoa,2001,/electricista/guipuzcoa/mendaro/,/electricista/guipuzcoa/elgoibar/,Elgoibar,/electricista/guipuzcoa/elgoibar/#cobertura-20901,4.95
+20046,Irura,Guipúzcoa,guipuzcoa,1896,/electricista/guipuzcoa/irura/,/electricista/guipuzcoa/villabona/,Villabona,/electricista/guipuzcoa/villabona/#cobertura-20046,2.516
+20005,Alegia,Guipúzcoa,guipuzcoa,1804,/electricista/guipuzcoa/alegia/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/#cobertura-20005,4.719
+20078,Zaldibia,Guipúzcoa,guipuzcoa,1735,/electricista/guipuzcoa/zaldibia/,/electricista/guipuzcoa/ordizia/,Ordizia,/electricista/guipuzcoa/ordizia/#cobertura-20078,2.868
+20015,Ataun,Guipúzcoa,guipuzcoa,1710,/electricista/guipuzcoa/ataun/,/electricista/guipuzcoa/lazkao/,Lazkao,/electricista/guipuzcoa/lazkao/#cobertura-20015,3.164
+20014,Asteasu,Guipúzcoa,guipuzcoa,1573,/electricista/guipuzcoa/asteasu/,/electricista/guipuzcoa/villabona/,Villabona,/electricista/guipuzcoa/villabona/#cobertura-20014,3.562
+20025,Zegama,Guipúzcoa,guipuzcoa,1541,/electricista/guipuzcoa/zegama/,/electricista/guipuzcoa/legazpi/,Legazpi,/electricista/guipuzcoa/legazpi/#cobertura-20025,9.043
+20070,Segura,Guipúzcoa,guipuzcoa,1466,/electricista/guipuzcoa/segura/,/electricista/guipuzcoa/lazkao/,Lazkao,/electricista/guipuzcoa/lazkao/#cobertura-20070,6.041
+20052,Legorreta,Guipúzcoa,guipuzcoa,1446,/electricista/guipuzcoa/legorreta/,/electricista/guipuzcoa/ordizia/,Ordizia,/electricista/guipuzcoa/ordizia/#cobertura-20052,4.279
+20062,Ormaiztegi,Guipúzcoa,guipuzcoa,1263,/electricista/guipuzcoa/ormaiztegi/,/electricista/guipuzcoa/beasain/,Beasain,/electricista/guipuzcoa/beasain/#cobertura-20062,4.826
+20033,Elgeta,Guipúzcoa,guipuzcoa,1126,/electricista/guipuzcoa/elgeta/,/electricista/guipuzcoa/eibar/,Eibar,/electricista/guipuzcoa/eibar/#cobertura-20033,5.413
+20022,Berastegi,Guipúzcoa,guipuzcoa,1110,/electricista/guipuzcoa/berastegi/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/#cobertura-20022,7.67
+20008,Amezketa,Guipúzcoa,guipuzcoa,940,/electricista/guipuzcoa/amezketa/,/electricista/guipuzcoa/ordizia/,Ordizia,/electricista/guipuzcoa/ordizia/#cobertura-20008,7.412
+20058,Olaberria,Guipúzcoa,guipuzcoa,929,/electricista/guipuzcoa/olaberria/,/electricista/guipuzcoa/lazkao/,Lazkao,/electricista/guipuzcoa/lazkao/#cobertura-20058,1.531
+20003,Aizarnazabal,Guipúzcoa,guipuzcoa,780,/electricista/guipuzcoa/aizarnazabal/,/electricista/guipuzcoa/zumaia/,Zumaia,/electricista/guipuzcoa/zumaia/#cobertura-20003,4.915
+20047,Itsasondo,Guipúzcoa,guipuzcoa,668,/electricista/guipuzcoa/itsasondo/,/electricista/guipuzcoa/ordizia/,Ordizia,/electricista/guipuzcoa/ordizia/#cobertura-20047,1.904
+20054,Lizartza,Guipúzcoa,guipuzcoa,666,/electricista/guipuzcoa/lizartza/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/#cobertura-20054,4.978
+20035,Ezkio-Itsaso,Guipúzcoa,guipuzcoa,589,/electricista/guipuzcoa/ezkio-itsaso/,/electricista/guipuzcoa/zumarraga/,Zumarraga,/electricista/guipuzcoa/zumarraga/#cobertura-20035,3.585
+20066,Errezil,Guipúzcoa,guipuzcoa,581,/electricista/guipuzcoa/errezil/,/electricista/guipuzcoa/azpeitia/,Azpeitia,/electricista/guipuzcoa/azpeitia/#cobertura-20066,7.761
+20023,Berrobi,Guipúzcoa,guipuzcoa,560,/electricista/guipuzcoa/berrobi/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/#cobertura-20023,3.786
+20024,Bidania-Goiatz,Guipúzcoa,guipuzcoa,533,/electricista/guipuzcoa/bidania-goiatz/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/#cobertura-20024,7.145
+20038,Gabiria,Guipúzcoa,guipuzcoa,516,/electricista/guipuzcoa/gabiria/,/electricista/guipuzcoa/legazpi/,Legazpi,/electricista/guipuzcoa/legazpi/#cobertura-20038,4.368
+20044,Ikaztegieta,Guipúzcoa,guipuzcoa,505,/electricista/guipuzcoa/ikaztegieta/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/#cobertura-20044,6.355
+20002,Aduna,Guipúzcoa,guipuzcoa,498,/electricista/guipuzcoa/aduna/,/electricista/guipuzcoa/villabona/,Villabona,/electricista/guipuzcoa/villabona/#cobertura-20002,1.817
+20007,Altzo,Guipúzcoa,guipuzcoa,444,/electricista/guipuzcoa/altzo/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/#cobertura-20007,4.357
+20050,Leaburu,Guipúzcoa,guipuzcoa,385,/electricista/guipuzcoa/leaburu/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/#cobertura-20050,2.209
+20006,Alkiza,Guipúzcoa,guipuzcoa,354,/electricista/guipuzcoa/alkiza/,/electricista/guipuzcoa/villabona/,Villabona,/electricista/guipuzcoa/villabona/#cobertura-20006,4.775
+20004,Albiztur,Guipúzcoa,guipuzcoa,324,/electricista/guipuzcoa/albiztur/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/#cobertura-20004,5.369
+20041,Hernialde,Guipúzcoa,guipuzcoa,318,/electricista/guipuzcoa/hernialde/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/#cobertura-20041,2.129
+20001,Abaltzisketa,Guipúzcoa,guipuzcoa,316,/electricista/guipuzcoa/abaltzisketa/,/electricista/guipuzcoa/ordizia/,Ordizia,/electricista/guipuzcoa/ordizia/#cobertura-20001,6.022
+20021,Belauntza,Guipúzcoa,guipuzcoa,288,/electricista/guipuzcoa/belauntza/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/#cobertura-20021,1.721
+20026,Zerain,Guipúzcoa,guipuzcoa,281,/electricista/guipuzcoa/zerain/,/electricista/guipuzcoa/legazpi/,Legazpi,/electricista/guipuzcoa/legazpi/#cobertura-20026,6.627
+20057,Mutiloa,Guipúzcoa,guipuzcoa,253,/electricista/guipuzcoa/mutiloa/,/electricista/guipuzcoa/legazpi/,Legazpi,/electricista/guipuzcoa/legazpi/#cobertura-20057,5.847
+20048,Larraul,Guipúzcoa,guipuzcoa,252,/electricista/guipuzcoa/larraul/,/electricista/guipuzcoa/villabona/,Villabona,/electricista/guipuzcoa/villabona/#cobertura-20048,3.906
+20031,Elduain,Guipúzcoa,guipuzcoa,250,/electricista/guipuzcoa/elduain/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/#cobertura-20031,5.833
+20905,Orendain,Guipúzcoa,guipuzcoa,245,/electricista/guipuzcoa/orendain/,/electricista/guipuzcoa/ordizia/,Ordizia,/electricista/guipuzcoa/ordizia/#cobertura-20905,6.008
+20068,Leintz-Gatzaga,Guipúzcoa,guipuzcoa,210,/electricista/guipuzcoa/leintz-gatzaga/,/electricista/guipuzcoa/aretxabaleta/,Aretxabaleta,/electricista/guipuzcoa/aretxabaleta/#cobertura-20068,7.546
+20012,Arama,Guipúzcoa,guipuzcoa,178,/electricista/guipuzcoa/arama/,/electricista/guipuzcoa/ordizia/,Ordizia,/electricista/guipuzcoa/ordizia/#cobertura-20012,1.543
+20906,Altzaga,Guipúzcoa,guipuzcoa,171,/electricista/guipuzcoa/altzaga/,/electricista/guipuzcoa/ordizia/,Ordizia,/electricista/guipuzcoa/ordizia/#cobertura-20906,2.393
+20907,Gaztelu,Guipúzcoa,guipuzcoa,171,/electricista/guipuzcoa/gaztelu/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/#cobertura-20907,4.704
+20904,Baliarrain,Guipúzcoa,guipuzcoa,154,/electricista/guipuzcoa/baliarrain/,/electricista/guipuzcoa/ordizia/,Ordizia,/electricista/guipuzcoa/ordizia/#cobertura-20904,4.521
+20020,Beizama,Guipúzcoa,guipuzcoa,130,/electricista/guipuzcoa/beizama/,/electricista/guipuzcoa/azpeitia/,Azpeitia,/electricista/guipuzcoa/azpeitia/#cobertura-20020,7.706
+20037,Gaintza,Guipúzcoa,guipuzcoa,124,/electricista/guipuzcoa/gaintza/,/electricista/guipuzcoa/ordizia/,Ordizia,/electricista/guipuzcoa/ordizia/#cobertura-20037,3.738
+20060,Orexa,Guipúzcoa,guipuzcoa,108,/electricista/guipuzcoa/orexa/,/electricista/guipuzcoa/tolosa/,Tolosa,/electricista/guipuzcoa/tolosa/#cobertura-20060,6.934
+28079,Madrid,Madrid,madrid,3422416,/electricista/madrid/madrid/,/electricista/madrid/madrid/,Madrid,/electricista/madrid/madrid/,0
+28092,Móstoles,Madrid,madrid,213268,/electricista/madrid/mostoles/,/electricista/madrid/mostoles/,Móstoles,/electricista/madrid/mostoles/,0
+28005,Alcalá de Henares,Madrid,madrid,199804,/electricista/madrid/alcala-de-henares/,/electricista/madrid/alcala-de-henares/,Alcalá de Henares,/electricista/madrid/alcala-de-henares/,0
+28074,Leganés,Madrid,madrid,193934,/electricista/madrid/leganes/,/electricista/madrid/leganes/,Leganés,/electricista/madrid/leganes/,0
+28065,Getafe,Madrid,madrid,191560,/electricista/madrid/getafe/,/electricista/madrid/getafe/,Getafe,/electricista/madrid/getafe/,0
+28058,Fuenlabrada,Madrid,madrid,190496,/electricista/madrid/fuenlabrada/,/electricista/madrid/fuenlabrada/,Fuenlabrada,/electricista/madrid/fuenlabrada/,0
+28007,Alcorcón,Madrid,madrid,174740,/electricista/madrid/alcorcon/,/electricista/madrid/alcorcon/,Alcorcón,/electricista/madrid/alcorcon/,0
+28148,Torrejón de Ardoz,Madrid,madrid,141047,/electricista/madrid/torrejon-de-ardoz/,/electricista/madrid/torrejon-de-ardoz/,Torrejón de Ardoz,/electricista/madrid/torrejon-de-ardoz/,0
+28106,Parla,Madrid,madrid,134876,/electricista/madrid/parla/,/electricista/madrid/parla/,Parla,/electricista/madrid/parla/,0
+28006,Alcobendas,Madrid,madrid,121446,/electricista/madrid/alcobendas/,/electricista/madrid/alcobendas/,Alcobendas,/electricista/madrid/alcobendas/,0
+28123,Rivas-Vaciamadrid,Madrid,madrid,101637,/electricista/madrid/rivas-vaciamadrid/,/electricista/madrid/rivas-vaciamadrid/,Rivas-Vaciamadrid,/electricista/madrid/rivas-vaciamadrid/,0
+28127,Las Rozas de Madrid,Madrid,madrid,99193,/electricista/madrid/las-rozas-de-madrid/,/electricista/madrid/las-rozas-de-madrid/,Las Rozas de Madrid,/electricista/madrid/las-rozas-de-madrid/,0
+28134,San Sebastián de los Reyes,Madrid,madrid,94942,/electricista/madrid/san-sebastian-de-los-reyes/,/electricista/madrid/san-sebastian-de-los-reyes/,San Sebastián de los Reyes,/electricista/madrid/san-sebastian-de-los-reyes/,0
+28115,Pozuelo de Alarcón,Madrid,madrid,89123,/electricista/madrid/pozuelo-de-alarcon/,/electricista/madrid/pozuelo-de-alarcon/,Pozuelo de Alarcón,/electricista/madrid/pozuelo-de-alarcon/,0
+28161,Valdemoro,Madrid,madrid,83582,/electricista/madrid/valdemoro/,/electricista/madrid/valdemoro/,Valdemoro,/electricista/madrid/valdemoro/,0
+28049,Coslada,Madrid,madrid,80688,/electricista/madrid/coslada/,/electricista/madrid/coslada/,Coslada,/electricista/madrid/coslada/,0
+28080,Majadahonda,Madrid,madrid,73547,/electricista/madrid/majadahonda/,/electricista/madrid/majadahonda/,Majadahonda,/electricista/madrid/majadahonda/,0
+28047,Collado Villalba,Madrid,madrid,67323,/electricista/madrid/collado-villalba/,/electricista/madrid/collado-villalba/,Collado Villalba,/electricista/madrid/collado-villalba/,0
+28022,Boadilla del Monte,Madrid,madrid,65528,/electricista/madrid/boadilla-del-monte/,/electricista/madrid/boadilla-del-monte/,Boadilla del Monte,/electricista/madrid/boadilla-del-monte/,0
+28013,Aranjuez,Madrid,madrid,62508,/electricista/madrid/aranjuez/,/electricista/madrid/aranjuez/,Aranjuez,/electricista/madrid/aranjuez/,0
+28014,Arganda del Rey,Madrid,madrid,59209,/electricista/madrid/arganda-del-rey/,/electricista/madrid/arganda-del-rey/,Arganda del Rey,/electricista/madrid/arganda-del-rey/,0
+28045,Colmenar Viejo,Madrid,madrid,56878,/electricista/madrid/colmenar-viejo/,/electricista/madrid/colmenar-viejo/,Colmenar Viejo,/electricista/madrid/colmenar-viejo/,0
+28113,Pinto,Madrid,madrid,55989,/electricista/madrid/pinto/,/electricista/madrid/pinto/,Pinto,/electricista/madrid/pinto/,0
+28903,Tres Cantos,Madrid,madrid,52825,/electricista/madrid/tres-cantos/,/electricista/madrid/tres-cantos/,Tres Cantos,/electricista/madrid/tres-cantos/,0
+28130,San Fernando de Henares,Madrid,madrid,38969,/electricista/madrid/san-fernando-de-henares/,/electricista/madrid/san-fernando-de-henares/,San Fernando de Henares,/electricista/madrid/san-fernando-de-henares/,0
+28015,Arroyomolinos,Madrid,madrid,37299,/electricista/madrid/arroyomolinos/,/electricista/madrid/arroyomolinos/,Arroyomolinos,/electricista/madrid/arroyomolinos/,0
+28061,Galapagar,Madrid,madrid,36112,/electricista/madrid/galapagar/,/electricista/madrid/galapagar/,Galapagar,/electricista/madrid/galapagar/,0
+28096,Navalcarnero,Madrid,madrid,32684,/electricista/madrid/navalcarnero/,/electricista/madrid/navalcarnero/,Navalcarnero,/electricista/madrid/navalcarnero/,0
+28181,Villaviciosa de Odón,Madrid,madrid,29294,/electricista/madrid/villaviciosa-de-odon/,/electricista/madrid/villaviciosa-de-odon/,Villaviciosa de Odón,/electricista/madrid/villaviciosa-de-odon/,0
+28104,Paracuellos de Jarama,Madrid,madrid,27241,/electricista/madrid/paracuellos-de-jarama/,/electricista/madrid/paracuellos-de-jarama/,Paracuellos de Jarama,/electricista/madrid/paracuellos-de-jarama/,0
+28040,Ciempozuelos,Madrid,madrid,26046,/electricista/madrid/ciempozuelos/,/electricista/madrid/ciempozuelos/,Ciempozuelos,/electricista/madrid/ciempozuelos/,0
+28152,Torrelodones,Madrid,madrid,25250,/electricista/madrid/torrelodones/,/electricista/madrid/torrelodones/,Torrelodones,/electricista/madrid/torrelodones/,0
+28084,Mejorada del Campo,Madrid,madrid,24632,/electricista/madrid/mejorada-del-campo/,/electricista/madrid/mejorada-del-campo/,Mejorada del Campo,/electricista/madrid/mejorada-del-campo/,0
+28176,Villanueva de la Cañada,Madrid,madrid,23714,/electricista/madrid/villanueva-de-la-canada/,/electricista/madrid/villanueva-de-la-canada/,Villanueva de la Cañada,/electricista/madrid/villanueva-de-la-canada/,0
+28009,Algete,Madrid,madrid,21134,/electricista/madrid/algete/,/electricista/madrid/algete/,Algete,/electricista/madrid/algete/,0
+28132,San Martín de la Vega,Madrid,madrid,20664,/electricista/madrid/san-martin-de-la-vega/,/electricista/madrid/san-martin-de-la-vega/,San Martín de la Vega,/electricista/madrid/san-martin-de-la-vega/,0
+28073,Humanes de Madrid,Madrid,madrid,20054,/electricista/madrid/humanes-de-madrid/,/electricista/madrid/humanes-de-madrid/,Humanes de Madrid,/electricista/madrid/humanes-de-madrid/,0
+28131,San Lorenzo de El Escorial,Madrid,madrid,18772,/electricista/madrid/san-lorenzo-de-el-escorial/,/electricista/madrid/san-lorenzo-de-el-escorial/,San Lorenzo de El Escorial,/electricista/madrid/san-lorenzo-de-el-escorial/,0
+28177,Villanueva del Pardillo,Madrid,madrid,17994,/electricista/madrid/villanueva-del-pardillo/,/electricista/madrid/villanueva-del-pardillo/,Villanueva del Pardillo,/electricista/madrid/villanueva-del-pardillo/,0
+28172,Villalbilla,Madrid,madrid,17967,/electricista/madrid/villalbilla/,/electricista/madrid/villalbilla/,Villalbilla,/electricista/madrid/villalbilla/,0
+28054,El Escorial,Madrid,madrid,17262,/electricista/madrid/el-escorial/,/electricista/madrid/el-escorial/,El Escorial,/electricista/madrid/el-escorial/,0
+28068,Guadarrama,Madrid,madrid,17069,/electricista/madrid/guadarrama/,/electricista/madrid/guadarrama/,Guadarrama,/electricista/madrid/guadarrama/,0
+28083,Meco,Madrid,madrid,15812,/electricista/madrid/meco/,/electricista/madrid/meco/,Meco,/electricista/madrid/meco/,0
+28010,Alpedrete,Madrid,madrid,15655,/electricista/madrid/alpedrete/,/electricista/madrid/alpedrete/,Alpedrete,/electricista/madrid/alpedrete/,0
+28090,Moralzarzal,Madrid,madrid,14504,/electricista/madrid/moralzarzal/,/electricista/madrid/moralzarzal/,Moralzarzal,/electricista/madrid/moralzarzal/,0
+28160,Valdemorillo,Madrid,madrid,14139,/electricista/madrid/valdemorillo/,/electricista/madrid/valdemorillo/,Valdemorillo,/electricista/madrid/valdemorillo/,0
+28167,Velilla de San Antonio,Madrid,madrid,14008,/electricista/madrid/velilla-de-san-antonio/,/electricista/madrid/velilla-de-san-antonio/,Velilla de San Antonio,/electricista/madrid/velilla-de-san-antonio/,0
+28129,San Agustín del Guadalix,Madrid,madrid,13849,/electricista/madrid/san-agustin-del-guadalix/,/electricista/madrid/san-agustin-del-guadalix/,San Agustín del Guadalix,/electricista/madrid/san-agustin-del-guadalix/,0
+28026,Brunete,Madrid,madrid,11263,/electricista/madrid/brunete/,/electricista/madrid/brunete/,Brunete,/electricista/madrid/brunete/,0
+28066,Griñón,Madrid,madrid,10714,/electricista/madrid/grinon/,/electricista/madrid/grinon/,Griñón,/electricista/madrid/grinon/,0
+28053,Daganzo de Arriba,Madrid,madrid,10673,/electricista/madrid/daganzo-de-arriba/,/electricista/madrid/daganzo-de-arriba/,Daganzo de Arriba,/electricista/madrid/daganzo-de-arriba/,0
+28004,El Álamo,Madrid,madrid,10413,/electricista/madrid/el-alamo/,/electricista/madrid/el-alamo/,El Álamo,/electricista/madrid/el-alamo/,0
+28149,Torrejón de la Calzada,Madrid,madrid,10366,/electricista/madrid/torrejon-de-la-calzada/,/electricista/madrid/torrejon-de-la-calzada/,Torrejón de la Calzada,/electricista/madrid/torrejon-de-la-calzada/,0
+28086,El Molar,Madrid,madrid,10079,/electricista/madrid/el-molar/,/electricista/madrid/el-molar/,El Molar,/electricista/madrid/el-molar/,0
+28044,Colmenarejo,Madrid,madrid,9741,/electricista/madrid/colmenarejo/,/electricista/madrid/colmenarejo/,Colmenarejo,/electricista/madrid/colmenarejo/,0
+28141,Sevilla la Nueva,Madrid,madrid,9694,/electricista/madrid/sevilla-la-nueva/,/electricista/madrid/sevilla-la-nueva/,Sevilla la Nueva,/electricista/madrid/sevilla-la-nueva/,0
+28082,Manzanares el Real,Madrid,madrid,9539,/electricista/madrid/manzanares-el-real/,/electricista/madrid/manzanares-el-real/,Manzanares el Real,/electricista/madrid/manzanares-el-real/,0
+28144,Soto del Real,Madrid,madrid,9436,/electricista/madrid/soto-del-real/,/electricista/madrid/soto-del-real/,Soto del Real,/electricista/madrid/soto-del-real/,0
+28075,Loeches,Madrid,madrid,9253,/electricista/madrid/loeches/,/electricista/madrid/loeches/,Loeches,/electricista/madrid/loeches/,0
+28072,Hoyo de Manzanares,Madrid,madrid,9186,/electricista/madrid/hoyo-de-manzanares/,/electricista/madrid/hoyo-de-manzanares/,Hoyo de Manzanares,/electricista/madrid/hoyo-de-manzanares/,0
+28133,San Martín de Valdeiglesias,Madrid,madrid,9120,/electricista/madrid/san-martin-de-valdeiglesias/,/electricista/madrid/san-martin-de-valdeiglesias/,San Martín de Valdeiglesias,/electricista/madrid/san-martin-de-valdeiglesias/,0
+28043,Colmenar de Oreja,Madrid,madrid,8982,/electricista/madrid/colmenar-de-oreja/,/electricista/madrid/colmenar-de-oreja/,Colmenar de Oreja,/electricista/madrid/colmenar-de-oreja/,0
+28023,El Boalo,Madrid,madrid,8548,/electricista/madrid/el-boalo/,/electricista/madrid/el-boalo/,El Boalo,/electricista/madrid/el-boalo/,0
+28091,Morata de Tajuña,Madrid,madrid,8294,/electricista/madrid/morata-de-tajuna/,/electricista/madrid/morata-de-tajuna/,Morata de Tajuña,/electricista/madrid/morata-de-tajuna/,0
+28032,Camarma de Esteruelas,Madrid,madrid,8107,/electricista/madrid/camarma-de-esteruelas/,/electricista/madrid/camarma-de-esteruelas/,Camarma de Esteruelas,/electricista/madrid/camarma-de-esteruelas/,0
+28180,Villarejo de Salvanés,Madrid,madrid,7887,/electricista/madrid/villarejo-de-salvanes/,/electricista/madrid/villarejo-de-salvanes/,Villarejo de Salvanés,/electricista/madrid/villarejo-de-salvanes/,0
+28041,Cobeña,Madrid,madrid,7742,/electricista/madrid/cobena/,/electricista/madrid/cobena/,Cobeña,/electricista/madrid/cobena/,0
+28154,Torres de la Alameda,Madrid,madrid,7742,/electricista/madrid/torres-de-la-alameda/,/electricista/madrid/torres-de-la-alameda/,Torres de la Alameda,/electricista/madrid/torres-de-la-alameda/,0
+28038,Cercedilla,Madrid,madrid,7646,/electricista/madrid/cercedilla/,/electricista/madrid/cercedilla/,Cercedilla,/electricista/madrid/cercedilla/,0
+28046,Collado Mediano,Madrid,madrid,7564,/electricista/madrid/collado-mediano/,/electricista/madrid/collado-mediano/,Collado Mediano,/electricista/madrid/collado-mediano/,0
+28171,Villa del Prado,Madrid,madrid,7424,/electricista/madrid/villa-del-prado/,/electricista/madrid/villa-del-prado/,Villa del Prado,/electricista/madrid/villa-del-prado/,0
+28100,Nuevo Baztán,Madrid,madrid,7393,/electricista/madrid/nuevo-baztan/,/electricista/madrid/nuevo-baztan/,Nuevo Baztán,/electricista/madrid/nuevo-baztan/,0
+28059,Fuente el Saz de Jarama,Madrid,madrid,7384,/electricista/madrid/fuente-el-saz-de-jarama/,/electricista/madrid/fuente-el-saz-de-jarama/,Fuente el Saz de Jarama,/electricista/madrid/fuente-el-saz-de-jarama/,0
+28085,Miraflores de la Sierra,Madrid,madrid,7209,/electricista/madrid/miraflores-de-la-sierra/,/electricista/madrid/miraflores-de-la-sierra/,Miraflores de la Sierra,/electricista/madrid/miraflores-de-la-sierra/,0
+28050,Cubas de la Sagra,Madrid,madrid,6984,/electricista/madrid/cubas-de-la-sagra/,/electricista/madrid/cubas-de-la-sagra/,Cubas de la Sagra,/electricista/madrid/cubas-de-la-sagra/,0
+28067,Guadalix de la Sierra,Madrid,madrid,6912,/electricista/madrid/guadalix-de-la-sierra/,/electricista/madrid/guadalix-de-la-sierra/,Guadalix de la Sierra,/electricista/madrid/guadalix-de-la-sierra/,0
+28033,Campo Real,Madrid,madrid,6766,/electricista/madrid/campo-real/,/electricista/madrid/campo-real/,Campo Real,/electricista/madrid/campo-real/,0
+28018,Becerril de la Sierra,Madrid,madrid,6553,/electricista/madrid/becerril-de-la-sierra/,/electricista/madrid/becerril-de-la-sierra/,Becerril de la Sierra,/electricista/madrid/becerril-de-la-sierra/,0
+28108,Pedrezuela,Madrid,madrid,6475,/electricista/madrid/pedrezuela/,/electricista/madrid/pedrezuela/,Pedrezuela,/electricista/madrid/pedrezuela/,0
+28052,Chinchón,Madrid,madrid,5820,/electricista/madrid/chinchon/,/electricista/madrid/chinchon/,Chinchón,/electricista/madrid/chinchon/,0
+28089,Moraleja de Enmedio,Madrid,madrid,5630,/electricista/madrid/moraleja-de-enmedio/,/electricista/madrid/moraleja-de-enmedio/,Moraleja de Enmedio,/electricista/madrid/moraleja-de-enmedio/,0
+28164,Valdetorres de Jarama,Madrid,madrid,5050,/electricista/madrid/valdetorres-de-jarama/,/electricista/madrid/valdetorres-de-jarama/,Valdetorres de Jarama,/electricista/madrid/valdetorres-de-jarama/,0
+28151,Torrelaguna,Madrid,madrid,4992,/electricista/madrid/torrelaguna/,/electricista/madrid/pedrezuela/,Pedrezuela,/electricista/madrid/pedrezuela/#cobertura-28151,10.67
+28002,Ajalvir,Madrid,madrid,4946,/electricista/madrid/ajalvir/,/electricista/madrid/daganzo-de-arriba/,Daganzo de Arriba,/electricista/madrid/daganzo-de-arriba/#cobertura-28002,2.28
+28150,Torrejón de Velasco,Madrid,madrid,4887,/electricista/madrid/torrejon-de-velasco/,/electricista/madrid/torrejon-de-la-calzada/,Torrejón de la Calzada,/electricista/madrid/torrejon-de-la-calzada/#cobertura-28150,2.42
+28087,Los Molinos,Madrid,madrid,4812,/electricista/madrid/los-molinos/,/electricista/madrid/cercedilla/,Cercedilla,/electricista/madrid/cercedilla/#cobertura-28087,3.358
+28125,Robledo de Chavela,Madrid,madrid,4763,/electricista/madrid/robledo-de-chavela/,/electricista/madrid/san-lorenzo-de-el-escorial/,San Lorenzo de El Escorial,/electricista/madrid/san-lorenzo-de-el-escorial/#cobertura-28125,12.59
+28140,Serranillos del Valle,Madrid,madrid,4632,/electricista/madrid/serranillos-del-valle/,/electricista/madrid/grinon/,Griñón,/electricista/madrid/grinon/#cobertura-28140,2.947
+28162,Valdeolmos-Alalpardo,Madrid,madrid,4579,/electricista/madrid/valdeolmos-alalpardo/,/electricista/madrid/fuente-el-saz-de-jarama/,Fuente el Saz de Jarama,/electricista/madrid/fuente-el-saz-de-jarama/#cobertura-28162,3.335
+28145,Talamanca de Jarama,Madrid,madrid,4526,/electricista/madrid/talamanca-de-jarama/,/electricista/madrid/valdetorres-de-jarama/,Valdetorres de Jarama,/electricista/madrid/valdetorres-de-jarama/#cobertura-28145,5.571
+28036,Casarrubuelos,Madrid,madrid,4225,/electricista/madrid/casarrubuelos/,/electricista/madrid/cubas-de-la-sagra/,Cubas de la Sagra,/electricista/madrid/cubas-de-la-sagra/#cobertura-28036,2.277
+28119,Quijorna,Madrid,madrid,3987,/electricista/madrid/quijorna/,/electricista/madrid/villanueva-de-la-canada/,Villanueva de la Cañada,/electricista/madrid/villanueva-de-la-canada/#cobertura-28119,4.915
+28170,Villaconejos,Madrid,madrid,3487,/electricista/madrid/villaconejos/,/electricista/madrid/chinchon/,Chinchón,/electricista/madrid/chinchon/#cobertura-28170,6.604
+28008,Aldea del Fresno,Madrid,madrid,3422,/electricista/madrid/aldea-del-fresno/,/electricista/madrid/villa-del-prado/,Villa del Prado,/electricista/madrid/villa-del-prado/#cobertura-28008,10.151
+28099,Navas del Rey,Madrid,madrid,3344,/electricista/madrid/navas-del-rey/,/electricista/madrid/san-martin-de-valdeiglesias/,San Martín de Valdeiglesias,/electricista/madrid/san-martin-de-valdeiglesias/#cobertura-28099,12.611
+28093,Navacerrada,Madrid,madrid,3307,/electricista/madrid/navacerrada/,/electricista/madrid/becerril-de-la-sierra/,Becerril de la Sierra,/electricista/madrid/becerril-de-la-sierra/#cobertura-28093,2.55
+28031,Cadalso de los Vidrios,Madrid,madrid,3274,/electricista/madrid/cadalso-de-los-vidrios/,/electricista/madrid/san-martin-de-valdeiglesias/,San Martín de Valdeiglesias,/electricista/madrid/san-martin-de-valdeiglesias/#cobertura-28031,7.669
+28165,Valdilecha,Madrid,madrid,3228,/electricista/madrid/valdilecha/,/electricista/madrid/campo-real/,Campo Real,/electricista/madrid/campo-real/#cobertura-28165,8.142
+28110,Perales de Tajuña,Madrid,madrid,3195,/electricista/madrid/perales-de-tajuna/,/electricista/madrid/morata-de-tajuna/,Morata de Tajuña,/electricista/madrid/morata-de-tajuna/#cobertura-28110,7.225
+28095,Navalagamella,Madrid,madrid,3119,/electricista/madrid/navalagamella/,/electricista/madrid/valdemorillo/,Valdemorillo,/electricista/madrid/valdemorillo/#cobertura-28095,5.8
+28109,Pelayos de la Presa,Madrid,madrid,3106,/electricista/madrid/pelayos-de-la-presa/,/electricista/madrid/san-martin-de-valdeiglesias/,San Martín de Valdeiglesias,/electricista/madrid/san-martin-de-valdeiglesias/#cobertura-28109,5.373
+28030,La Cabrera,Madrid,madrid,2952,/electricista/madrid/la-cabrera/,/electricista/madrid/guadalix-de-la-sierra/,Guadalix de la Sierra,/electricista/madrid/guadalix-de-la-sierra/#cobertura-28030,10.95
+28174,Villamanta,Madrid,madrid,2855,/electricista/madrid/villamanta/,/electricista/madrid/navalcarnero/,Navalcarnero,/electricista/madrid/navalcarnero/#cobertura-28174,8.114
+28028,Bustarviejo,Madrid,madrid,2833,/electricista/madrid/bustarviejo/,/electricista/madrid/miraflores-de-la-sierra/,Miraflores de la Sierra,/electricista/madrid/miraflores-de-la-sierra/#cobertura-28028,6.945
+28146,Tielmes,Madrid,madrid,2807,/electricista/madrid/tielmes/,/electricista/madrid/villarejo-de-salvanes/,Villarejo de Salvanés,/electricista/madrid/villarejo-de-salvanes/#cobertura-28146,9.191
+28137,Los Santos de la Humosa,Madrid,madrid,2797,/electricista/madrid/los-santos-de-la-humosa/,/electricista/madrid/meco/,Meco,/electricista/madrid/meco/#cobertura-28137,7.995
+28051,Chapinería,Madrid,madrid,2634,/electricista/madrid/chapineria/,/electricista/madrid/villa-del-prado/,Villa del Prado,/electricista/madrid/villa-del-prado/#cobertura-28051,13.987
+28169,Venturada,Madrid,madrid,2577,/electricista/madrid/venturada/,/electricista/madrid/pedrezuela/,Pedrezuela,/electricista/madrid/pedrezuela/#cobertura-28169,6.1
+28057,Fresno de Torote,Madrid,madrid,2547,/electricista/madrid/fresno-de-torote/,/electricista/madrid/camarma-de-esteruelas/,Camarma de Esteruelas,/electricista/madrid/camarma-de-esteruelas/#cobertura-28057,5.607
+28035,Carabaña,Madrid,madrid,2375,/electricista/madrid/carabana/,/electricista/madrid/villarejo-de-salvanes/,Villarejo de Salvanés,/electricista/madrid/villarejo-de-salvanes/#cobertura-28035,10.338
+28060,Fuentidueña de Tajo,Madrid,madrid,2319,/electricista/madrid/fuentiduena-de-tajo/,/electricista/madrid/villarejo-de-salvanes/,Villarejo de Salvanés,/electricista/madrid/villarejo-de-salvanes/#cobertura-28060,11.38
+28179,Villar del Olmo,Madrid,madrid,2274,/electricista/madrid/villar-del-olmo/,/electricista/madrid/nuevo-baztan/,Nuevo Baztán,/electricista/madrid/nuevo-baztan/#cobertura-28179,3.278
+28168,El Vellón,Madrid,madrid,2160,/electricista/madrid/el-vellon/,/electricista/madrid/pedrezuela/,Pedrezuela,/electricista/madrid/pedrezuela/#cobertura-28168,2.903
+28037,Cenicientos,Madrid,madrid,2141,/electricista/madrid/cenicientos/,/electricista/madrid/san-martin-de-valdeiglesias/,San Martín de Valdeiglesias,/electricista/madrid/san-martin-de-valdeiglesias/#cobertura-28037,12.455
+28042,Colmenar del Arroyo,Madrid,madrid,2013,/electricista/madrid/colmenar-del-arroyo/,/electricista/madrid/valdemorillo/,Valdemorillo,/electricista/madrid/valdemorillo/#cobertura-28042,14.353
+28027,Buitrago del Lozoya,Madrid,madrid,1970,/electricista/madrid/buitrago-del-lozoya/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28027,11.564
+28017,Batres,Madrid,madrid,1957,/electricista/madrid/batres/,/electricista/madrid/grinon/,Griñón,/electricista/madrid/grinon/#cobertura-28017,5.783
+28019,Belmonte de Tajo,Madrid,madrid,1919,/electricista/madrid/belmonte-de-tajo/,/electricista/madrid/colmenar-de-oreja/,Colmenar de Oreja,/electricista/madrid/colmenar-de-oreja/#cobertura-28019,4.996
+28183,Zarzalejo,Madrid,madrid,1870,/electricista/madrid/zarzalejo/,/electricista/madrid/san-lorenzo-de-el-escorial/,San Lorenzo de El Escorial,/electricista/madrid/san-lorenzo-de-el-escorial/#cobertura-28183,5.619
+28056,Fresnedillas de la Oliva,Madrid,madrid,1833,/electricista/madrid/fresnedillas-de-la-oliva/,/electricista/madrid/valdemorillo/,Valdemorillo,/electricista/madrid/valdemorillo/#cobertura-28056,8.915
+28156,Valdeavero,Madrid,madrid,1817,/electricista/madrid/valdeavero/,/electricista/madrid/meco/,Meco,/electricista/madrid/meco/#cobertura-28156,8.758
+28178,Villanueva de Perales,Madrid,madrid,1718,/electricista/madrid/villanueva-de-perales/,/electricista/madrid/sevilla-la-nueva/,Sevilla la Nueva,/electricista/madrid/sevilla-la-nueva/#cobertura-28178,6.295
+28120,Rascafría,Madrid,madrid,1712,/electricista/madrid/rascafria/,/electricista/madrid/miraflores-de-la-sierra/,Miraflores de la Sierra,/electricista/madrid/miraflores-de-la-sierra/#cobertura-28120,13.86
+28094,Navalafuente,Madrid,madrid,1703,/electricista/madrid/navalafuente/,/electricista/madrid/guadalix-de-la-sierra/,Guadalix de la Sierra,/electricista/madrid/guadalix-de-la-sierra/#cobertura-28094,4.501
+28175,Villamantilla,Madrid,madrid,1620,/electricista/madrid/villamantilla/,/electricista/madrid/sevilla-la-nueva/,Sevilla la Nueva,/electricista/madrid/sevilla-la-nueva/#cobertura-28175,8.834
+28135,Santa María de la Alameda,Madrid,madrid,1516,/electricista/madrid/santa-maria-de-la-alameda/,/electricista/madrid/san-lorenzo-de-el-escorial/,San Lorenzo de El Escorial,/electricista/madrid/san-lorenzo-de-el-escorial/#cobertura-28135,9.212
+28102,Orusco de Tajuña,Madrid,madrid,1504,/electricista/madrid/orusco-de-tajuna/,/electricista/madrid/nuevo-baztan/,Nuevo Baztán,/electricista/madrid/nuevo-baztan/#cobertura-28102,9.406
+28901,Lozoyuela-Navas-Sieteiglesias,Madrid,madrid,1479,/electricista/madrid/lozoyuela-navas-sieteiglesias/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28901,16.547
+28055,Estremera,Madrid,madrid,1451,/electricista/madrid/estremera/,/electricista/madrid/villarejo-de-salvanes/,Villarejo de Salvanés,/electricista/madrid/villarejo-de-salvanes/#cobertura-28055,14.51
+28012,Anchuelo,Madrid,madrid,1393,/electricista/madrid/anchuelo/,/electricista/madrid/villalbilla/,Villalbilla,/electricista/madrid/villalbilla/#cobertura-28012,4.464
+28147,Titulcia,Madrid,madrid,1393,/electricista/madrid/titulcia/,/electricista/madrid/ciempozuelos/,Ciempozuelos,/electricista/madrid/ciempozuelos/#cobertura-28147,4.707
+28116,Pozuelo del Rey,Madrid,madrid,1302,/electricista/madrid/pozuelo-del-rey/,/electricista/madrid/torres-de-la-alameda/,Torres de la Alameda,/electricista/madrid/torres-de-la-alameda/#cobertura-28116,5.61
+28153,Torremocha de Jarama,Madrid,madrid,1134,/electricista/madrid/torremocha-de-jarama/,/electricista/madrid/pedrezuela/,Pedrezuela,/electricista/madrid/pedrezuela/#cobertura-28153,13.467
+28157,Valdelaguna,Madrid,madrid,1079,/electricista/madrid/valdelaguna/,/electricista/madrid/chinchon/,Chinchón,/electricista/madrid/chinchon/#cobertura-28157,5.34
+28158,Valdemanco,Madrid,madrid,1065,/electricista/madrid/valdemanco/,/electricista/madrid/guadalix-de-la-sierra/,Guadalix de la Sierra,/electricista/madrid/guadalix-de-la-sierra/#cobertura-28158,10.067
+28136,Santorcaz,Madrid,madrid,998,/electricista/madrid/santorcaz/,/electricista/madrid/villalbilla/,Villalbilla,/electricista/madrid/villalbilla/#cobertura-28136,7.088
+28111,Pezuela de las Torres,Madrid,madrid,990,/electricista/madrid/pezuela-de-las-torres/,/electricista/madrid/nuevo-baztan/,Nuevo Baztán,/electricista/madrid/nuevo-baztan/#cobertura-28111,8.133
+28029,Cabanillas de la Sierra,Madrid,madrid,949,/electricista/madrid/cabanillas-de-la-sierra/,/electricista/madrid/guadalix-de-la-sierra/,Guadalix de la Sierra,/electricista/madrid/guadalix-de-la-sierra/#cobertura-28029,6.823
+28122,Ribatejada,Madrid,madrid,911,/electricista/madrid/ribatejada/,/electricista/madrid/valdetorres-de-jarama/,Valdetorres de Jarama,/electricista/madrid/valdetorres-de-jarama/#cobertura-28122,10.578
+28159,Valdemaqueda,Madrid,madrid,836,/electricista/madrid/valdemaqueda/,/electricista/madrid/san-lorenzo-de-el-escorial/,San Lorenzo de El Escorial,/electricista/madrid/san-lorenzo-de-el-escorial/#cobertura-28159,15.279
+28021,El Berrueco,Madrid,madrid,828,/electricista/madrid/el-berrueco/,/electricista/madrid/guadalix-de-la-sierra/,Guadalix de la Sierra,/electricista/madrid/guadalix-de-la-sierra/#cobertura-28021,15.894
+28173,Villamanrique de Tajo,Madrid,madrid,820,/electricista/madrid/villamanrique-de-tajo/,/electricista/madrid/villarejo-de-salvanes/,Villarejo de Salvanés,/electricista/madrid/villarejo-de-salvanes/#cobertura-28173,11.541
+28048,Corpa,Madrid,madrid,795,/electricista/madrid/corpa/,/electricista/madrid/villalbilla/,Villalbilla,/electricista/madrid/villalbilla/#cobertura-28048,3.139
+28902,Puentes Viejas,Madrid,madrid,774,/electricista/madrid/puentes-viejas/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28902,11.434
+28011,Ambite,Madrid,madrid,701,/electricista/madrid/ambite/,/electricista/madrid/nuevo-baztan/,Nuevo Baztán,/electricista/madrid/nuevo-baztan/#cobertura-28011,6.626
+28155,Valdaracete,Madrid,madrid,653,/electricista/madrid/valdaracete/,/electricista/madrid/villarejo-de-salvanes/,Villarejo de Salvanés,/electricista/madrid/villarejo-de-salvanes/#cobertura-28155,8.382
+28163,Valdepiélagos,Madrid,madrid,623,/electricista/madrid/valdepielagos/,/electricista/madrid/valdetorres-de-jarama/,Valdetorres de Jarama,/electricista/madrid/valdetorres-de-jarama/#cobertura-28163,8.263
+28076,Lozoya,Madrid,madrid,620,/electricista/madrid/lozoya/,/electricista/madrid/miraflores-de-la-sierra/,Miraflores de la Sierra,/electricista/madrid/miraflores-de-la-sierra/#cobertura-28076,15.439
+28107,Patones,Madrid,madrid,604,/electricista/madrid/patones/,/electricista/madrid/pedrezuela/,Pedrezuela,/electricista/madrid/pedrezuela/#cobertura-28107,15.789
+28128,Rozas de Puerto Real,Madrid,madrid,581,/electricista/madrid/rozas-de-puerto-real/,/electricista/madrid/san-martin-de-valdeiglesias/,San Martín de Valdeiglesias,/electricista/madrid/san-martin-de-valdeiglesias/#cobertura-28128,9.769
+28025,Brea de Tajo,Madrid,madrid,567,/electricista/madrid/brea-de-tajo/,/electricista/madrid/villarejo-de-salvanes/,Villarejo de Salvanés,/electricista/madrid/villarejo-de-salvanes/#cobertura-28025,15.69
+28166,Valverde de Alcalá,Madrid,madrid,555,/electricista/madrid/valverde-de-alcala/,/electricista/madrid/villalbilla/,Villalbilla,/electricista/madrid/villalbilla/#cobertura-28166,1.431
+28034,Canencia,Madrid,madrid,468,/electricista/madrid/canencia/,/electricista/madrid/miraflores-de-la-sierra/,Miraflores de la Sierra,/electricista/madrid/miraflores-de-la-sierra/#cobertura-28034,10.948
+28062,Garganta de los Montes,Madrid,madrid,415,/electricista/madrid/garganta-de-los-montes/,/electricista/madrid/miraflores-de-la-sierra/,Miraflores de la Sierra,/electricista/madrid/miraflores-de-la-sierra/#cobertura-28062,13.695
+28101,Olmeda de las Fuentes,Madrid,madrid,409,/electricista/madrid/olmeda-de-las-fuentes/,/electricista/madrid/nuevo-baztan/,Nuevo Baztán,/electricista/madrid/nuevo-baztan/#cobertura-28101,1.833
+28063,Gargantilla del Lozoya y Pinilla de Buitrago,Madrid,madrid,401,/electricista/madrid/gargantilla-del-lozoya-y-pinilla-de-buitrago/,/electricista/madrid/miraflores-de-la-sierra/,Miraflores de la Sierra,/electricista/madrid/miraflores-de-la-sierra/#cobertura-28063,17.275
+28088,Montejo de la Sierra,Madrid,madrid,374,/electricista/madrid/montejo-de-la-sierra/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/,0
+28182,Villavieja del Lozoya,Madrid,madrid,327,/electricista/madrid/villavieja-del-lozoya/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28182,13.266
+28121,Redueña,Madrid,madrid,292,/electricista/madrid/reduena/,/electricista/madrid/pedrezuela/,Pedrezuela,/electricista/madrid/pedrezuela/#cobertura-28121,7.907
+28003,Alameda del Valle,Madrid,madrid,256,/electricista/madrid/alameda-del-valle/,/electricista/madrid/miraflores-de-la-sierra/,Miraflores de la Sierra,/electricista/madrid/miraflores-de-la-sierra/#cobertura-28003,13.275
+28064,Gascones,Madrid,madrid,236,/electricista/madrid/gascones/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28064,10.459
+28020,Berzosa del Lozoya,Madrid,madrid,234,/electricista/madrid/berzosa-del-lozoya/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28020,9.376
+28070,Horcajo de la Sierra-Aoslos,Madrid,madrid,231,/electricista/madrid/horcajo-de-la-sierra-aoslos/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28070,4.741
+28024,Braojos,Madrid,madrid,219,/electricista/madrid/braojos/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28024,9.685
+28112,Pinilla del Valle,Madrid,madrid,199,/electricista/madrid/pinilla-del-valle/,/electricista/madrid/miraflores-de-la-sierra/,Miraflores de la Sierra,/electricista/madrid/miraflores-de-la-sierra/#cobertura-28112,13.256
+28114,Piñuécar-Gandullas,Madrid,madrid,185,/electricista/madrid/pinuecar-gandullas/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28114,6.527
+28039,Cervera de Buitrago,Madrid,madrid,161,/electricista/madrid/cervera-de-buitrago/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28039,15.243
+28097,Navarredonda y San Mamés,Madrid,madrid,154,/electricista/madrid/navarredonda-y-san-mames/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28097,18.106
+28117,Prádena del Rincón,Madrid,madrid,139,/electricista/madrid/pradena-del-rincon/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28117,1.977
+28124,Robledillo de la Jara,Madrid,madrid,132,/electricista/madrid/robledillo-de-la-jara/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28124,11.903
+28071,Horcajuelo de la Sierra,Madrid,madrid,111,/electricista/madrid/horcajuelo-de-la-sierra/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28071,1.289
+28016,El Atazar,Madrid,madrid,107,/electricista/madrid/el-atazar/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28016,14.805
+28138,La Serna del Monte,Madrid,madrid,105,/electricista/madrid/la-serna-del-monte/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28138,8.632
+28143,Somosierra,Madrid,madrid,98,/electricista/madrid/somosierra/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28143,9.259
+28118,Puebla de la Sierra,Madrid,madrid,93,/electricista/madrid/puebla-de-la-sierra/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28118,8.866
+28069,La Hiruela,Madrid,madrid,84,/electricista/madrid/la-hiruela/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28069,6.638
+28126,Robregordo,Madrid,madrid,73,/electricista/madrid/robregordo/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28126,7.415
+28078,Madarcos,Madrid,madrid,70,/electricista/madrid/madarcos/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28078,4.563
+28001,La Acebeda,Madrid,madrid,68,/electricista/madrid/la-acebeda/,/electricista/madrid/montejo-de-la-sierra/,Montejo de la Sierra,/electricista/madrid/montejo-de-la-sierra/#cobertura-28001,8.503
+39075,Santander,Cantabria,cantabria,173635,/electricista/cantabria/santander/,/electricista/cantabria/santander/,Santander,/electricista/cantabria/santander/,0
+39087,Torrelavega,Cantabria,cantabria,51466,/electricista/cantabria/torrelavega/,/electricista/cantabria/torrelavega/,Torrelavega,/electricista/cantabria/torrelavega/,0
+39020,Castro-Urdiales,Cantabria,cantabria,33365,/electricista/cantabria/castro-urdiales/,/electricista/cantabria/castro-urdiales/,Castro-Urdiales,/electricista/cantabria/castro-urdiales/,0
+39016,Camargo,Cantabria,cantabria,30425,/electricista/cantabria/camargo/,/electricista/cantabria/camargo/,Camargo,/electricista/cantabria/camargo/,0
+39052,Piélagos,Cantabria,cantabria,26724,/electricista/cantabria/pielagos/,/electricista/cantabria/pielagos/,Piélagos,/electricista/cantabria/pielagos/,0
+39008,El Astillero,Cantabria,cantabria,18453,/electricista/cantabria/el-astillero/,/electricista/cantabria/el-astillero/,El Astillero,/electricista/cantabria/el-astillero/,0
+39073,Santa Cruz de Bezana,Cantabria,cantabria,13824,/electricista/cantabria/santa-cruz-de-bezana/,/electricista/cantabria/santa-cruz-de-bezana/,Santa Cruz de Bezana,/electricista/cantabria/santa-cruz-de-bezana/,0
+39079,Santoña,Cantabria,cantabria,10944,/electricista/cantabria/santona/,/electricista/cantabria/santona/,Santoña,/electricista/cantabria/santona/,0
+39025,Los Corrales de Buelna,Cantabria,cantabria,10799,/electricista/cantabria/los-corrales-de-buelna/,/electricista/cantabria/los-corrales-de-buelna/,Los Corrales de Buelna,/electricista/cantabria/los-corrales-de-buelna/,0
+39035,Laredo,Cantabria,cantabria,10738,/electricista/cantabria/laredo/,/electricista/cantabria/laredo/,Laredo,/electricista/cantabria/laredo/,0
+39074,Santa María de Cayón,Cantabria,cantabria,9446,/electricista/cantabria/santa-maria-de-cayon/,/electricista/cantabria/santa-maria-de-cayon/,Santa María de Cayón,/electricista/cantabria/santa-maria-de-cayon/,0
+39085,Suances,Cantabria,cantabria,9101,/electricista/cantabria/suances/,/electricista/cantabria/suances/,Suances,/electricista/cantabria/suances/,0
+39023,Colindres,Cantabria,cantabria,8536,/electricista/cantabria/colindres/,/electricista/cantabria/colindres/,Colindres,/electricista/cantabria/colindres/,0
+39059,Reinosa,Cantabria,cantabria,8526,/electricista/cantabria/reinosa/,/electricista/cantabria/reinosa/,Reinosa,/electricista/cantabria/reinosa/,0
+39060,Reocín,Cantabria,cantabria,8414,/electricista/cantabria/reocin/,/electricista/cantabria/reocin/,Reocín,/electricista/cantabria/reocin/,0
+39012,Cabezón de la Sal,Cantabria,cantabria,8280,/electricista/cantabria/cabezon-de-la-sal/,/electricista/cantabria/cabezon-de-la-sal/,Cabezón de la Sal,/electricista/cantabria/cabezon-de-la-sal/,0
+39042,Medio Cudeyo,Cantabria,cantabria,7674,/electricista/cantabria/medio-cudeyo/,/electricista/cantabria/medio-cudeyo/,Medio Cudeyo,/electricista/cantabria/medio-cudeyo/,0
+39054,Polanco,Cantabria,cantabria,6231,/electricista/cantabria/polanco/,/electricista/cantabria/polanco/,Polanco,/electricista/cantabria/polanco/,0
+39018,Cartes,Cantabria,cantabria,5863,/electricista/cantabria/cartes/,/electricista/cantabria/cartes/,Cartes,/electricista/cantabria/cartes/,0
+39028,Entrambasaguas,Cantabria,cantabria,5628,/electricista/cantabria/entrambasaguas/,/electricista/cantabria/entrambasaguas/,Entrambasaguas,/electricista/cantabria/entrambasaguas/,0
+39044,Miengo,Cantabria,cantabria,5234,/electricista/cantabria/miengo/,/electricista/cantabria/miengo/,Miengo,/electricista/cantabria/miengo/,0
+39040,Marina de Cudeyo,Cantabria,cantabria,5194,/electricista/cantabria/marina-de-cudeyo/,/electricista/cantabria/marina-de-cudeyo/,Marina de Cudeyo,/electricista/cantabria/marina-de-cudeyo/,0
+39009,Bárcena de Cicero,Cantabria,cantabria,4735,/electricista/cantabria/barcena-de-cicero/,/electricista/cantabria/santona/,Santoña,/electricista/cantabria/santona/#cobertura-39009,5.841
+39061,Ribamontán al Mar,Cantabria,cantabria,4624,/electricista/cantabria/ribamontan-al-mar/,/electricista/cantabria/marina-de-cudeyo/,Marina de Cudeyo,/electricista/cantabria/marina-de-cudeyo/#cobertura-39061,7.132
+39002,Ampuero,Cantabria,cantabria,4471,/electricista/cantabria/ampuero/,/electricista/cantabria/colindres/,Colindres,/electricista/cantabria/colindres/#cobertura-39002,6.322
+39076,Santillana del Mar,Cantabria,cantabria,4208,/electricista/cantabria/santillana-del-mar/,/electricista/cantabria/reocin/,Reocín,/electricista/cantabria/reocin/#cobertura-39076,3.835
+39080,San Vicente de la Barquera,Cantabria,cantabria,3985,/electricista/cantabria/san-vicente-de-la-barquera/,/electricista/cantabria/cabezon-de-la-sal/,Cabezón de la Sal,/electricista/cantabria/cabezon-de-la-sal/#cobertura-39080,15.76
+39099,Villaescusa,Cantabria,cantabria,3953,/electricista/cantabria/villaescusa/,/electricista/cantabria/el-astillero/,El Astillero,/electricista/cantabria/el-astillero/#cobertura-39099,4.502
+39027,Campoo de Enmedio,Cantabria,cantabria,3732,/electricista/cantabria/campoo-de-enmedio/,/electricista/cantabria/reinosa/,Reinosa,/electricista/cantabria/reinosa/#cobertura-39027,1.805
+39019,Castañeda,Cantabria,cantabria,3247,/electricista/cantabria/castaneda/,/electricista/cantabria/pielagos/,Piélagos,/electricista/cantabria/pielagos/#cobertura-39019,5.534
+39057,Ramales de la Victoria,Cantabria,cantabria,3055,/electricista/cantabria/ramales-de-la-victoria/,/electricista/cantabria/colindres/,Colindres,/electricista/cantabria/colindres/#cobertura-39057,15.469
+39102,Voto,Cantabria,cantabria,2947,/electricista/cantabria/voto/,/electricista/cantabria/colindres/,Colindres,/electricista/cantabria/colindres/#cobertura-39102,6.013
+39056,Puente Viesgo,Cantabria,cantabria,2877,/electricista/cantabria/puente-viesgo/,/electricista/cantabria/pielagos/,Piélagos,/electricista/cantabria/pielagos/#cobertura-39056,6.381
+39095,Val de San Vicente,Cantabria,cantabria,2808,/electricista/cantabria/val-de-san-vicente/,/electricista/cantabria/cabezon-de-la-sal/,Cabezón de la Sal,/electricista/cantabria/cabezon-de-la-sal/#cobertura-39095,21.564
+39047,Noja,Cantabria,cantabria,2686,/electricista/cantabria/noja/,/electricista/cantabria/santona/,Santoña,/electricista/cantabria/santona/#cobertura-39047,6.455
+39062,Ribamontán al Monte,Cantabria,cantabria,2547,/electricista/cantabria/ribamontan-al-monte/,/electricista/cantabria/entrambasaguas/,Entrambasaguas,/electricista/cantabria/entrambasaguas/#cobertura-39062,3.482
+39001,Alfoz de Lloredo,Cantabria,cantabria,2502,/electricista/cantabria/alfoz-de-lloredo/,/electricista/cantabria/reocin/,Reocín,/electricista/cantabria/reocin/#cobertura-39001,7.921
+39030,Guriezo,Cantabria,cantabria,2458,/electricista/cantabria/guriezo/,/electricista/cantabria/castro-urdiales/,Castro-Urdiales,/electricista/cantabria/castro-urdiales/#cobertura-39030,9.583
+39037,Liérganes,Cantabria,cantabria,2394,/electricista/cantabria/lierganes/,/electricista/cantabria/medio-cudeyo/,Medio Cudeyo,/electricista/cantabria/medio-cudeyo/#cobertura-39037,3.86
+39069,San Felices de Buelna,Cantabria,cantabria,2371,/electricista/cantabria/san-felices-de-buelna/,/electricista/cantabria/los-corrales-de-buelna/,Los Corrales de Buelna,/electricista/cantabria/los-corrales-de-buelna/#cobertura-39069,2.579
+39043,Meruelo,Cantabria,cantabria,2301,/electricista/cantabria/meruelo/,/electricista/cantabria/santona/,Santoña,/electricista/cantabria/santona/#cobertura-39043,9.657
+39006,Arnuero,Cantabria,cantabria,2272,/electricista/cantabria/arnuero/,/electricista/cantabria/santona/,Santoña,/electricista/cantabria/santona/#cobertura-39006,8.973
+39048,Penagos,Cantabria,cantabria,2257,/electricista/cantabria/penagos/,/electricista/cantabria/santa-maria-de-cayon/,Santa María de Cayón,/electricista/cantabria/santa-maria-de-cayon/#cobertura-39048,4.372
+39091,Valdáliga,Cantabria,cantabria,2153,/electricista/cantabria/valdaliga/,/electricista/cantabria/cabezon-de-la-sal/,Cabezón de la Sal,/electricista/cantabria/cabezon-de-la-sal/#cobertura-39091,9.444
+39024,Comillas,Cantabria,cantabria,2141,/electricista/cantabria/comillas/,/electricista/cantabria/cabezon-de-la-sal/,Cabezón de la Sal,/electricista/cantabria/cabezon-de-la-sal/#cobertura-39024,9.572
+39026,Corvera de Toranzo,Cantabria,cantabria,2140,/electricista/cantabria/corvera-de-toranzo/,/electricista/cantabria/los-corrales-de-buelna/,Los Corrales de Buelna,/electricista/cantabria/los-corrales-de-buelna/#cobertura-39026,11.496
+39011,Bareyo,Cantabria,cantabria,2133,/electricista/cantabria/bareyo/,/electricista/cantabria/entrambasaguas/,Entrambasaguas,/electricista/cantabria/entrambasaguas/#cobertura-39011,12.517
+39041,Mazcuerras,Cantabria,cantabria,2089,/electricista/cantabria/mazcuerras/,/electricista/cantabria/cabezon-de-la-sal/,Cabezón de la Sal,/electricista/cantabria/cabezon-de-la-sal/#cobertura-39041,2.514
+39038,Limpias,Cantabria,cantabria,2004,/electricista/cantabria/limpias/,/electricista/cantabria/colindres/,Colindres,/electricista/cantabria/colindres/#cobertura-39038,4.088
+39005,Argoños,Cantabria,cantabria,1873,/electricista/cantabria/argonos/,/electricista/cantabria/santona/,Santoña,/electricista/cantabria/santona/#cobertura-39005,3.278
+39031,Hazas de Cesto,Cantabria,cantabria,1865,/electricista/cantabria/hazas-de-cesto/,/electricista/cantabria/entrambasaguas/,Entrambasaguas,/electricista/cantabria/entrambasaguas/#cobertura-39031,9.223
+39082,Selaya,Cantabria,cantabria,1849,/electricista/cantabria/selaya/,/electricista/cantabria/santa-maria-de-cayon/,Santa María de Cayón,/electricista/cantabria/santa-maria-de-cayon/#cobertura-39082,10.985
+39004,Arenas de Iguña,Cantabria,cantabria,1756,/electricista/cantabria/arenas-de-iguna/,/electricista/cantabria/los-corrales-de-buelna/,Los Corrales de Buelna,/electricista/cantabria/los-corrales-de-buelna/#cobertura-39004,7.945
+39078,Santiurde de Toranzo,Cantabria,cantabria,1738,/electricista/cantabria/santiurde-de-toranzo/,/electricista/cantabria/los-corrales-de-buelna/,Los Corrales de Buelna,/electricista/cantabria/los-corrales-de-buelna/#cobertura-39078,10.434
+39098,Villacarriedo,Cantabria,cantabria,1680,/electricista/cantabria/villacarriedo/,/electricista/cantabria/santa-maria-de-cayon/,Santa María de Cayón,/electricista/cantabria/santa-maria-de-cayon/#cobertura-39098,9.646
+39064,Riotuerto,Cantabria,cantabria,1670,/electricista/cantabria/riotuerto/,/electricista/cantabria/entrambasaguas/,Entrambasaguas,/electricista/cantabria/entrambasaguas/#cobertura-39064,3.834
+39032,Hermandad de Campoo de Suso,Cantabria,cantabria,1616,/electricista/cantabria/hermandad-de-campoo-de-suso/,/electricista/cantabria/reinosa/,Reinosa,/electricista/cantabria/reinosa/#cobertura-39032,7.514
+39046,Molledo,Cantabria,cantabria,1486,/electricista/cantabria/molledo/,/electricista/cantabria/los-corrales-de-buelna/,Los Corrales de Buelna,/electricista/cantabria/los-corrales-de-buelna/#cobertura-39046,11.991
+39022,Cillorigo de Liébana,Cantabria,cantabria,1361,/electricista/cantabria/cillorigo-de-liebana/,/electricista/cantabria/cillorigo-de-liebana/,Cillorigo de Liébana,/electricista/cantabria/cillorigo-de-liebana/,0
+39055,Potes,Cantabria,cantabria,1345,/electricista/cantabria/potes/,/electricista/cantabria/cillorigo-de-liebana/,Cillorigo de Liébana,/electricista/cantabria/cillorigo-de-liebana/#cobertura-39055,2.996
+39036,Liendo,Cantabria,cantabria,1228,/electricista/cantabria/liendo/,/electricista/cantabria/laredo/,Laredo,/electricista/cantabria/laredo/#cobertura-39036,3.359
+39084,Solórzano,Cantabria,cantabria,1110,/electricista/cantabria/solorzano/,/electricista/cantabria/entrambasaguas/,Entrambasaguas,/electricista/cantabria/entrambasaguas/#cobertura-39084,7.732
+39083,Soba,Cantabria,cantabria,1075,/electricista/cantabria/soba/,/electricista/cantabria/colindres/,Colindres,/electricista/cantabria/colindres/#cobertura-39083,24.04
+39066,Ruente,Cantabria,cantabria,1072,/electricista/cantabria/ruente/,/electricista/cantabria/cabezon-de-la-sal/,Cabezón de la Sal,/electricista/cantabria/cabezon-de-la-sal/#cobertura-39066,6.068
+39100,Villafufre,Cantabria,cantabria,1019,/electricista/cantabria/villafufre/,/electricista/cantabria/santa-maria-de-cayon/,Santa María de Cayón,/electricista/cantabria/santa-maria-de-cayon/#cobertura-39100,5.944
+39063,Rionansa,Cantabria,cantabria,1002,/electricista/cantabria/rionansa/,/electricista/cantabria/cabezon-de-la-sal/,Cabezón de la Sal,/electricista/cantabria/cabezon-de-la-sal/#cobertura-39063,14.926
+39014,Cabuérniga,Cantabria,cantabria,1001,/electricista/cantabria/cabuerniga/,/electricista/cantabria/cabezon-de-la-sal/,Cabezón de la Sal,/electricista/cantabria/cabezon-de-la-sal/#cobertura-39014,10.547
+39015,Camaleño,Cantabria,cantabria,972,/electricista/cantabria/camaleno/,/electricista/cantabria/cillorigo-de-liebana/,Cillorigo de Liébana,/electricista/cantabria/cillorigo-de-liebana/#cobertura-39015,8.257
+39058,Rasines,Cantabria,cantabria,971,/electricista/cantabria/rasines/,/electricista/cantabria/colindres/,Colindres,/electricista/cantabria/colindres/#cobertura-39058,10.163
+39090,Udías,Cantabria,cantabria,946,/electricista/cantabria/udias/,/electricista/cantabria/cabezon-de-la-sal/,Cabezón de la Sal,/electricista/cantabria/cabezon-de-la-sal/#cobertura-39090,3.209
+39094,Valderredible,Cantabria,cantabria,938,/electricista/cantabria/valderredible/,/electricista/cantabria/valderredible/,Valderredible,/electricista/cantabria/valderredible/,0
+39092,Valdeolea,Cantabria,cantabria,884,/electricista/cantabria/valdeolea/,/electricista/cantabria/reinosa/,Reinosa,/electricista/cantabria/reinosa/#cobertura-39092,14.173
+39067,Ruesga,Cantabria,cantabria,830,/electricista/cantabria/ruesga/,/electricista/cantabria/entrambasaguas/,Entrambasaguas,/electricista/cantabria/entrambasaguas/#cobertura-39067,14.528
+39097,Vega de Pas,Cantabria,cantabria,768,/electricista/cantabria/vega-de-pas/,/electricista/cantabria/santa-maria-de-cayon/,Santa María de Cayón,/electricista/cantabria/santa-maria-de-cayon/#cobertura-39097,17.74
+39068,Ruiloba,Cantabria,cantabria,764,/electricista/cantabria/ruiloba/,/electricista/cantabria/cabezon-de-la-sal/,Cabezón de la Sal,/electricista/cantabria/cabezon-de-la-sal/#cobertura-39068,8.1
+39029,Escalante,Cantabria,cantabria,736,/electricista/cantabria/escalante/,/electricista/cantabria/santona/,Santoña,/electricista/cantabria/santona/#cobertura-39029,4.749
+39096,Vega de Liébana,Cantabria,cantabria,690,/electricista/cantabria/vega-de-liebana/,/electricista/cantabria/cillorigo-de-liebana/,Cillorigo de Liébana,/electricista/cantabria/cillorigo-de-liebana/#cobertura-39096,9.446
+39010,Bárcena de Pie de Concha,Cantabria,cantabria,674,/electricista/cantabria/barcena-de-pie-de-concha/,/electricista/cantabria/los-corrales-de-buelna/,Los Corrales de Buelna,/electricista/cantabria/los-corrales-de-buelna/#cobertura-39010,14.491
+39017,Campoo de Yuso,Cantabria,cantabria,674,/electricista/cantabria/campoo-de-yuso/,/electricista/cantabria/reinosa/,Reinosa,/electricista/cantabria/reinosa/#cobertura-39017,11.143
+39039,Luena,Cantabria,cantabria,607,/electricista/cantabria/luena/,/electricista/cantabria/los-corrales-de-buelna/,Los Corrales de Buelna,/electricista/cantabria/los-corrales-de-buelna/#cobertura-39039,21.516
+39033,Herrerías,Cantabria,cantabria,581,/electricista/cantabria/herrerias/,/electricista/cantabria/cillorigo-de-liebana/,Cillorigo de Liébana,/electricista/cantabria/cillorigo-de-liebana/#cobertura-39033,17.838
+39021,Cieza,Cantabria,cantabria,544,/electricista/cantabria/cieza/,/electricista/cantabria/los-corrales-de-buelna/,Los Corrales de Buelna,/electricista/cantabria/los-corrales-de-buelna/#cobertura-39021,4.479
+39013,Cabezón de Liébana,Cantabria,cantabria,540,/electricista/cantabria/cabezon-de-liebana/,/electricista/cantabria/cillorigo-de-liebana/,Cillorigo de Liébana,/electricista/cantabria/cillorigo-de-liebana/#cobertura-39013,5.27
+39081,Saro,Cantabria,cantabria,508,/electricista/cantabria/saro/,/electricista/cantabria/santa-maria-de-cayon/,Santa María de Cayón,/electricista/cantabria/santa-maria-de-cayon/#cobertura-39081,6.482
+39007,Arredondo,Cantabria,cantabria,477,/electricista/cantabria/arredondo/,/electricista/cantabria/entrambasaguas/,Entrambasaguas,/electricista/cantabria/entrambasaguas/#cobertura-39007,13.362
+39071,San Pedro del Romeral,Cantabria,cantabria,433,/electricista/cantabria/san-pedro-del-romeral/,/electricista/cantabria/santa-maria-de-cayon/,Santa María de Cayón,/electricista/cantabria/santa-maria-de-cayon/#cobertura-39071,21.75
+39045,Miera,Cantabria,cantabria,400,/electricista/cantabria/miera/,/electricista/cantabria/medio-cudeyo/,Medio Cudeyo,/electricista/cantabria/medio-cudeyo/#cobertura-39045,11.605
+39086,Los Tojos,Cantabria,cantabria,374,/electricista/cantabria/los-tojos/,/electricista/cantabria/cabezon-de-la-sal/,Cabezón de la Sal,/electricista/cantabria/cabezon-de-la-sal/#cobertura-39086,16.081
+39072,San Roque de Riomiera,Cantabria,cantabria,340,/electricista/cantabria/san-roque-de-riomiera/,/electricista/cantabria/santa-maria-de-cayon/,Santa María de Cayón,/electricista/cantabria/santa-maria-de-cayon/#cobertura-39072,14.768
+39049,Peñarrubia,Cantabria,cantabria,331,/electricista/cantabria/penarrubia/,/electricista/cantabria/cillorigo-de-liebana/,Cillorigo de Liébana,/electricista/cantabria/cillorigo-de-liebana/#cobertura-39049,8.474
+39093,Valdeprado del Río,Cantabria,cantabria,320,/electricista/cantabria/valdeprado-del-rio/,/electricista/cantabria/reinosa/,Reinosa,/electricista/cantabria/reinosa/#cobertura-39093,11.312
+39003,Anievas,Cantabria,cantabria,276,/electricista/cantabria/anievas/,/electricista/cantabria/los-corrales-de-buelna/,Los Corrales de Buelna,/electricista/cantabria/los-corrales-de-buelna/#cobertura-39003,7.693
+39050,Pesaguero,Cantabria,cantabria,275,/electricista/cantabria/pesaguero/,/electricista/cantabria/cillorigo-de-liebana/,Cillorigo de Liébana,/electricista/cantabria/cillorigo-de-liebana/#cobertura-39050,12.121
+39065,Las Rozas de Valdearroyo,Cantabria,cantabria,261,/electricista/cantabria/las-rozas-de-valdearroyo/,/electricista/cantabria/reinosa/,Reinosa,/electricista/cantabria/reinosa/#cobertura-39065,9.367
+39077,Santiurde de Reinosa,Cantabria,cantabria,254,/electricista/cantabria/santiurde-de-reinosa/,/electricista/cantabria/reinosa/,Reinosa,/electricista/cantabria/reinosa/#cobertura-39077,7.778
+39101,Valle de Villaverde,Cantabria,cantabria,251,/electricista/cantabria/valle-de-villaverde/,/electricista/cantabria/castro-urdiales/,Castro-Urdiales,/electricista/cantabria/castro-urdiales/#cobertura-39101,15.864
+39034,Lamasón,Cantabria,cantabria,248,/electricista/cantabria/lamason/,/electricista/cantabria/cillorigo-de-liebana/,Cillorigo de Liébana,/electricista/cantabria/cillorigo-de-liebana/#cobertura-39034,12.601
+39053,Polaciones,Cantabria,cantabria,202,/electricista/cantabria/polaciones/,/electricista/cantabria/cillorigo-de-liebana/,Cillorigo de Liébana,/electricista/cantabria/cillorigo-de-liebana/#cobertura-39053,17.354
+39070,San Miguel de Aguayo,Cantabria,cantabria,167,/electricista/cantabria/san-miguel-de-aguayo/,/electricista/cantabria/reinosa/,Reinosa,/electricista/cantabria/reinosa/#cobertura-39070,11.068
+39089,Tudanca,Cantabria,cantabria,156,/electricista/cantabria/tudanca/,/electricista/cantabria/cillorigo-de-liebana/,Cillorigo de Liébana,/electricista/cantabria/cillorigo-de-liebana/#cobertura-39089,18.639
+39051,Pesquera,Cantabria,cantabria,70,/electricista/cantabria/pesquera/,/electricista/cantabria/reinosa/,Reinosa,/electricista/cantabria/reinosa/#cobertura-39051,10.153
+39088,Tresviso,Cantabria,cantabria,53,/electricista/cantabria/tresviso/,/electricista/cantabria/cillorigo-de-liebana/,Cillorigo de Liébana,/electricista/cantabria/cillorigo-de-liebana/#cobertura-39088,10.495
+48020,Bilbao,Vizcaya,vizcaya,347342,/electricista/vizcaya/bilbao/,/electricista/vizcaya/bilbao/,Bilbao,/electricista/vizcaya/bilbao/,0
+48013,Barakaldo,Vizcaya,vizcaya,101869,/electricista/vizcaya/barakaldo/,/electricista/vizcaya/barakaldo/,Barakaldo,/electricista/vizcaya/barakaldo/,0
+48044,Getxo,Vizcaya,vizcaya,76155,/electricista/vizcaya/getxo/,/electricista/vizcaya/getxo/,Getxo,/electricista/vizcaya/getxo/,0
+48082,Santurtzi,Vizcaya,vizcaya,46244,/electricista/vizcaya/santurtzi/,/electricista/vizcaya/santurtzi/,Santurtzi,/electricista/vizcaya/santurtzi/,0
+48078,Portugalete,Vizcaya,vizcaya,44800,/electricista/vizcaya/portugalete/,/electricista/vizcaya/portugalete/,Portugalete,/electricista/vizcaya/portugalete/,0
+48015,Basauri,Vizcaya,vizcaya,40407,/electricista/vizcaya/basauri/,/electricista/vizcaya/basauri/,Basauri,/electricista/vizcaya/basauri/,0
+48054,Leioa,Vizcaya,vizcaya,32665,/electricista/vizcaya/leioa/,/electricista/vizcaya/leioa/,Leioa,/electricista/vizcaya/leioa/,0
+48027,Durango,Vizcaya,vizcaya,29857,/electricista/vizcaya/durango/,/electricista/vizcaya/durango/,Durango,/electricista/vizcaya/durango/,0
+48084,Sestao,Vizcaya,vizcaya,28201,/electricista/vizcaya/sestao/,/electricista/vizcaya/sestao/,Sestao,/electricista/vizcaya/sestao/,0
+48036,Galdakao,Vizcaya,vizcaya,24768,/electricista/vizcaya/galdakao/,/electricista/vizcaya/galdakao/,Galdakao,/electricista/vizcaya/galdakao/,0
+48902,Erandio,Vizcaya,vizcaya,24675,/electricista/vizcaya/erandio/,/electricista/vizcaya/erandio/,Erandio,/electricista/vizcaya/erandio/,0
+48003,Amorebieta-Etxano,Vizcaya,vizcaya,19663,/electricista/vizcaya/amorebieta-etxano/,/electricista/vizcaya/amorebieta-etxano/,Amorebieta-Etxano,/electricista/vizcaya/amorebieta-etxano/,0
+48069,Mungia,Vizcaya,vizcaya,17990,/electricista/vizcaya/mungia/,/electricista/vizcaya/mungia/,Mungia,/electricista/vizcaya/mungia/,0
+48017,Bermeo,Vizcaya,vizcaya,17092,/electricista/vizcaya/bermeo/,/electricista/vizcaya/bermeo/,Bermeo,/electricista/vizcaya/bermeo/,0
+48046,Gernika-Lumo,Vizcaya,vizcaya,17009,/electricista/vizcaya/gernika-lumo/,/electricista/vizcaya/gernika-lumo/,Gernika-Lumo,/electricista/vizcaya/gernika-lumo/,0
+48034,Ermua,Vizcaya,vizcaya,15616,/electricista/vizcaya/ermua/,/electricista/vizcaya/ermua/,Ermua,/electricista/vizcaya/ermua/,0
+48085,Sopela,Vizcaya,vizcaya,14923,/electricista/vizcaya/sopela/,/electricista/vizcaya/sopela/,Sopela,/electricista/vizcaya/sopela/,0
+48011,Arrigorriaga,Vizcaya,vizcaya,11968,/electricista/vizcaya/arrigorriaga/,/electricista/vizcaya/arrigorriaga/,Arrigorriaga,/electricista/vizcaya/arrigorriaga/,0
+48029,Etxebarri,Vizcaya,vizcaya,11950,/electricista/vizcaya/etxebarri/,/electricista/vizcaya/etxebarri/,Etxebarri,/electricista/vizcaya/etxebarri/,0
+48080,Valle de Trápaga-Trapagaran,Vizcaya,vizcaya,11884,/electricista/vizcaya/valle-de-trapaga-trapagaran/,/electricista/vizcaya/valle-de-trapaga-trapagaran/,Valle de Trápaga-Trapagaran,/electricista/vizcaya/valle-de-trapaga-trapagaran/,0
+48002,Abanto y Ciérvana-Abanto Zierbena,Vizcaya,vizcaya,9408,/electricista/vizcaya/abanto-y-ciervana-abanto-zierbena/,/electricista/vizcaya/abanto-y-ciervana-abanto-zierbena/,Abanto y Ciérvana-Abanto Zierbena,/electricista/vizcaya/abanto-y-ciervana-abanto-zierbena/,0
+48083,Ortuella,Vizcaya,vizcaya,8616,/electricista/vizcaya/ortuella/,/electricista/vizcaya/ortuella/,Ortuella,/electricista/vizcaya/ortuella/,0
+48096,Zalla,Vizcaya,vizcaya,8311,/electricista/vizcaya/zalla/,/electricista/vizcaya/zalla/,Zalla,/electricista/vizcaya/zalla/,0
+48073,Ondarroa,Vizcaya,vizcaya,8129,/electricista/vizcaya/ondarroa/,/electricista/vizcaya/ondarroa/,Ondarroa,/electricista/vizcaya/ondarroa/,0
+48001,Abadiño,Vizcaya,vizcaya,7742,/electricista/vizcaya/abadino/,/electricista/vizcaya/abadino/,Abadiño,/electricista/vizcaya/abadino/,0
+48090,Balmaseda,Vizcaya,vizcaya,7671,/electricista/vizcaya/balmaseda/,/electricista/vizcaya/balmaseda/,Balmaseda,/electricista/vizcaya/balmaseda/,0
+48016,Berango,Vizcaya,vizcaya,7665,/electricista/vizcaya/berango/,/electricista/vizcaya/berango/,Berango,/electricista/vizcaya/berango/,0
+48071,Muskiz,Vizcaya,vizcaya,7357,/electricista/vizcaya/muskiz/,/electricista/vizcaya/muskiz/,Muskiz,/electricista/vizcaya/muskiz/,0
+48032,Elorrio,Vizcaya,vizcaya,7293,/electricista/vizcaya/elorrio/,/electricista/vizcaya/elorrio/,Elorrio,/electricista/vizcaya/elorrio/,0
+48901,Derio,Vizcaya,vizcaya,7162,/electricista/vizcaya/derio/,/electricista/vizcaya/derio/,Derio,/electricista/vizcaya/derio/,0
+48057,Lekeitio,Vizcaya,vizcaya,7154,/electricista/vizcaya/lekeitio/,/electricista/vizcaya/lekeitio/,Lekeitio,/electricista/vizcaya/lekeitio/,0
+48045,Güeñes,Vizcaya,vizcaya,6753,/electricista/vizcaya/guenes/,/electricista/vizcaya/guenes/,Güeñes,/electricista/vizcaya/guenes/,0
+48043,Gorliz,Vizcaya,vizcaya,6014,/electricista/vizcaya/gorliz/,/electricista/vizcaya/gorliz/,Gorliz,/electricista/vizcaya/gorliz/,0
+48089,Urduliz,Vizcaya,vizcaya,5709,/electricista/vizcaya/urduliz/,/electricista/vizcaya/urduliz/,Urduliz,/electricista/vizcaya/urduliz/,0
+48060,Markina-Xemein,Vizcaya,vizcaya,5079,/electricista/vizcaya/markina-xemein/,/electricista/vizcaya/markina-xemein/,Markina-Xemein,/electricista/vizcaya/markina-xemein/,0
+48019,Berriz,Vizcaya,vizcaya,4587,/electricista/vizcaya/berriz/,/electricista/vizcaya/abadino/,Abadiño,/electricista/vizcaya/abadino/#cobertura-48019,3.505
+48904,Sondika,Vizcaya,vizcaya,4584,/electricista/vizcaya/sondika/,/electricista/vizcaya/bilbao/,Bilbao,/electricista/vizcaya/bilbao/#cobertura-48904,3.495
+48916,Usansolo,Vizcaya,vizcaya,4568,/electricista/vizcaya/usansolo/,/electricista/vizcaya/galdakao/,Galdakao,/electricista/vizcaya/galdakao/#cobertura-48916,2.087
+48077,Plentzia,Vizcaya,vizcaya,4392,/electricista/vizcaya/plentzia/,/electricista/vizcaya/gorliz/,Gorliz,/electricista/vizcaya/gorliz/#cobertura-48077,1.874
+48094,Igorre,Vizcaya,vizcaya,4329,/electricista/vizcaya/igorre/,/electricista/vizcaya/amorebieta-etxano/,Amorebieta-Etxano,/electricista/vizcaya/amorebieta-etxano/#cobertura-48094,7.265
+48074,Urduña/Orduña,Vizcaya,vizcaya,4202,/electricista/vizcaya/urduna-orduna/,/electricista/vizcaya/guenes/,Güeñes,/electricista/vizcaya/guenes/#cobertura-48074,24.955
+48065,Ugao-Miraballes,Vizcaya,vizcaya,4176,/electricista/vizcaya/ugao-miraballes/,/electricista/vizcaya/arrigorriaga/,Arrigorriaga,/electricista/vizcaya/arrigorriaga/#cobertura-48065,3.065
+48910,Iurreta,Vizcaya,vizcaya,3868,/electricista/vizcaya/iurreta/,/electricista/vizcaya/durango/,Durango,/electricista/vizcaya/durango/#cobertura-48910,1.06
+48055,Lemoa,Vizcaya,vizcaya,3579,/electricista/vizcaya/lemoa/,/electricista/vizcaya/amorebieta-etxano/,Amorebieta-Etxano,/electricista/vizcaya/amorebieta-etxano/#cobertura-48055,3.734
+48905,Zamudio,Vizcaya,vizcaya,3312,/electricista/vizcaya/zamudio/,/electricista/vizcaya/derio/,Derio,/electricista/vizcaya/derio/#cobertura-48905,1.892
+48912,Alonsotegi,Vizcaya,vizcaya,3027,/electricista/vizcaya/alonsotegi/,/electricista/vizcaya/bilbao/,Bilbao,/electricista/vizcaya/bilbao/#cobertura-48912,5.622
+48095,Zaldibar,Vizcaya,vizcaya,3018,/electricista/vizcaya/zaldibar/,/electricista/vizcaya/ermua/,Ermua,/electricista/vizcaya/ermua/#cobertura-48095,3.888
+48012,Bakio,Vizcaya,vizcaya,2819,/electricista/vizcaya/bakio/,/electricista/vizcaya/bermeo/,Bermeo,/electricista/vizcaya/bermeo/#cobertura-48012,7.362
+48086,Sopuerta,Vizcaya,vizcaya,2759,/electricista/vizcaya/sopuerta/,/electricista/vizcaya/zalla/,Zalla,/electricista/vizcaya/zalla/#cobertura-48086,5.581
+48022,Karrantza Harana/Valle de Carranza,Vizcaya,vizcaya,2706,/electricista/vizcaya/karrantza-harana-valle-de-carranza/,/electricista/vizcaya/balmaseda/,Balmaseda,/electricista/vizcaya/balmaseda/#cobertura-48022,13.961
+48075,Orozko,Vizcaya,vizcaya,2659,/electricista/vizcaya/orozko/,/electricista/vizcaya/arrigorriaga/,Arrigorriaga,/electricista/vizcaya/arrigorriaga/#cobertura-48075,11.152
+48081,Lezama,Vizcaya,vizcaya,2460,/electricista/vizcaya/lezama/,/electricista/vizcaya/derio/,Derio,/electricista/vizcaya/derio/#cobertura-48081,4.762
+48903,Loiu,Vizcaya,vizcaya,2354,/electricista/vizcaya/loiu/,/electricista/vizcaya/erandio/,Erandio,/electricista/vizcaya/erandio/#cobertura-48903,3.211
+48052,Larrabetzu,Vizcaya,vizcaya,2040,/electricista/vizcaya/larrabetzu/,/electricista/vizcaya/galdakao/,Galdakao,/electricista/vizcaya/galdakao/#cobertura-48052,4.856
+48068,Mundaka,Vizcaya,vizcaya,1830,/electricista/vizcaya/mundaka/,/electricista/vizcaya/bermeo/,Bermeo,/electricista/vizcaya/bermeo/#cobertura-48068,2.461
+48042,Gordexola,Vizcaya,vizcaya,1708,/electricista/vizcaya/gordexola/,/electricista/vizcaya/guenes/,Güeñes,/electricista/vizcaya/guenes/#cobertura-48042,3.819
+48021,Busturia,Vizcaya,vizcaya,1653,/electricista/vizcaya/busturia/,/electricista/vizcaya/bermeo/,Bermeo,/electricista/vizcaya/bermeo/#cobertura-48021,4.592
+48040,Gatika,Vizcaya,vizcaya,1632,/electricista/vizcaya/gatika/,/electricista/vizcaya/mungia/,Mungia,/electricista/vizcaya/mungia/#cobertura-48040,2.399
+48097,Zaratamo,Vizcaya,vizcaya,1608,/electricista/vizcaya/zaratamo/,/electricista/vizcaya/arrigorriaga/,Arrigorriaga,/electricista/vizcaya/arrigorriaga/#cobertura-48097,1.271
+48014,Barrika,Vizcaya,vizcaya,1549,/electricista/vizcaya/barrika/,/electricista/vizcaya/gorliz/,Gorliz,/electricista/vizcaya/gorliz/#cobertura-48014,2.781
+48067,Muxika,Vizcaya,vizcaya,1546,/electricista/vizcaya/muxika/,/electricista/vizcaya/gernika-lumo/,Gernika-Lumo,/electricista/vizcaya/gernika-lumo/#cobertura-48067,3.522
+48026,Dima,Vizcaya,vizcaya,1505,/electricista/vizcaya/dima/,/electricista/vizcaya/amorebieta-etxano/,Amorebieta-Etxano,/electricista/vizcaya/amorebieta-etxano/#cobertura-48026,8.708
+48913,Zierbena,Vizcaya,vizcaya,1492,/electricista/vizcaya/zierbena/,/electricista/vizcaya/abanto-y-ciervana-abanto-zierbena/,Abanto y Ciérvana-Abanto Zierbena,/electricista/vizcaya/abanto-y-ciervana-abanto-zierbena/#cobertura-48913,3.051
+48038,Gamiz-Fika,Vizcaya,vizcaya,1384,/electricista/vizcaya/gamiz-fika/,/electricista/vizcaya/mungia/,Mungia,/electricista/vizcaya/mungia/#cobertura-48038,3.79
+48072,Otxandio,Vizcaya,vizcaya,1355,/electricista/vizcaya/otxandio/,/electricista/vizcaya/abadino/,Abadiño,/electricista/vizcaya/abadino/#cobertura-48072,13.024
+48091,Atxondo,Vizcaya,vizcaya,1355,/electricista/vizcaya/atxondo/,/electricista/vizcaya/abadino/,Abadiño,/electricista/vizcaya/abadino/#cobertura-48091,3.207
+48056,Lemoiz,Vizcaya,vizcaya,1339,/electricista/vizcaya/lemoiz/,/electricista/vizcaya/gorliz/,Gorliz,/electricista/vizcaya/gorliz/#cobertura-48056,2.448
+48093,Areatza,Vizcaya,vizcaya,1271,/electricista/vizcaya/areatza/,/electricista/vizcaya/amorebieta-etxano/,Amorebieta-Etxano,/electricista/vizcaya/amorebieta-etxano/#cobertura-48093,11.441
+48024,Zeanuri,Vizcaya,vizcaya,1251,/electricista/vizcaya/zeanuri/,/electricista/vizcaya/durango/,Durango,/electricista/vizcaya/durango/#cobertura-48024,12.243
+48053,Laukiz,Vizcaya,vizcaya,1244,/electricista/vizcaya/laukiz/,/electricista/vizcaya/mungia/,Mungia,/electricista/vizcaya/mungia/#cobertura-48053,4.916
+48018,Berriatua,Vizcaya,vizcaya,1242,/electricista/vizcaya/berriatua/,/electricista/vizcaya/ondarroa/,Ondarroa,/electricista/vizcaya/ondarroa/#cobertura-48018,4.059
+48058,Mallabia,Vizcaya,vizcaya,1155,/electricista/vizcaya/mallabia/,/electricista/vizcaya/ermua/,Ermua,/electricista/vizcaya/ermua/#cobertura-48058,2.222
+48092,Bedia,Vizcaya,vizcaya,1111,/electricista/vizcaya/bedia/,/electricista/vizcaya/galdakao/,Galdakao,/electricista/vizcaya/galdakao/#cobertura-48092,4.038
+48025,Zeberio,Vizcaya,vizcaya,1082,/electricista/vizcaya/zeberio/,/electricista/vizcaya/arrigorriaga/,Arrigorriaga,/electricista/vizcaya/arrigorriaga/#cobertura-48025,7.232
+48061,Maruri-Jatabe,Vizcaya,vizcaya,1071,/electricista/vizcaya/maruri-jatabe/,/electricista/vizcaya/mungia/,Mungia,/electricista/vizcaya/mungia/#cobertura-48061,3.227
+48009,Arrankudiaga-Zollo,Vizcaya,vizcaya,1007,/electricista/vizcaya/arrankudiaga-zollo/,/electricista/vizcaya/arrigorriaga/,Arrigorriaga,/electricista/vizcaya/arrigorriaga/#cobertura-48009,4.984
+48906,Forua,Vizcaya,vizcaya,948,/electricista/vizcaya/forua/,/electricista/vizcaya/gernika-lumo/,Gernika-Lumo,/electricista/vizcaya/gernika-lumo/#cobertura-48906,2.137
+48041,Gautegiz Arteaga,Vizcaya,vizcaya,880,/electricista/vizcaya/gautegiz-arteaga/,/electricista/vizcaya/gernika-lumo/,Gernika-Lumo,/electricista/vizcaya/gernika-lumo/#cobertura-48041,4.824
+48028,Ea,Vizcaya,vizcaya,838,/electricista/vizcaya/ea/,/electricista/vizcaya/lekeitio/,Lekeitio,/electricista/vizcaya/lekeitio/#cobertura-48028,6.922
+48037,Galdames,Vizcaya,vizcaya,823,/electricista/vizcaya/galdames/,/electricista/vizcaya/guenes/,Güeñes,/electricista/vizcaya/guenes/#cobertura-48037,4.845
+48030,Etxebarria,Vizcaya,vizcaya,772,/electricista/vizcaya/etxebarria/,/electricista/vizcaya/markina-xemein/,Markina-Xemein,/electricista/vizcaya/markina-xemein/#cobertura-48030,2.279
+48064,Meñaka,Vizcaya,vizcaya,766,/electricista/vizcaya/menaka/,/electricista/vizcaya/mungia/,Mungia,/electricista/vizcaya/mungia/#cobertura-48064,3.665
+48023,Artea,Vizcaya,vizcaya,748,/electricista/vizcaya/artea/,/electricista/vizcaya/amorebieta-etxano/,Amorebieta-Etxano,/electricista/vizcaya/amorebieta-etxano/#cobertura-48023,10.574
+48008,Artzentales,Vizcaya,vizcaya,737,/electricista/vizcaya/artzentales/,/electricista/vizcaya/balmaseda/,Balmaseda,/electricista/vizcaya/balmaseda/#cobertura-48008,6.54
+48049,Ispaster,Vizcaya,vizcaya,714,/electricista/vizcaya/ispaster/,/electricista/vizcaya/lekeitio/,Lekeitio,/electricista/vizcaya/lekeitio/#cobertura-48049,3.36
+48048,Ibarrangelu,Vizcaya,vizcaya,680,/electricista/vizcaya/ibarrangelu/,/electricista/vizcaya/bermeo/,Bermeo,/electricista/vizcaya/bermeo/#cobertura-48048,8.087
+48070,Aulesti,Vizcaya,vizcaya,643,/electricista/vizcaya/aulesti/,/electricista/vizcaya/markina-xemein/,Markina-Xemein,/electricista/vizcaya/markina-xemein/#cobertura-48070,6.153
+48010,Arrieta,Vizcaya,vizcaya,579,/electricista/vizcaya/arrieta/,/electricista/vizcaya/mungia/,Mungia,/electricista/vizcaya/mungia/#cobertura-48010,6.431
+48035,Fruiz,Vizcaya,vizcaya,576,/electricista/vizcaya/fruiz/,/electricista/vizcaya/mungia/,Mungia,/electricista/vizcaya/mungia/#cobertura-48035,5.808
+48059,Mañaria,Vizcaya,vizcaya,533,/electricista/vizcaya/manaria/,/electricista/vizcaya/durango/,Durango,/electricista/vizcaya/durango/#cobertura-48059,4.008
+48087,Trucios-Turtzioz,Vizcaya,vizcaya,516,/electricista/vizcaya/trucios-turtzioz/,/electricista/vizcaya/balmaseda/,Balmaseda,/electricista/vizcaya/balmaseda/#cobertura-48087,9.794
+48079,Errigoiti,Vizcaya,vizcaya,510,/electricista/vizcaya/errigoiti/,/electricista/vizcaya/gernika-lumo/,Gernika-Lumo,/electricista/vizcaya/gernika-lumo/#cobertura-48079,3.808
+48911,Ajangiz,Vizcaya,vizcaya,474,/electricista/vizcaya/ajangiz/,/electricista/vizcaya/gernika-lumo/,Gernika-Lumo,/electricista/vizcaya/gernika-lumo/#cobertura-48911,1.513
+48007,Munitibar-Arbatzegi Gerrikaitz,Vizcaya,vizcaya,469,/electricista/vizcaya/munitibar-arbatzegi-gerrikaitz/,/electricista/vizcaya/markina-xemein/,Markina-Xemein,/electricista/vizcaya/markina-xemein/#cobertura-48007,7.634
+48907,Kortezubi,Vizcaya,vizcaya,447,/electricista/vizcaya/kortezubi/,/electricista/vizcaya/gernika-lumo/,Gernika-Lumo,/electricista/vizcaya/gernika-lumo/#cobertura-48907,3.413
+48063,Mendexa,Vizcaya,vizcaya,425,/electricista/vizcaya/mendexa/,/electricista/vizcaya/lekeitio/,Lekeitio,/electricista/vizcaya/lekeitio/#cobertura-48063,2.508
+48914,Arratzu,Vizcaya,vizcaya,417,/electricista/vizcaya/arratzu/,/electricista/vizcaya/gernika-lumo/,Gernika-Lumo,/electricista/vizcaya/gernika-lumo/#cobertura-48914,3.29
+48066,Morga,Vizcaya,vizcaya,413,/electricista/vizcaya/morga/,/electricista/vizcaya/gernika-lumo/,Gernika-Lumo,/electricista/vizcaya/gernika-lumo/#cobertura-48066,6.263
+48915,Ziortza-Bolibar,Vizcaya,vizcaya,408,/electricista/vizcaya/ziortza-bolibar/,/electricista/vizcaya/markina-xemein/,Markina-Xemein,/electricista/vizcaya/markina-xemein/#cobertura-48915,4.516
+48006,Arantzazu,Vizcaya,vizcaya,394,/electricista/vizcaya/arantzazu/,/electricista/vizcaya/amorebieta-etxano/,Amorebieta-Etxano,/electricista/vizcaya/amorebieta-etxano/#cobertura-48006,8.552
+48004,Amoroto,Vizcaya,vizcaya,392,/electricista/vizcaya/amoroto/,/electricista/vizcaya/lekeitio/,Lekeitio,/electricista/vizcaya/lekeitio/#cobertura-48004,4.305
+48062,Mendata,Vizcaya,vizcaya,382,/electricista/vizcaya/mendata/,/electricista/vizcaya/gernika-lumo/,Gernika-Lumo,/electricista/vizcaya/gernika-lumo/#cobertura-48062,4.686
+48076,Sukarrieta,Vizcaya,vizcaya,354,/electricista/vizcaya/sukarrieta/,/electricista/vizcaya/bermeo/,Bermeo,/electricista/vizcaya/bermeo/#cobertura-48076,3.507
+48031,Elantxobe,Vizcaya,vizcaya,348,/electricista/vizcaya/elantxobe/,/electricista/vizcaya/bermeo/,Bermeo,/electricista/vizcaya/bermeo/#cobertura-48031,6.991
+48039,Garai,Vizcaya,vizcaya,343,/electricista/vizcaya/garai/,/electricista/vizcaya/durango/,Durango,/electricista/vizcaya/durango/#cobertura-48039,3.412
+48908,Murueta,Vizcaya,vizcaya,321,/electricista/vizcaya/murueta/,/electricista/vizcaya/gernika-lumo/,Gernika-Lumo,/electricista/vizcaya/gernika-lumo/#cobertura-48908,4.014
+48909,Nabarniz,Vizcaya,vizcaya,274,/electricista/vizcaya/nabarniz/,/electricista/vizcaya/gernika-lumo/,Gernika-Lumo,/electricista/vizcaya/gernika-lumo/#cobertura-48909,7.648
+48033,Ereño,Vizcaya,vizcaya,272,/electricista/vizcaya/ereno/,/electricista/vizcaya/gernika-lumo/,Gernika-Lumo,/electricista/vizcaya/gernika-lumo/#cobertura-48033,6.347
+48051,Lanestosa,Vizcaya,vizcaya,246,/electricista/vizcaya/lanestosa/,/electricista/vizcaya/balmaseda/,Balmaseda,/electricista/vizcaya/balmaseda/#cobertura-48051,20.081
+48050,Izurtza,Vizcaya,vizcaya,229,/electricista/vizcaya/izurtza/,/electricista/vizcaya/durango/,Durango,/electricista/vizcaya/durango/#cobertura-48050,1.67
+48047,Gizaburuaga,Vizcaya,vizcaya,196,/electricista/vizcaya/gizaburuaga/,/electricista/vizcaya/lekeitio/,Lekeitio,/electricista/vizcaya/lekeitio/#cobertura-48047,4.649
+48088,Ubide,Vizcaya,vizcaya,171,/electricista/vizcaya/ubide/,/electricista/vizcaya/abadino/,Abadiño,/electricista/vizcaya/abadino/#cobertura-48088,15.75
+48005,Arakaldo,Vizcaya,vizcaya,160,/electricista/vizcaya/arakaldo/,/electricista/vizcaya/arrigorriaga/,Arrigorriaga,/electricista/vizcaya/arrigorriaga/#cobertura-48005,6.936

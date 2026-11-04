@@ -1,0 +1,3738 @@
+{
+  "source": "https://www.ign.es/web/ign/portal/ane-datos-geograficos",
+  "edition": "2025-10-20",
+  "description": "Población y coordenadas municipales del catálogo IGN ya documentado, enlazadas al inventario existente por código INE. No son distancias por carretera.",
+  "municipalities": [
+    {
+      "code": "01051",
+      "name": "Agurain/Salvatierra",
+      "population": 5147,
+      "lat": 42.850452,
+      "lon": -2.389753
+    },
+    {
+      "code": "01001",
+      "name": "Alegría-Dulantzi",
+      "population": 2965,
+      "lat": 42.840452,
+      "lon": -2.512508
+    },
+    {
+      "code": "01002",
+      "name": "Amurrio",
+      "population": 10312,
+      "lat": 43.052658,
+      "lon": -3.001015
+    },
+    {
+      "code": "01049",
+      "name": "Añana",
+      "population": 143,
+      "lat": 42.802371,
+      "lon": -2.986523
+    },
+    {
+      "code": "01003",
+      "name": "Aramaio",
+      "population": 1380,
+      "lat": 43.052579,
+      "lon": -2.564829
+    },
+    {
+      "code": "01006",
+      "name": "Armiñón",
+      "population": 246,
+      "lat": 42.723409,
+      "lon": -2.872271
+    },
+    {
+      "code": "01037",
+      "name": "Arraia-Maeztu",
+      "population": 823,
+      "lat": 42.738527,
+      "lon": -2.444299
+    },
+    {
+      "code": "01008",
+      "name": "Arratzua-Ubarrundia",
+      "population": 1046,
+      "lat": 42.889907,
+      "lon": -2.640208
+    },
+    {
+      "code": "01004",
+      "name": "Artziniega",
+      "population": 1856,
+      "lat": 43.121792,
+      "lon": -3.130521
+    },
+    {
+      "code": "01009",
+      "name": "Asparrena",
+      "population": 1613,
+      "lat": 42.889624,
+      "lon": -2.317426
+    },
+    {
+      "code": "01010",
+      "name": "Ayala/Aiara",
+      "population": 2939,
+      "lat": 43.077921,
+      "lon": -3.042684
+    },
+    {
+      "code": "01011",
+      "name": "Baños de Ebro/Mañueta",
+      "population": 292,
+      "lat": 42.530235,
+      "lon": -2.679561
+    },
+    {
+      "code": "01013",
+      "name": "Barrundia",
+      "population": 879,
+      "lat": 42.917599,
+      "lon": -2.496599
+    },
+    {
+      "code": "01014",
+      "name": "Berantevilla",
+      "population": 468,
+      "lat": 42.682692,
+      "lon": -2.859369
+    },
+    {
+      "code": "01016",
+      "name": "Bernedo",
+      "population": 544,
+      "lat": 42.626442,
+      "lon": -2.498884
+    },
+    {
+      "code": "01017",
+      "name": "Campezo/Kanpezu",
+      "population": 1088,
+      "lat": 42.670021,
+      "lon": -2.351268
+    },
+    {
+      "code": "01021",
+      "name": "Elburgo/Burgelu",
+      "population": 641,
+      "lat": 42.850282,
+      "lon": -2.545933
+    },
+    {
+      "code": "01022",
+      "name": "Elciego",
+      "population": 953,
+      "lat": 42.515172,
+      "lon": -2.618158
+    },
+    {
+      "code": "01023",
+      "name": "Elvillar/Bilar",
+      "population": 320,
+      "lat": 42.569311,
+      "lon": -2.54479
+    },
+    {
+      "code": "01046",
+      "name": "Erriberagoitia/Ribera Alta",
+      "population": 844,
+      "lat": 42.805548,
+      "lon": -2.907363
+    },
+    {
+      "code": "01056",
+      "name": "Harana/Valle de Arana",
+      "population": 214,
+      "lat": 42.754397,
+      "lon": -2.331923
+    },
+    {
+      "code": "01901",
+      "name": "Iruña Oka/Iruña de Oca",
+      "population": 3610,
+      "lat": 42.818034,
+      "lon": -2.808334
+    },
+    {
+      "code": "01027",
+      "name": "Iruraiz-Gauna",
+      "population": 550,
+      "lat": 42.83131,
+      "lon": -2.475996
+    },
+    {
+      "code": "01019",
+      "name": "Kripan",
+      "population": 178,
+      "lat": 42.591665,
+      "lon": -2.515661
+    },
+    {
+      "code": "01020",
+      "name": "Kuartango",
+      "population": 409,
+      "lat": 42.8699,
+      "lon": -2.887492
+    },
+    {
+      "code": "01028",
+      "name": "Labastida/Bastida",
+      "population": 1571,
+      "lat": 42.590217,
+      "lon": -2.793199
+    },
+    {
+      "code": "01030",
+      "name": "Lagrán",
+      "population": 170,
+      "lat": 42.626121,
+      "lon": -2.584351
+    },
+    {
+      "code": "01031",
+      "name": "Laguardia",
+      "population": 1491,
+      "lat": 42.553385,
+      "lon": -2.585006
+    },
+    {
+      "code": "01032",
+      "name": "Lanciego/Lantziego",
+      "population": 689,
+      "lat": 42.562185,
+      "lon": -2.512792
+    },
+    {
+      "code": "01902",
+      "name": "Lantarón",
+      "population": 926,
+      "lat": 42.716576,
+      "lon": -2.966497
+    },
+    {
+      "code": "01033",
+      "name": "Lapuebla de Labarca",
+      "population": 856,
+      "lat": 42.493653,
+      "lon": -2.572925
+    },
+    {
+      "code": "01036",
+      "name": "Laudio/Llodio",
+      "population": 17970,
+      "lat": 43.143201,
+      "lon": -2.962807
+    },
+    {
+      "code": "01058",
+      "name": "Legutio",
+      "population": 2082,
+      "lat": 42.977836,
+      "lon": -2.642728
+    },
+    {
+      "code": "01034",
+      "name": "Leza",
+      "population": 210,
+      "lat": 42.56512,
+      "lon": -2.63486
+    },
+    {
+      "code": "01039",
+      "name": "Moreda de Álava/Moreda Araba",
+      "population": 215,
+      "lat": 42.523761,
+      "lon": -2.408129
+    },
+    {
+      "code": "01041",
+      "name": "Navaridas",
+      "population": 203,
+      "lat": 42.543737,
+      "lon": -2.624549
+    },
+    {
+      "code": "01042",
+      "name": "Okondo",
+      "population": 1190,
+      "lat": 43.161551,
+      "lon": -3.019027
+    },
+    {
+      "code": "01043",
+      "name": "Oyón-Oion",
+      "population": 3456,
+      "lat": 42.506067,
+      "lon": -2.436788
+    },
+    {
+      "code": "01044",
+      "name": "Peñacerrada-Urizaharra",
+      "population": 302,
+      "lat": 42.644344,
+      "lon": -2.713556
+    },
+    {
+      "code": "01047",
+      "name": "Ribera Baja/Erriberabeitia",
+      "population": 1441,
+      "lat": 42.712285,
+      "lon": -2.918689
+    },
+    {
+      "code": "01052",
+      "name": "Samaniego",
+      "population": 290,
+      "lat": 42.568109,
+      "lon": -2.679226
+    },
+    {
+      "code": "01053",
+      "name": "San Millán/Donemiliaga",
+      "population": 721,
+      "lat": 42.872571,
+      "lon": -2.377483
+    },
+    {
+      "code": "01054",
+      "name": "Urkabustaiz",
+      "population": 1459,
+      "lat": 42.952396,
+      "lon": -2.900348
+    },
+    {
+      "code": "01055",
+      "name": "Valdegovía/Gaubea",
+      "population": 1071,
+      "lat": 42.848247,
+      "lon": -3.098139
+    },
+    {
+      "code": "01057",
+      "name": "Villabuena de Álava/Eskuernaga",
+      "population": 282,
+      "lat": 42.548905,
+      "lon": -2.665447
+    },
+    {
+      "code": "01059",
+      "name": "Vitoria-Gasteiz",
+      "population": 257407,
+      "lat": 42.846824,
+      "lon": -2.67234
+    },
+    {
+      "code": "01060",
+      "name": "Yécora/Iekora",
+      "population": 264,
+      "lat": 42.569244,
+      "lon": -2.470255
+    },
+    {
+      "code": "01061",
+      "name": "Zalduondo",
+      "population": 194,
+      "lat": 42.885486,
+      "lon": -2.347934
+    },
+    {
+      "code": "01062",
+      "name": "Zambrana",
+      "population": 438,
+      "lat": 42.661004,
+      "lon": -2.877876
+    },
+    {
+      "code": "01018",
+      "name": "Zigoitia",
+      "population": 1845,
+      "lat": 42.95771,
+      "lon": -2.729744
+    },
+    {
+      "code": "01063",
+      "name": "Zuia",
+      "population": 2391,
+      "lat": 42.956306,
+      "lon": -2.81996
+    },
+    {
+      "code": "20001",
+      "name": "Abaltzisketa",
+      "population": 316,
+      "lat": 43.047821,
+      "lon": -2.105565
+    },
+    {
+      "code": "20002",
+      "name": "Aduna",
+      "population": 498,
+      "lat": 43.203894,
+      "lon": -2.050186
+    },
+    {
+      "code": "20016",
+      "name": "Aia",
+      "population": 2139,
+      "lat": 43.236418,
+      "lon": -2.148064
+    },
+    {
+      "code": "20003",
+      "name": "Aizarnazabal",
+      "population": 780,
+      "lat": 43.255654,
+      "lon": -2.236537
+    },
+    {
+      "code": "20004",
+      "name": "Albiztur",
+      "population": 324,
+      "lat": 43.129853,
+      "lon": -2.137121
+    },
+    {
+      "code": "20005",
+      "name": "Alegia",
+      "population": 1804,
+      "lat": 43.100262,
+      "lon": -2.098268
+    },
+    {
+      "code": "20006",
+      "name": "Alkiza",
+      "population": 354,
+      "lat": 43.173006,
+      "lon": -2.109068
+    },
+    {
+      "code": "20906",
+      "name": "Altzaga",
+      "population": 171,
+      "lat": 43.064589,
+      "lon": -2.153832
+    },
+    {
+      "code": "20007",
+      "name": "Altzo",
+      "population": 444,
+      "lat": 43.09983,
+      "lon": -2.083473
+    },
+    {
+      "code": "20008",
+      "name": "Amezketa",
+      "population": 940,
+      "lat": 43.048842,
+      "lon": -2.088261
+    },
+    {
+      "code": "20009",
+      "name": "Andoain",
+      "population": 14546,
+      "lat": 43.219425,
+      "lon": -2.019983
+    },
+    {
+      "code": "20010",
+      "name": "Anoeta",
+      "population": 2082,
+      "lat": 43.161425,
+      "lon": -2.071436
+    },
+    {
+      "code": "20011",
+      "name": "Antzuola",
+      "population": 2070,
+      "lat": 43.09868,
+      "lon": -2.381146
+    },
+    {
+      "code": "20012",
+      "name": "Arama",
+      "population": 178,
+      "lat": 43.063346,
+      "lon": -2.165593
+    },
+    {
+      "code": "20013",
+      "name": "Aretxabaleta",
+      "population": 7187,
+      "lat": 43.036457,
+      "lon": -2.504467
+    },
+    {
+      "code": "20055",
+      "name": "Arrasate/Mondragón",
+      "population": 22076,
+      "lat": 43.065831,
+      "lon": -2.489836
+    },
+    {
+      "code": "20014",
+      "name": "Asteasu",
+      "population": 1573,
+      "lat": 43.19336,
+      "lon": -2.09703
+    },
+    {
+      "code": "20903",
+      "name": "Astigarraga",
+      "population": 7748,
+      "lat": 43.279984,
+      "lon": -1.949216
+    },
+    {
+      "code": "20015",
+      "name": "Ataun",
+      "population": 1710,
+      "lat": 43.007041,
+      "lon": -2.176705
+    },
+    {
+      "code": "20017",
+      "name": "Azkoitia",
+      "population": 11674,
+      "lat": 43.177656,
+      "lon": -2.312448
+    },
+    {
+      "code": "20018",
+      "name": "Azpeitia",
+      "population": 15169,
+      "lat": 43.184053,
+      "lon": -2.266048
+    },
+    {
+      "code": "20904",
+      "name": "Baliarrain",
+      "population": 154,
+      "lat": 43.06919,
+      "lon": -2.127796
+    },
+    {
+      "code": "20019",
+      "name": "Beasain",
+      "population": 13924,
+      "lat": 43.047293,
+      "lon": -2.196047
+    },
+    {
+      "code": "20020",
+      "name": "Beizama",
+      "population": 130,
+      "lat": 43.134102,
+      "lon": -2.200202
+    },
+    {
+      "code": "20021",
+      "name": "Belauntza",
+      "population": 288,
+      "lat": 43.134792,
+      "lon": -2.0512
+    },
+    {
+      "code": "20022",
+      "name": "Berastegi",
+      "population": 1110,
+      "lat": 43.124044,
+      "lon": -1.979384
+    },
+    {
+      "code": "20074",
+      "name": "Bergara",
+      "population": 14474,
+      "lat": 43.117483,
+      "lon": -2.413071
+    },
+    {
+      "code": "20023",
+      "name": "Berrobi",
+      "population": 560,
+      "lat": 43.145325,
+      "lon": -2.026325
+    },
+    {
+      "code": "20024",
+      "name": "Bidania-Goiatz",
+      "population": 533,
+      "lat": 43.139592,
+      "lon": -2.15996
+    },
+    {
+      "code": "20029",
+      "name": "Deba",
+      "population": 5397,
+      "lat": 43.294193,
+      "lon": -2.354369
+    },
+    {
+      "code": "20069",
+      "name": "Donostia/San Sebastián",
+      "population": 188487,
+      "lat": 43.321523,
+      "lon": -1.985721
+    },
+    {
+      "code": "20030",
+      "name": "Eibar",
+      "population": 27299,
+      "lat": 43.18454,
+      "lon": -2.473421
+    },
+    {
+      "code": "20031",
+      "name": "Elduain",
+      "population": 250,
+      "lat": 43.140834,
+      "lon": -2.000127
+    },
+    {
+      "code": "20033",
+      "name": "Elgeta",
+      "population": 1126,
+      "lat": 43.136931,
+      "lon": -2.487368
+    },
+    {
+      "code": "20032",
+      "name": "Elgoibar",
+      "population": 11574,
+      "lat": 43.214312,
+      "lon": -2.417156
+    },
+    {
+      "code": "20067",
+      "name": "Errenteria",
+      "population": 39310,
+      "lat": 43.312687,
+      "lon": -1.898768
+    },
+    {
+      "code": "20066",
+      "name": "Errezil",
+      "population": 581,
+      "lat": 43.165048,
+      "lon": -2.173956
+    },
+    {
+      "code": "20034",
+      "name": "Eskoriatza",
+      "population": 4227,
+      "lat": 43.01724,
+      "lon": -2.526687
+    },
+    {
+      "code": "20035",
+      "name": "Ezkio-Itsaso",
+      "population": 589,
+      "lat": 43.069123,
+      "lon": -2.281549
+    },
+    {
+      "code": "20038",
+      "name": "Gabiria",
+      "population": 516,
+      "lat": 43.049636,
+      "lon": -2.280071
+    },
+    {
+      "code": "20037",
+      "name": "Gaintza",
+      "population": 124,
+      "lat": 43.053501,
+      "lon": -2.133231
+    },
+    {
+      "code": "20907",
+      "name": "Gaztelu",
+      "population": 171,
+      "lat": 43.11668,
+      "lon": -2.021928
+    },
+    {
+      "code": "20039",
+      "name": "Getaria",
+      "population": 2914,
+      "lat": 43.303198,
+      "lon": -2.204411
+    },
+    {
+      "code": "20040",
+      "name": "Hernani",
+      "population": 20345,
+      "lat": 43.265075,
+      "lon": -1.975939
+    },
+    {
+      "code": "20041",
+      "name": "Hernialde",
+      "population": 318,
+      "lat": 43.154776,
+      "lon": -2.084796
+    },
+    {
+      "code": "20036",
+      "name": "Hondarribia",
+      "population": 16934,
+      "lat": 43.362421,
+      "lon": -1.791532
+    },
+    {
+      "code": "20042",
+      "name": "Ibarra",
+      "population": 4106,
+      "lat": 43.1314,
+      "lon": -2.062338
+    },
+    {
+      "code": "20043",
+      "name": "Idiazabal",
+      "population": 2270,
+      "lat": 43.012968,
+      "lon": -2.233935
+    },
+    {
+      "code": "20044",
+      "name": "Ikaztegieta",
+      "population": 505,
+      "lat": 43.095428,
+      "lon": -2.124004
+    },
+    {
+      "code": "20045",
+      "name": "Irun",
+      "population": 63298,
+      "lat": 43.337711,
+      "lon": -1.788803
+    },
+    {
+      "code": "20046",
+      "name": "Irura",
+      "population": 1896,
+      "lat": 43.167484,
+      "lon": -2.067534
+    },
+    {
+      "code": "20047",
+      "name": "Itsasondo",
+      "population": 668,
+      "lat": 43.067467,
+      "lon": -2.165326
+    },
+    {
+      "code": "20048",
+      "name": "Larraul",
+      "population": 252,
+      "lat": 43.187567,
+      "lon": -2.101936
+    },
+    {
+      "code": "20902",
+      "name": "Lasarte-Oria",
+      "population": 19239,
+      "lat": 43.268376,
+      "lon": -2.020358
+    },
+    {
+      "code": "20049",
+      "name": "Lazkao",
+      "population": 6037,
+      "lat": 43.034498,
+      "lon": -2.186939
+    },
+    {
+      "code": "20050",
+      "name": "Leaburu",
+      "population": 385,
+      "lat": 43.124666,
+      "lon": -2.05186
+    },
+    {
+      "code": "20051",
+      "name": "Legazpi",
+      "population": 8379,
+      "lat": 43.050379,
+      "lon": -2.333822
+    },
+    {
+      "code": "20052",
+      "name": "Legorreta",
+      "population": 1446,
+      "lat": 43.085184,
+      "lon": -2.148969
+    },
+    {
+      "code": "20068",
+      "name": "Leintz-Gatzaga",
+      "population": 210,
+      "lat": 42.98691,
+      "lon": -2.567879
+    },
+    {
+      "code": "20053",
+      "name": "Lezo",
+      "population": 6004,
+      "lat": 43.320975,
+      "lon": -1.898861
+    },
+    {
+      "code": "20054",
+      "name": "Lizartza",
+      "population": 666,
+      "lat": 43.10312,
+      "lon": -2.033633
+    },
+    {
+      "code": "20901",
+      "name": "Mendaro",
+      "population": 2001,
+      "lat": 43.251163,
+      "lon": -2.382887
+    },
+    {
+      "code": "20057",
+      "name": "Mutiloa",
+      "population": 253,
+      "lat": 43.022454,
+      "lon": -2.272869
+    },
+    {
+      "code": "20056",
+      "name": "Mutriku",
+      "population": 5273,
+      "lat": 43.307254,
+      "lon": -2.387092
+    },
+    {
+      "code": "20063",
+      "name": "Oiartzun",
+      "population": 10349,
+      "lat": 43.299171,
+      "lon": -1.860292
+    },
+    {
+      "code": "20058",
+      "name": "Olaberria",
+      "population": 929,
+      "lat": 43.027441,
+      "lon": -2.203106
+    },
+    {
+      "code": "20059",
+      "name": "Oñati",
+      "population": 11500,
+      "lat": 43.032604,
+      "lon": -2.413162
+    },
+    {
+      "code": "20076",
+      "name": "Ordizia",
+      "population": 10616,
+      "lat": 43.053689,
+      "lon": -2.179236
+    },
+    {
+      "code": "20905",
+      "name": "Orendain",
+      "population": 245,
+      "lat": 43.079573,
+      "lon": -2.11432
+    },
+    {
+      "code": "20060",
+      "name": "Orexa",
+      "population": 108,
+      "lat": 43.093949,
+      "lon": -2.011579
+    },
+    {
+      "code": "20061",
+      "name": "Orio",
+      "population": 6170,
+      "lat": 43.275919,
+      "lon": -2.126785
+    },
+    {
+      "code": "20062",
+      "name": "Ormaiztegi",
+      "population": 1263,
+      "lat": 43.042894,
+      "lon": -2.255124
+    },
+    {
+      "code": "20064",
+      "name": "Pasaia",
+      "population": 16255,
+      "lat": 43.324953,
+      "lon": -1.917532
+    },
+    {
+      "code": "20070",
+      "name": "Segura",
+      "population": 1466,
+      "lat": 43.008666,
+      "lon": -2.25231
+    },
+    {
+      "code": "20065",
+      "name": "Soraluze-Placencia de las Armas",
+      "population": 3789,
+      "lat": 43.17423,
+      "lon": -2.413056
+    },
+    {
+      "code": "20071",
+      "name": "Tolosa",
+      "population": 20099,
+      "lat": 43.138095,
+      "lon": -2.071922
+    },
+    {
+      "code": "20072",
+      "name": "Urnieta",
+      "population": 6249,
+      "lat": 43.247761,
+      "lon": -1.990261
+    },
+    {
+      "code": "20077",
+      "name": "Urretxu",
+      "population": 6758,
+      "lat": 43.093139,
+      "lon": -2.313725
+    },
+    {
+      "code": "20073",
+      "name": "Usurbil",
+      "population": 6430,
+      "lat": 43.270861,
+      "lon": -2.051156
+    },
+    {
+      "code": "20075",
+      "name": "Villabona",
+      "population": 5850,
+      "lat": 43.187761,
+      "lon": -2.053763
+    },
+    {
+      "code": "20078",
+      "name": "Zaldibia",
+      "population": 1735,
+      "lat": 43.03828,
+      "lon": -2.150936
+    },
+    {
+      "code": "20079",
+      "name": "Zarautz",
+      "population": 23337,
+      "lat": 43.285399,
+      "lon": -2.175088
+    },
+    {
+      "code": "20025",
+      "name": "Zegama",
+      "population": 1541,
+      "lat": 42.975614,
+      "lon": -2.290044
+    },
+    {
+      "code": "20026",
+      "name": "Zerain",
+      "population": 281,
+      "lat": 43.011966,
+      "lon": -2.271479
+    },
+    {
+      "code": "20027",
+      "name": "Zestoa",
+      "population": 3842,
+      "lat": 43.239957,
+      "lon": -2.258747
+    },
+    {
+      "code": "20028",
+      "name": "Zizurkil",
+      "population": 2966,
+      "lat": 43.198002,
+      "lon": -2.073789
+    },
+    {
+      "code": "20081",
+      "name": "Zumaia",
+      "population": 10250,
+      "lat": 43.296889,
+      "lon": -2.258394
+    },
+    {
+      "code": "20080",
+      "name": "Zumarraga",
+      "population": 9688,
+      "lat": 43.090477,
+      "lon": -2.314621
+    },
+    {
+      "code": "28001",
+      "name": "La Acebeda",
+      "population": 68,
+      "lat": 41.086853,
+      "lon": -3.624793
+    },
+    {
+      "code": "28002",
+      "name": "Ajalvir",
+      "population": 4946,
+      "lat": 40.534271,
+      "lon": -3.480942
+    },
+    {
+      "code": "28003",
+      "name": "Alameda del Valle",
+      "population": 256,
+      "lat": 40.918056,
+      "lon": -3.843636
+    },
+    {
+      "code": "28004",
+      "name": "El Álamo",
+      "population": 10413,
+      "lat": 40.230312,
+      "lon": -3.990672
+    },
+    {
+      "code": "28005",
+      "name": "Alcalá de Henares",
+      "population": 199804,
+      "lat": 40.481793,
+      "lon": -3.364867
+    },
+    {
+      "code": "28006",
+      "name": "Alcobendas",
+      "population": 121446,
+      "lat": 40.547459,
+      "lon": -3.641871
+    },
+    {
+      "code": "28007",
+      "name": "Alcorcón",
+      "population": 174740,
+      "lat": 40.349499,
+      "lon": -3.828794
+    },
+    {
+      "code": "28008",
+      "name": "Aldea del Fresno",
+      "population": 3422,
+      "lat": 40.324913,
+      "lon": -4.203838
+    },
+    {
+      "code": "28009",
+      "name": "Algete",
+      "population": 21134,
+      "lat": 40.596254,
+      "lon": -3.497838
+    },
+    {
+      "code": "28010",
+      "name": "Alpedrete",
+      "population": 15655,
+      "lat": 40.65887,
+      "lon": -4.023479
+    },
+    {
+      "code": "28011",
+      "name": "Ambite",
+      "population": 701,
+      "lat": 40.328997,
+      "lon": -3.181565
+    },
+    {
+      "code": "28012",
+      "name": "Anchuelo",
+      "population": 1393,
+      "lat": 40.465517,
+      "lon": -3.268668
+    },
+    {
+      "code": "28013",
+      "name": "Aranjuez",
+      "population": 62508,
+      "lat": 40.032192,
+      "lon": -3.603525
+    },
+    {
+      "code": "28014",
+      "name": "Arganda del Rey",
+      "population": 59209,
+      "lat": 40.300794,
+      "lon": -3.437457
+    },
+    {
+      "code": "28015",
+      "name": "Arroyomolinos",
+      "population": 37299,
+      "lat": 40.26771,
+      "lon": -3.920199
+    },
+    {
+      "code": "28016",
+      "name": "El Atazar",
+      "population": 107,
+      "lat": 40.933964,
+      "lon": -3.471582
+    },
+    {
+      "code": "28017",
+      "name": "Batres",
+      "population": 1957,
+      "lat": 40.209125,
+      "lon": -3.920789
+    },
+    {
+      "code": "28018",
+      "name": "Becerril de la Sierra",
+      "population": 6553,
+      "lat": 40.716264,
+      "lon": -3.989401
+    },
+    {
+      "code": "28019",
+      "name": "Belmonte de Tajo",
+      "population": 1919,
+      "lat": 40.133747,
+      "lon": -3.339569
+    },
+    {
+      "code": "28021",
+      "name": "El Berrueco",
+      "population": 828,
+      "lat": 40.887569,
+      "lon": -3.561347
+    },
+    {
+      "code": "28020",
+      "name": "Berzosa del Lozoya",
+      "population": 234,
+      "lat": 40.975395,
+      "lon": -3.523852
+    },
+    {
+      "code": "28022",
+      "name": "Boadilla del Monte",
+      "population": 65528,
+      "lat": 40.407822,
+      "lon": -3.879174
+    },
+    {
+      "code": "28023",
+      "name": "El Boalo",
+      "population": 8548,
+      "lat": 40.717106,
+      "lon": -3.920171
+    },
+    {
+      "code": "28024",
+      "name": "Braojos",
+      "population": 219,
+      "lat": 41.03944,
+      "lon": -3.642385
+    },
+    {
+      "code": "28025",
+      "name": "Brea de Tajo",
+      "population": 567,
+      "lat": 40.23002,
+      "lon": -3.109662
+    },
+    {
+      "code": "28026",
+      "name": "Brunete",
+      "population": 11263,
+      "lat": 40.405433,
+      "lon": -3.997741
+    },
+    {
+      "code": "28027",
+      "name": "Buitrago del Lozoya",
+      "population": 1970,
+      "lat": 40.993481,
+      "lon": -3.636447
+    },
+    {
+      "code": "28028",
+      "name": "Bustarviejo",
+      "population": 2833,
+      "lat": 40.859083,
+      "lon": -3.709862
+    },
+    {
+      "code": "28029",
+      "name": "Cabanillas de la Sierra",
+      "population": 949,
+      "lat": 40.8196,
+      "lon": -3.625928
+    },
+    {
+      "code": "28030",
+      "name": "La Cabrera",
+      "population": 2952,
+      "lat": 40.864194,
+      "lon": -3.615635
+    },
+    {
+      "code": "28031",
+      "name": "Cadalso de los Vidrios",
+      "population": 3274,
+      "lat": 40.301621,
+      "lon": -4.44146
+    },
+    {
+      "code": "28032",
+      "name": "Camarma de Esteruelas",
+      "population": 8107,
+      "lat": 40.549126,
+      "lon": -3.378683
+    },
+    {
+      "code": "28033",
+      "name": "Campo Real",
+      "population": 6766,
+      "lat": 40.338027,
+      "lon": -3.381598
+    },
+    {
+      "code": "28034",
+      "name": "Canencia",
+      "population": 468,
+      "lat": 40.909774,
+      "lon": -3.737669
+    },
+    {
+      "code": "28035",
+      "name": "Carabaña",
+      "population": 2375,
+      "lat": 40.257162,
+      "lon": -3.237934
+    },
+    {
+      "code": "28036",
+      "name": "Casarrubuelos",
+      "population": 4225,
+      "lat": 40.171171,
+      "lon": -3.833194
+    },
+    {
+      "code": "28037",
+      "name": "Cenicientos",
+      "population": 2141,
+      "lat": 40.26345,
+      "lon": -4.467561
+    },
+    {
+      "code": "28038",
+      "name": "Cercedilla",
+      "population": 7646,
+      "lat": 40.741608,
+      "lon": -4.055288
+    },
+    {
+      "code": "28039",
+      "name": "Cervera de Buitrago",
+      "population": 161,
+      "lat": 40.922508,
+      "lon": -3.529811
+    },
+    {
+      "code": "28051",
+      "name": "Chapinería",
+      "population": 2634,
+      "lat": 40.379192,
+      "lon": -4.209809
+    },
+    {
+      "code": "28052",
+      "name": "Chinchón",
+      "population": 5820,
+      "lat": 40.139942,
+      "lon": -3.423103
+    },
+    {
+      "code": "28040",
+      "name": "Ciempozuelos",
+      "population": 26046,
+      "lat": 40.158953,
+      "lon": -3.618284
+    },
+    {
+      "code": "28041",
+      "name": "Cobeña",
+      "population": 7742,
+      "lat": 40.567905,
+      "lon": -3.50499
+    },
+    {
+      "code": "28046",
+      "name": "Collado Mediano",
+      "population": 7564,
+      "lat": 40.693657,
+      "lon": -4.024391
+    },
+    {
+      "code": "28047",
+      "name": "Collado Villalba",
+      "population": 67323,
+      "lat": 40.645798,
+      "lon": -3.991592
+    },
+    {
+      "code": "28043",
+      "name": "Colmenar de Oreja",
+      "population": 8982,
+      "lat": 40.107721,
+      "lon": -3.387465
+    },
+    {
+      "code": "28042",
+      "name": "Colmenar del Arroyo",
+      "population": 2013,
+      "lat": 40.418338,
+      "lon": -4.198607
+    },
+    {
+      "code": "28045",
+      "name": "Colmenar Viejo",
+      "population": 56878,
+      "lat": 40.658808,
+      "lon": -3.76615
+    },
+    {
+      "code": "28044",
+      "name": "Colmenarejo",
+      "population": 9741,
+      "lat": 40.560927,
+      "lon": -4.016774
+    },
+    {
+      "code": "28048",
+      "name": "Corpa",
+      "population": 795,
+      "lat": 40.424794,
+      "lon": -3.263012
+    },
+    {
+      "code": "28049",
+      "name": "Coslada",
+      "population": 80688,
+      "lat": 40.426279,
+      "lon": -3.56556
+    },
+    {
+      "code": "28050",
+      "name": "Cubas de la Sagra",
+      "population": 6984,
+      "lat": 40.191264,
+      "lon": -3.838345
+    },
+    {
+      "code": "28053",
+      "name": "Daganzo de Arriba",
+      "population": 10673,
+      "lat": 40.544939,
+      "lon": -3.457894
+    },
+    {
+      "code": "28054",
+      "name": "El Escorial",
+      "population": 17262,
+      "lat": 40.585101,
+      "lon": -4.129576
+    },
+    {
+      "code": "28055",
+      "name": "Estremera",
+      "population": 1451,
+      "lat": 40.18466,
+      "lon": -3.106621
+    },
+    {
+      "code": "28056",
+      "name": "Fresnedillas de la Oliva",
+      "population": 1833,
+      "lat": 40.486513,
+      "lon": -4.172038
+    },
+    {
+      "code": "28057",
+      "name": "Fresno de Torote",
+      "population": 2547,
+      "lat": 40.592792,
+      "lon": -3.411881
+    },
+    {
+      "code": "28058",
+      "name": "Fuenlabrada",
+      "population": 190496,
+      "lat": 40.284031,
+      "lon": -3.799803
+    },
+    {
+      "code": "28059",
+      "name": "Fuente el Saz de Jarama",
+      "population": 7384,
+      "lat": 40.634172,
+      "lon": -3.51387
+    },
+    {
+      "code": "28060",
+      "name": "Fuentidueña de Tajo",
+      "population": 2319,
+      "lat": 40.118608,
+      "lon": -3.159544
+    },
+    {
+      "code": "28061",
+      "name": "Galapagar",
+      "population": 36112,
+      "lat": 40.580525,
+      "lon": -4.006091
+    },
+    {
+      "code": "28062",
+      "name": "Garganta de los Montes",
+      "population": 415,
+      "lat": 40.921527,
+      "lon": -3.687766
+    },
+    {
+      "code": "28063",
+      "name": "Gargantilla del Lozoya y Pinilla de Buitrago",
+      "population": 401,
+      "lat": 40.964835,
+      "lon": -3.71859
+    },
+    {
+      "code": "28064",
+      "name": "Gascones",
+      "population": 236,
+      "lat": 41.017884,
+      "lon": -3.641805
+    },
+    {
+      "code": "28065",
+      "name": "Getafe",
+      "population": 191560,
+      "lat": 40.305551,
+      "lon": -3.732332
+    },
+    {
+      "code": "28066",
+      "name": "Griñón",
+      "population": 10714,
+      "lat": 40.213132,
+      "lon": -3.852889
+    },
+    {
+      "code": "28067",
+      "name": "Guadalix de la Sierra",
+      "population": 6912,
+      "lat": 40.784873,
+      "lon": -3.692753
+    },
+    {
+      "code": "28068",
+      "name": "Guadarrama",
+      "population": 17069,
+      "lat": 40.672524,
+      "lon": -4.08879
+    },
+    {
+      "code": "28069",
+      "name": "La Hiruela",
+      "population": 84,
+      "lat": 41.077847,
+      "lon": -3.454639
+    },
+    {
+      "code": "28070",
+      "name": "Horcajo de la Sierra-Aoslos",
+      "population": 231,
+      "lat": 41.066684,
+      "lon": -3.585785
+    },
+    {
+      "code": "28071",
+      "name": "Horcajuelo de la Sierra",
+      "population": 111,
+      "lat": 41.060208,
+      "lon": -3.545381
+    },
+    {
+      "code": "28072",
+      "name": "Hoyo de Manzanares",
+      "population": 9186,
+      "lat": 40.622864,
+      "lon": -3.907251
+    },
+    {
+      "code": "28073",
+      "name": "Humanes de Madrid",
+      "population": 20054,
+      "lat": 40.250806,
+      "lon": -3.829042
+    },
+    {
+      "code": "28074",
+      "name": "Leganés",
+      "population": 193934,
+      "lat": 40.327055,
+      "lon": -3.758378
+    },
+    {
+      "code": "28075",
+      "name": "Loeches",
+      "population": 9253,
+      "lat": 40.383835,
+      "lon": -3.409335
+    },
+    {
+      "code": "28076",
+      "name": "Lozoya",
+      "population": 620,
+      "lat": 40.951341,
+      "lon": -3.791819
+    },
+    {
+      "code": "28901",
+      "name": "Lozoyuela-Navas-Sieteiglesias",
+      "population": 1479,
+      "lat": 40.926302,
+      "lon": -3.617705
+    },
+    {
+      "code": "28078",
+      "name": "Madarcos",
+      "population": 70,
+      "lat": 41.047515,
+      "lon": -3.582031
+    },
+    {
+      "code": "28079",
+      "name": "Madrid",
+      "population": 3422416,
+      "lat": 40.419026,
+      "lon": -3.691978
+    },
+    {
+      "code": "28080",
+      "name": "Majadahonda",
+      "population": 73547,
+      "lat": 40.472863,
+      "lon": -3.872525
+    },
+    {
+      "code": "28082",
+      "name": "Manzanares el Real",
+      "population": 9539,
+      "lat": 40.726812,
+      "lon": -3.865187
+    },
+    {
+      "code": "28083",
+      "name": "Meco",
+      "population": 15812,
+      "lat": 40.552564,
+      "lon": -3.324452
+    },
+    {
+      "code": "28084",
+      "name": "Mejorada del Campo",
+      "population": 24632,
+      "lat": 40.396072,
+      "lon": -3.484677
+    },
+    {
+      "code": "28085",
+      "name": "Miraflores de la Sierra",
+      "population": 7209,
+      "lat": 40.813802,
+      "lon": -3.766721
+    },
+    {
+      "code": "28086",
+      "name": "El Molar",
+      "population": 10079,
+      "lat": 40.732771,
+      "lon": -3.582153
+    },
+    {
+      "code": "28087",
+      "name": "Los Molinos",
+      "population": 4812,
+      "lat": 40.714809,
+      "lon": -4.073655
+    },
+    {
+      "code": "28088",
+      "name": "Montejo de la Sierra",
+      "population": 374,
+      "lat": 41.059589,
+      "lon": -3.530026
+    },
+    {
+      "code": "28089",
+      "name": "Moraleja de Enmedio",
+      "population": 5630,
+      "lat": 40.260236,
+      "lon": -3.861669
+    },
+    {
+      "code": "28090",
+      "name": "Moralzarzal",
+      "population": 14504,
+      "lat": 40.679074,
+      "lon": -3.971736
+    },
+    {
+      "code": "28091",
+      "name": "Morata de Tajuña",
+      "population": 8294,
+      "lat": 40.22951,
+      "lon": -3.437003
+    },
+    {
+      "code": "28092",
+      "name": "Móstoles",
+      "population": 213268,
+      "lat": 40.322714,
+      "lon": -3.865399
+    },
+    {
+      "code": "28093",
+      "name": "Navacerrada",
+      "population": 3307,
+      "lat": 40.728966,
+      "lon": -4.014591
+    },
+    {
+      "code": "28094",
+      "name": "Navalafuente",
+      "population": 1703,
+      "lat": 40.823342,
+      "lon": -3.676125
+    },
+    {
+      "code": "28095",
+      "name": "Navalagamella",
+      "population": 3119,
+      "lat": 40.46931,
+      "lon": -4.122788
+    },
+    {
+      "code": "28096",
+      "name": "Navalcarnero",
+      "population": 32684,
+      "lat": 40.290824,
+      "lon": -4.015144
+    },
+    {
+      "code": "28097",
+      "name": "Navarredonda y San Mamés",
+      "population": 154,
+      "lat": 40.990843,
+      "lon": -3.725679
+    },
+    {
+      "code": "28099",
+      "name": "Navas del Rey",
+      "population": 3344,
+      "lat": 40.384099,
+      "lon": -4.251577
+    },
+    {
+      "code": "28100",
+      "name": "Nuevo Baztán",
+      "population": 7393,
+      "lat": 40.365452,
+      "lon": -3.243415
+    },
+    {
+      "code": "28101",
+      "name": "Olmeda de las Fuentes",
+      "population": 409,
+      "lat": 40.368827,
+      "lon": -3.222243
+    },
+    {
+      "code": "28102",
+      "name": "Orusco de Tajuña",
+      "population": 1504,
+      "lat": 40.285165,
+      "lon": -3.208495
+    },
+    {
+      "code": "28104",
+      "name": "Paracuellos de Jarama",
+      "population": 27241,
+      "lat": 40.505131,
+      "lon": -3.531863
+    },
+    {
+      "code": "28106",
+      "name": "Parla",
+      "population": 134876,
+      "lat": 40.237594,
+      "lon": -3.772703
+    },
+    {
+      "code": "28107",
+      "name": "Patones",
+      "population": 604,
+      "lat": 40.855687,
+      "lon": -3.485073
+    },
+    {
+      "code": "28108",
+      "name": "Pedrezuela",
+      "population": 6475,
+      "lat": 40.745327,
+      "lon": -3.603095
+    },
+    {
+      "code": "28109",
+      "name": "Pelayos de la Presa",
+      "population": 3106,
+      "lat": 40.359271,
+      "lon": -4.334256
+    },
+    {
+      "code": "28110",
+      "name": "Perales de Tajuña",
+      "population": 3195,
+      "lat": 40.234544,
+      "lon": -3.352146
+    },
+    {
+      "code": "28111",
+      "name": "Pezuela de las Torres",
+      "population": 990,
+      "lat": 40.418671,
+      "lon": -3.177531
+    },
+    {
+      "code": "28112",
+      "name": "Pinilla del Valle",
+      "population": 199,
+      "lat": 40.926428,
+      "lon": -3.818417
+    },
+    {
+      "code": "28113",
+      "name": "Pinto",
+      "population": 55989,
+      "lat": 40.240992,
+      "lon": -3.700096
+    },
+    {
+      "code": "28114",
+      "name": "Piñuécar-Gandullas",
+      "population": 185,
+      "lat": 41.033223,
+      "lon": -3.599559
+    },
+    {
+      "code": "28115",
+      "name": "Pozuelo de Alarcón",
+      "population": 89123,
+      "lat": 40.43438,
+      "lon": -3.813933
+    },
+    {
+      "code": "28116",
+      "name": "Pozuelo del Rey",
+      "population": 1302,
+      "lat": 40.366225,
+      "lon": -3.32198
+    },
+    {
+      "code": "28117",
+      "name": "Prádena del Rincón",
+      "population": 139,
+      "lat": 41.043806,
+      "lon": -3.540871
+    },
+    {
+      "code": "28118",
+      "name": "Puebla de la Sierra",
+      "population": 93,
+      "lat": 41.012212,
+      "lon": -3.445002
+    },
+    {
+      "code": "28902",
+      "name": "Puentes Viejas",
+      "population": 774,
+      "lat": 40.965285,
+      "lon": -3.584358
+    },
+    {
+      "code": "28119",
+      "name": "Quijorna",
+      "population": 3987,
+      "lat": 40.426401,
+      "lon": -4.057077
+    },
+    {
+      "code": "28120",
+      "name": "Rascafría",
+      "population": 1712,
+      "lat": 40.904049,
+      "lon": -3.880406
+    },
+    {
+      "code": "28121",
+      "name": "Redueña",
+      "population": 292,
+      "lat": 40.816439,
+      "lon": -3.603701
+    },
+    {
+      "code": "28122",
+      "name": "Ribatejada",
+      "population": 911,
+      "lat": 40.666661,
+      "lon": -3.39273
+    },
+    {
+      "code": "28123",
+      "name": "Rivas-Vaciamadrid",
+      "population": 101637,
+      "lat": 40.328013,
+      "lon": -3.516098
+    },
+    {
+      "code": "28124",
+      "name": "Robledillo de la Jara",
+      "population": 132,
+      "lat": 40.952606,
+      "lon": -3.525088
+    },
+    {
+      "code": "28125",
+      "name": "Robledo de Chavela",
+      "population": 4763,
+      "lat": 40.500796,
+      "lon": -4.238262
+    },
+    {
+      "code": "28126",
+      "name": "Robregordo",
+      "population": 73,
+      "lat": 41.105639,
+      "lon": -3.594005
+    },
+    {
+      "code": "28127",
+      "name": "Las Rozas de Madrid",
+      "population": 99193,
+      "lat": 40.493131,
+      "lon": -3.874369
+    },
+    {
+      "code": "28128",
+      "name": "Rozas de Puerto Real",
+      "population": 581,
+      "lat": 40.310236,
+      "lon": -4.490769
+    },
+    {
+      "code": "28129",
+      "name": "San Agustín del Guadalix",
+      "population": 13849,
+      "lat": 40.678382,
+      "lon": -3.615755
+    },
+    {
+      "code": "28130",
+      "name": "San Fernando de Henares",
+      "population": 38969,
+      "lat": 40.424993,
+      "lon": -3.53516
+    },
+    {
+      "code": "28131",
+      "name": "San Lorenzo de El Escorial",
+      "population": 18772,
+      "lat": 40.591435,
+      "lon": -4.148963
+    },
+    {
+      "code": "28132",
+      "name": "San Martín de la Vega",
+      "population": 20664,
+      "lat": 40.207839,
+      "lon": -3.568595
+    },
+    {
+      "code": "28133",
+      "name": "San Martín de Valdeiglesias",
+      "population": 9120,
+      "lat": 40.361931,
+      "lon": -4.397571
+    },
+    {
+      "code": "28134",
+      "name": "San Sebastián de los Reyes",
+      "population": 94942,
+      "lat": 40.547563,
+      "lon": -3.626397
+    },
+    {
+      "code": "28135",
+      "name": "Santa María de la Alameda",
+      "population": 1516,
+      "lat": 40.595706,
+      "lon": -4.257917
+    },
+    {
+      "code": "28136",
+      "name": "Santorcaz",
+      "population": 998,
+      "lat": 40.472171,
+      "lon": -3.233115
+    },
+    {
+      "code": "28137",
+      "name": "Los Santos de la Humosa",
+      "population": 2797,
+      "lat": 40.501676,
+      "lon": -3.257621
+    },
+    {
+      "code": "28138",
+      "name": "La Serna del Monte",
+      "population": 105,
+      "lat": 41.029858,
+      "lon": -3.625111
+    },
+    {
+      "code": "28140",
+      "name": "Serranillos del Valle",
+      "population": 4632,
+      "lat": 40.204689,
+      "lon": -3.885784
+    },
+    {
+      "code": "28141",
+      "name": "Sevilla la Nueva",
+      "population": 9694,
+      "lat": 40.347655,
+      "lon": -4.027235
+    },
+    {
+      "code": "28143",
+      "name": "Somosierra",
+      "population": 98,
+      "lat": 41.133155,
+      "lon": -3.581784
+    },
+    {
+      "code": "28144",
+      "name": "Soto del Real",
+      "population": 9436,
+      "lat": 40.753179,
+      "lon": -3.786896
+    },
+    {
+      "code": "28145",
+      "name": "Talamanca de Jarama",
+      "population": 4526,
+      "lat": 40.745261,
+      "lon": -3.511038
+    },
+    {
+      "code": "28146",
+      "name": "Tielmes",
+      "population": 2807,
+      "lat": 40.245995,
+      "lon": -3.315155
+    },
+    {
+      "code": "28147",
+      "name": "Titulcia",
+      "population": 1393,
+      "lat": 40.137154,
+      "lon": -3.570814
+    },
+    {
+      "code": "28148",
+      "name": "Torrejón de Ardoz",
+      "population": 141047,
+      "lat": 40.459174,
+      "lon": -3.479824
+    },
+    {
+      "code": "28149",
+      "name": "Torrejón de la Calzada",
+      "population": 10366,
+      "lat": 40.200892,
+      "lon": -3.799326
+    },
+    {
+      "code": "28150",
+      "name": "Torrejón de Velasco",
+      "population": 4887,
+      "lat": 40.187063,
+      "lon": -3.777333
+    },
+    {
+      "code": "28151",
+      "name": "Torrelaguna",
+      "population": 4992,
+      "lat": 40.827901,
+      "lon": -3.53854
+    },
+    {
+      "code": "28152",
+      "name": "Torrelodones",
+      "population": 25250,
+      "lat": 40.5756,
+      "lon": -3.929301
+    },
+    {
+      "code": "28153",
+      "name": "Torremocha de Jarama",
+      "population": 1134,
+      "lat": 40.835359,
+      "lon": -3.496091
+    },
+    {
+      "code": "28154",
+      "name": "Torres de la Alameda",
+      "population": 7742,
+      "lat": 40.405946,
+      "lon": -3.362815
+    },
+    {
+      "code": "28903",
+      "name": "Tres Cantos",
+      "population": 52825,
+      "lat": 40.599068,
+      "lon": -3.712207
+    },
+    {
+      "code": "28155",
+      "name": "Valdaracete",
+      "population": 653,
+      "lat": 40.211226,
+      "lon": -3.19451
+    },
+    {
+      "code": "28156",
+      "name": "Valdeavero",
+      "population": 1817,
+      "lat": 40.631055,
+      "lon": -3.333044
+    },
+    {
+      "code": "28157",
+      "name": "Valdelaguna",
+      "population": 1079,
+      "lat": 40.161988,
+      "lon": -3.367288
+    },
+    {
+      "code": "28158",
+      "name": "Valdemanco",
+      "population": 1065,
+      "lat": 40.872554,
+      "lon": -3.662972
+    },
+    {
+      "code": "28159",
+      "name": "Valdemaqueda",
+      "population": 836,
+      "lat": 40.511151,
+      "lon": -4.295727
+    },
+    {
+      "code": "28160",
+      "name": "Valdemorillo",
+      "population": 14139,
+      "lat": 40.501042,
+      "lon": -4.068353
+    },
+    {
+      "code": "28161",
+      "name": "Valdemoro",
+      "population": 83582,
+      "lat": 40.190765,
+      "lon": -3.677002
+    },
+    {
+      "code": "28162",
+      "name": "Valdeolmos-Alalpardo",
+      "population": 4579,
+      "lat": 40.628809,
+      "lon": -3.474985
+    },
+    {
+      "code": "28163",
+      "name": "Valdepiélagos",
+      "population": 623,
+      "lat": 40.760609,
+      "lon": -3.465944
+    },
+    {
+      "code": "28164",
+      "name": "Valdetorres de Jarama",
+      "population": 5050,
+      "lat": 40.695172,
+      "lon": -3.512413
+    },
+    {
+      "code": "28165",
+      "name": "Valdilecha",
+      "population": 3228,
+      "lat": 40.295773,
+      "lon": -3.303171
+    },
+    {
+      "code": "28166",
+      "name": "Valverde de Alcalá",
+      "population": 555,
+      "lat": 40.419645,
+      "lon": -3.298831
+    },
+    {
+      "code": "28167",
+      "name": "Velilla de San Antonio",
+      "population": 14008,
+      "lat": 40.366957,
+      "lon": -3.487862
+    },
+    {
+      "code": "28168",
+      "name": "El Vellón",
+      "population": 2160,
+      "lat": 40.766029,
+      "lon": -3.582103
+    },
+    {
+      "code": "28169",
+      "name": "Venturada",
+      "population": 2577,
+      "lat": 40.798488,
+      "lon": -3.620972
+    },
+    {
+      "code": "28171",
+      "name": "Villa del Prado",
+      "population": 7424,
+      "lat": 40.276717,
+      "lon": -4.3055
+    },
+    {
+      "code": "28170",
+      "name": "Villaconejos",
+      "population": 3487,
+      "lat": 40.10416,
+      "lon": -3.485096
+    },
+    {
+      "code": "28172",
+      "name": "Villalbilla",
+      "population": 17967,
+      "lat": 40.43251,
+      "lon": -3.298688
+    },
+    {
+      "code": "28173",
+      "name": "Villamanrique de Tajo",
+      "population": 820,
+      "lat": 40.068809,
+      "lon": -3.240184
+    },
+    {
+      "code": "28174",
+      "name": "Villamanta",
+      "population": 2855,
+      "lat": 40.299556,
+      "lon": -4.110129
+    },
+    {
+      "code": "28175",
+      "name": "Villamantilla",
+      "population": 1620,
+      "lat": 40.338057,
+      "lon": -4.130707
+    },
+    {
+      "code": "28176",
+      "name": "Villanueva de la Cañada",
+      "population": 23714,
+      "lat": 40.446576,
+      "lon": -4.005406
+    },
+    {
+      "code": "28178",
+      "name": "Villanueva de Perales",
+      "population": 1718,
+      "lat": 40.346599,
+      "lon": -4.101506
+    },
+    {
+      "code": "28177",
+      "name": "Villanueva del Pardillo",
+      "population": 17994,
+      "lat": 40.490696,
+      "lon": -3.96427
+    },
+    {
+      "code": "28179",
+      "name": "Villar del Olmo",
+      "population": 2274,
+      "lat": 40.33657,
+      "lon": -3.235648
+    },
+    {
+      "code": "28180",
+      "name": "Villarejo de Salvanés",
+      "population": 7887,
+      "lat": 40.168887,
+      "lon": -3.276156
+    },
+    {
+      "code": "28181",
+      "name": "Villaviciosa de Odón",
+      "population": 29294,
+      "lat": 40.358607,
+      "lon": -3.901882
+    },
+    {
+      "code": "28182",
+      "name": "Villavieja del Lozoya",
+      "population": 327,
+      "lat": 41.006481,
+      "lon": -3.671651
+    },
+    {
+      "code": "28183",
+      "name": "Zarzalejo",
+      "population": 1870,
+      "lat": 40.547309,
+      "lon": -4.181378
+    },
+    {
+      "code": "39001",
+      "name": "Alfoz de Lloredo",
+      "population": 2502,
+      "lat": 43.378694,
+      "lon": -4.181694
+    },
+    {
+      "code": "39002",
+      "name": "Ampuero",
+      "population": 4471,
+      "lat": 43.342389,
+      "lon": -3.417417
+    },
+    {
+      "code": "39003",
+      "name": "Anievas",
+      "population": 276,
+      "lat": 43.202611,
+      "lon": -4.007278
+    },
+    {
+      "code": "39004",
+      "name": "Arenas de Iguña",
+      "population": 1756,
+      "lat": 43.185583,
+      "lon": -4.048806
+    },
+    {
+      "code": "39005",
+      "name": "Argoños",
+      "population": 1873,
+      "lat": 43.455639,
+      "lon": -3.493972
+    },
+    {
+      "code": "39006",
+      "name": "Arnuero",
+      "population": 2272,
+      "lat": 43.470444,
+      "lon": -3.561611
+    },
+    {
+      "code": "39007",
+      "name": "Arredondo",
+      "population": 477,
+      "lat": 43.274556,
+      "lon": -3.6015
+    },
+    {
+      "code": "39008",
+      "name": "El Astillero",
+      "population": 18453,
+      "lat": 43.40025,
+      "lon": -3.819111
+    },
+    {
+      "code": "39009",
+      "name": "Bárcena de Cicero",
+      "population": 4735,
+      "lat": 43.424611,
+      "lon": -3.522917
+    },
+    {
+      "code": "39010",
+      "name": "Bárcena de Pie de Concha",
+      "population": 674,
+      "lat": 43.1255,
+      "lon": -4.058111
+    },
+    {
+      "code": "39011",
+      "name": "Bareyo",
+      "population": 2133,
+      "lat": 43.479111,
+      "lon": -3.612028
+    },
+    {
+      "code": "39012",
+      "name": "Cabezón de la Sal",
+      "population": 8280,
+      "lat": 43.308944,
+      "lon": -4.236861
+    },
+    {
+      "code": "39013",
+      "name": "Cabezón de Liébana",
+      "population": 540,
+      "lat": 43.133556,
+      "lon": -4.575306
+    },
+    {
+      "code": "39014",
+      "name": "Cabuérniga",
+      "population": 1001,
+      "lat": 43.226583,
+      "lon": -4.301472
+    },
+    {
+      "code": "39015",
+      "name": "Camaleño",
+      "population": 972,
+      "lat": 43.150667,
+      "lon": -4.695528
+    },
+    {
+      "code": "39016",
+      "name": "Camargo",
+      "population": 30425,
+      "lat": 43.423528,
+      "lon": -3.855083
+    },
+    {
+      "code": "39027",
+      "name": "Campoo de Enmedio",
+      "population": 3732,
+      "lat": 42.986333,
+      "lon": -4.147306
+    },
+    {
+      "code": "39017",
+      "name": "Campoo de Yuso",
+      "population": 674,
+      "lat": 43.016444,
+      "lon": -4.002556
+    },
+    {
+      "code": "39018",
+      "name": "Cartes",
+      "population": 5863,
+      "lat": 43.323476,
+      "lon": -4.070094
+    },
+    {
+      "code": "39019",
+      "name": "Castañeda",
+      "population": 3247,
+      "lat": 43.310194,
+      "lon": -3.93
+    },
+    {
+      "code": "39020",
+      "name": "Castro-Urdiales",
+      "population": 33365,
+      "lat": 43.38375,
+      "lon": -3.217667
+    },
+    {
+      "code": "39021",
+      "name": "Cieza",
+      "population": 544,
+      "lat": 43.221056,
+      "lon": -4.096722
+    },
+    {
+      "code": "39022",
+      "name": "Cillorigo de Liébana",
+      "population": 1361,
+      "lat": 43.17725,
+      "lon": -4.600472
+    },
+    {
+      "code": "39023",
+      "name": "Colindres",
+      "population": 8536,
+      "lat": 43.395056,
+      "lon": -3.446889
+    },
+    {
+      "code": "39024",
+      "name": "Comillas",
+      "population": 2141,
+      "lat": 43.385278,
+      "lon": -4.291583
+    },
+    {
+      "code": "39025",
+      "name": "Los Corrales de Buelna",
+      "population": 10799,
+      "lat": 43.255611,
+      "lon": -4.068306
+    },
+    {
+      "code": "39026",
+      "name": "Corvera de Toranzo",
+      "population": 2140,
+      "lat": 43.212583,
+      "lon": -3.939278
+    },
+    {
+      "code": "39028",
+      "name": "Entrambasaguas",
+      "population": 5628,
+      "lat": 43.379056,
+      "lon": -3.683056
+    },
+    {
+      "code": "39029",
+      "name": "Escalante",
+      "population": 736,
+      "lat": 43.437417,
+      "lon": -3.514083
+    },
+    {
+      "code": "39030",
+      "name": "Guriezo",
+      "population": 2458,
+      "lat": 43.348944,
+      "lon": -3.326111
+    },
+    {
+      "code": "39031",
+      "name": "Hazas de Cesto",
+      "population": 1865,
+      "lat": 43.413694,
+      "lon": -3.579333
+    },
+    {
+      "code": "39032",
+      "name": "Hermandad de Campoo de Suso",
+      "population": 1616,
+      "lat": 43.022,
+      "lon": -4.225833
+    },
+    {
+      "code": "39033",
+      "name": "Herrerías",
+      "population": 581,
+      "lat": 43.307139,
+      "lon": -4.471222
+    },
+    {
+      "code": "39034",
+      "name": "Lamasón",
+      "population": 248,
+      "lat": 43.252789,
+      "lon": -4.484563
+    },
+    {
+      "code": "39035",
+      "name": "Laredo",
+      "population": 10738,
+      "lat": 43.409888,
+      "lon": -3.414322
+    },
+    {
+      "code": "39036",
+      "name": "Liendo",
+      "population": 1228,
+      "lat": 43.394833,
+      "lon": -3.378278
+    },
+    {
+      "code": "39037",
+      "name": "Liérganes",
+      "population": 2394,
+      "lat": 43.344944,
+      "lon": -3.745639
+    },
+    {
+      "code": "39038",
+      "name": "Limpias",
+      "population": 2004,
+      "lat": 43.361306,
+      "lon": -3.426833
+    },
+    {
+      "code": "39039",
+      "name": "Luena",
+      "population": 607,
+      "lat": 43.104667,
+      "lon": -3.902278
+    },
+    {
+      "code": "39040",
+      "name": "Marina de Cudeyo",
+      "population": 5194,
+      "lat": 43.418694,
+      "lon": -3.757111
+    },
+    {
+      "code": "39041",
+      "name": "Mazcuerras",
+      "population": 2089,
+      "lat": 43.298581,
+      "lon": -4.209254
+    },
+    {
+      "code": "39042",
+      "name": "Medio Cudeyo",
+      "population": 7674,
+      "lat": 43.378694,
+      "lon": -3.734444
+    },
+    {
+      "code": "39043",
+      "name": "Meruelo",
+      "population": 2301,
+      "lat": 43.456672,
+      "lon": -3.57469
+    },
+    {
+      "code": "39044",
+      "name": "Miengo",
+      "population": 5234,
+      "lat": 43.427275,
+      "lon": -3.992972
+    },
+    {
+      "code": "39045",
+      "name": "Miera",
+      "population": 400,
+      "lat": 43.275583,
+      "lon": -3.712222
+    },
+    {
+      "code": "39046",
+      "name": "Molledo",
+      "population": 1486,
+      "lat": 43.1495,
+      "lon": -4.041972
+    },
+    {
+      "code": "39047",
+      "name": "Noja",
+      "population": 2686,
+      "lat": 43.479333,
+      "lon": -3.520528
+    },
+    {
+      "code": "39048",
+      "name": "Penagos",
+      "population": 2257,
+      "lat": 43.340056,
+      "lon": -3.81875
+    },
+    {
+      "code": "39049",
+      "name": "Peñarrubia",
+      "population": 331,
+      "lat": 43.252477,
+      "lon": -4.583742
+    },
+    {
+      "code": "39050",
+      "name": "Pesaguero",
+      "population": 275,
+      "lat": 43.076306,
+      "lon": -4.544083
+    },
+    {
+      "code": "39051",
+      "name": "Pesquera",
+      "population": 70,
+      "lat": 43.082111,
+      "lon": -4.080444
+    },
+    {
+      "code": "39052",
+      "name": "Piélagos",
+      "population": 26724,
+      "lat": 43.356056,
+      "lon": -3.956583
+    },
+    {
+      "code": "39053",
+      "name": "Polaciones",
+      "population": 202,
+      "lat": 43.100528,
+      "lon": -4.414222
+    },
+    {
+      "code": "39054",
+      "name": "Polanco",
+      "population": 6231,
+      "lat": 43.384694,
+      "lon": -4.018222
+    },
+    {
+      "code": "39055",
+      "name": "Potes",
+      "population": 1345,
+      "lat": 43.154769,
+      "lon": -4.620832
+    },
+    {
+      "code": "39056",
+      "name": "Puente Viesgo",
+      "population": 2877,
+      "lat": 43.298944,
+      "lon": -3.964222
+    },
+    {
+      "code": "39057",
+      "name": "Ramales de la Victoria",
+      "population": 3055,
+      "lat": 43.256528,
+      "lon": -3.464472
+    },
+    {
+      "code": "39058",
+      "name": "Rasines",
+      "population": 971,
+      "lat": 43.304583,
+      "lon": -3.429056
+    },
+    {
+      "code": "39059",
+      "name": "Reinosa",
+      "population": 8526,
+      "lat": 43.001056,
+      "lon": -4.137972
+    },
+    {
+      "code": "39060",
+      "name": "Reocín",
+      "population": 8414,
+      "lat": 43.359694,
+      "lon": -4.08725
+    },
+    {
+      "code": "39061",
+      "name": "Ribamontán al Mar",
+      "population": 4624,
+      "lat": 43.451306,
+      "lon": -3.681056
+    },
+    {
+      "code": "39062",
+      "name": "Ribamontán al Monte",
+      "population": 2547,
+      "lat": 43.406889,
+      "lon": -3.663306
+    },
+    {
+      "code": "39063",
+      "name": "Rionansa",
+      "population": 1002,
+      "lat": 43.255444,
+      "lon": -4.405972
+    },
+    {
+      "code": "39064",
+      "name": "Riotuerto",
+      "population": 1670,
+      "lat": 43.346944,
+      "lon": -3.700333
+    },
+    {
+      "code": "39065",
+      "name": "Las Rozas de Valdearroyo",
+      "population": 261,
+      "lat": 42.973222,
+      "lon": -4.029278
+    },
+    {
+      "code": "39066",
+      "name": "Ruente",
+      "population": 1072,
+      "lat": 43.259083,
+      "lon": -4.267333
+    },
+    {
+      "code": "39067",
+      "name": "Ruesga",
+      "population": 830,
+      "lat": 43.281444,
+      "lon": -3.563667
+    },
+    {
+      "code": "39068",
+      "name": "Ruiloba",
+      "population": 764,
+      "lat": 43.380944,
+      "lon": -4.252111
+    },
+    {
+      "code": "39069",
+      "name": "San Felices de Buelna",
+      "population": 2371,
+      "lat": 43.274667,
+      "lon": -4.050139
+    },
+    {
+      "code": "39070",
+      "name": "San Miguel de Aguayo",
+      "population": 167,
+      "lat": 43.056444,
+      "lon": -4.024833
+    },
+    {
+      "code": "39071",
+      "name": "San Pedro del Romeral",
+      "population": 433,
+      "lat": 43.115611,
+      "lon": -3.818694
+    },
+    {
+      "code": "39072",
+      "name": "San Roque de Riomiera",
+      "population": 340,
+      "lat": 43.234889,
+      "lon": -3.702139
+    },
+    {
+      "code": "39080",
+      "name": "San Vicente de la Barquera",
+      "population": 3985,
+      "lat": 43.384384,
+      "lon": -4.401858
+    },
+    {
+      "code": "39073",
+      "name": "Santa Cruz de Bezana",
+      "population": 13824,
+      "lat": 43.440444,
+      "lon": -3.904722
+    },
+    {
+      "code": "39074",
+      "name": "Santa María de Cayón",
+      "population": 9446,
+      "lat": 43.309611,
+      "lon": -3.852944
+    },
+    {
+      "code": "39075",
+      "name": "Santander",
+      "population": 173635,
+      "lat": 43.462343,
+      "lon": -3.80999
+    },
+    {
+      "code": "39076",
+      "name": "Santillana del Mar",
+      "population": 4208,
+      "lat": 43.390583,
+      "lon": -4.108361
+    },
+    {
+      "code": "39077",
+      "name": "Santiurde de Reinosa",
+      "population": 254,
+      "lat": 43.058611,
+      "lon": -4.083583
+    },
+    {
+      "code": "39078",
+      "name": "Santiurde de Toranzo",
+      "population": 1738,
+      "lat": 43.238528,
+      "lon": -3.941639
+    },
+    {
+      "code": "39079",
+      "name": "Santoña",
+      "population": 10944,
+      "lat": 43.444867,
+      "lon": -3.456169
+    },
+    {
+      "code": "39081",
+      "name": "Saro",
+      "population": 508,
+      "lat": 43.261306,
+      "lon": -3.808111
+    },
+    {
+      "code": "39082",
+      "name": "Selaya",
+      "population": 1849,
+      "lat": 43.216694,
+      "lon": -3.806861
+    },
+    {
+      "code": "39083",
+      "name": "Soba",
+      "population": 1075,
+      "lat": 43.185917,
+      "lon": -3.522139
+    },
+    {
+      "code": "39084",
+      "name": "Solórzano",
+      "population": 1110,
+      "lat": 43.381,
+      "lon": -3.587417
+    },
+    {
+      "code": "39085",
+      "name": "Suances",
+      "population": 9101,
+      "lat": 43.426028,
+      "lon": -4.042
+    },
+    {
+      "code": "39086",
+      "name": "Los Tojos",
+      "population": 374,
+      "lat": 43.166694,
+      "lon": -4.272639
+    },
+    {
+      "code": "39087",
+      "name": "Torrelavega",
+      "population": 51466,
+      "lat": 43.349111,
+      "lon": -4.050639
+    },
+    {
+      "code": "39088",
+      "name": "Tresviso",
+      "population": 53,
+      "lat": 43.257528,
+      "lon": -4.668583
+    },
+    {
+      "code": "39089",
+      "name": "Tudanca",
+      "population": 156,
+      "lat": 43.162056,
+      "lon": -4.371583
+    },
+    {
+      "code": "39090",
+      "name": "Udías",
+      "population": 946,
+      "lat": 43.335222,
+      "lon": -4.25325
+    },
+    {
+      "code": "39095",
+      "name": "Val de San Vicente",
+      "population": 2808,
+      "lat": 43.374694,
+      "lon": -4.487722
+    },
+    {
+      "code": "39091",
+      "name": "Valdáliga",
+      "population": 2153,
+      "lat": 43.329222,
+      "lon": -4.350222
+    },
+    {
+      "code": "39092",
+      "name": "Valdeolea",
+      "population": 884,
+      "lat": 42.874833,
+      "lon": -4.162139
+    },
+    {
+      "code": "39093",
+      "name": "Valdeprado del Río",
+      "population": 320,
+      "lat": 42.909583,
+      "lon": -4.077139
+    },
+    {
+      "code": "39094",
+      "name": "Valderredible",
+      "population": 938,
+      "lat": 42.805639,
+      "lon": -3.940694
+    },
+    {
+      "code": "39101",
+      "name": "Valle de Villaverde",
+      "population": 251,
+      "lat": 43.244586,
+      "lon": -3.260854
+    },
+    {
+      "code": "39096",
+      "name": "Vega de Liébana",
+      "population": 690,
+      "lat": 43.099444,
+      "lon": -4.647194
+    },
+    {
+      "code": "39097",
+      "name": "Vega de Pas",
+      "population": 768,
+      "lat": 43.1585,
+      "lon": -3.782694
+    },
+    {
+      "code": "39098",
+      "name": "Villacarriedo",
+      "population": 1680,
+      "lat": 43.228667,
+      "lon": -3.810083
+    },
+    {
+      "code": "39099",
+      "name": "Villaescusa",
+      "population": 3953,
+      "lat": 43.370333,
+      "lon": -3.856639
+    },
+    {
+      "code": "39100",
+      "name": "Villafufre",
+      "population": 1019,
+      "lat": 43.25925,
+      "lon": -3.877583
+    },
+    {
+      "code": "39102",
+      "name": "Voto",
+      "population": 2947,
+      "lat": 43.355056,
+      "lon": -3.496944
+    },
+    {
+      "code": "48001",
+      "name": "Abadiño",
+      "population": 7742,
+      "lat": 43.152499,
+      "lon": -2.608188
+    },
+    {
+      "code": "48002",
+      "name": "Abanto y Ciérvana-Abanto Zierbena",
+      "population": 9408,
+      "lat": 43.320733,
+      "lon": -3.073873
+    },
+    {
+      "code": "48911",
+      "name": "Ajangiz",
+      "population": 474,
+      "lat": 43.309457,
+      "lon": -2.661824
+    },
+    {
+      "code": "48912",
+      "name": "Alonsotegi",
+      "population": 3027,
+      "lat": 43.245085,
+      "lon": -2.987713
+    },
+    {
+      "code": "48003",
+      "name": "Amorebieta-Etxano",
+      "population": 19663,
+      "lat": 43.220301,
+      "lon": -2.732118
+    },
+    {
+      "code": "48004",
+      "name": "Amoroto",
+      "population": 392,
+      "lat": 43.325949,
+      "lon": -2.513445
+    },
+    {
+      "code": "48005",
+      "name": "Arakaldo",
+      "population": 160,
+      "lat": 43.153443,
+      "lon": -2.933967
+    },
+    {
+      "code": "48006",
+      "name": "Arantzazu",
+      "population": 394,
+      "lat": 43.156783,
+      "lon": -2.791589
+    },
+    {
+      "code": "48093",
+      "name": "Areatza",
+      "population": 1271,
+      "lat": 43.120756,
+      "lon": -2.767813
+    },
+    {
+      "code": "48009",
+      "name": "Arrankudiaga-Zollo",
+      "population": 1007,
+      "lat": 43.168509,
+      "lon": -2.921585
+    },
+    {
+      "code": "48914",
+      "name": "Arratzu",
+      "population": 417,
+      "lat": 43.305576,
+      "lon": -2.640284
+    },
+    {
+      "code": "48010",
+      "name": "Arrieta",
+      "population": 579,
+      "lat": 43.341925,
+      "lon": -2.76898
+    },
+    {
+      "code": "48011",
+      "name": "Arrigorriaga",
+      "population": 11968,
+      "lat": 43.205913,
+      "lon": -2.887721
+    },
+    {
+      "code": "48023",
+      "name": "Artea",
+      "population": 748,
+      "lat": 43.132628,
+      "lon": -2.782605
+    },
+    {
+      "code": "48008",
+      "name": "Artzentales",
+      "population": 737,
+      "lat": 43.251348,
+      "lon": -3.221602
+    },
+    {
+      "code": "48091",
+      "name": "Atxondo",
+      "population": 1355,
+      "lat": 43.129243,
+      "lon": -2.584817
+    },
+    {
+      "code": "48070",
+      "name": "Aulesti",
+      "population": 643,
+      "lat": 43.297257,
+      "lon": -2.562474
+    },
+    {
+      "code": "48012",
+      "name": "Bakio",
+      "population": 2819,
+      "lat": 43.42139,
+      "lon": -2.81421
+    },
+    {
+      "code": "48090",
+      "name": "Balmaseda",
+      "population": 7671,
+      "lat": 43.196324,
+      "lon": -3.193092
+    },
+    {
+      "code": "48013",
+      "name": "Barakaldo",
+      "population": 101869,
+      "lat": 43.297587,
+      "lon": -2.986094
+    },
+    {
+      "code": "48014",
+      "name": "Barrika",
+      "population": 1549,
+      "lat": 43.407786,
+      "lon": -2.965439
+    },
+    {
+      "code": "48015",
+      "name": "Basauri",
+      "population": 40407,
+      "lat": 43.235352,
+      "lon": -2.891715
+    },
+    {
+      "code": "48092",
+      "name": "Bedia",
+      "population": 1111,
+      "lat": 43.209543,
+      "lon": -2.799936
+    },
+    {
+      "code": "48016",
+      "name": "Berango",
+      "population": 7665,
+      "lat": 43.363587,
+      "lon": -2.99692
+    },
+    {
+      "code": "48017",
+      "name": "Bermeo",
+      "population": 17092,
+      "lat": 43.420237,
+      "lon": -2.723068
+    },
+    {
+      "code": "48018",
+      "name": "Berriatua",
+      "population": 1242,
+      "lat": 43.308248,
+      "lon": -2.467512
+    },
+    {
+      "code": "48019",
+      "name": "Berriz",
+      "population": 4587,
+      "lat": 43.174802,
+      "lon": -2.57765
+    },
+    {
+      "code": "48020",
+      "name": "Bilbao",
+      "population": 347342,
+      "lat": 43.264219,
+      "lon": -2.923459
+    },
+    {
+      "code": "48021",
+      "name": "Busturia",
+      "population": 1653,
+      "lat": 43.382298,
+      "lon": -2.700613
+    },
+    {
+      "code": "48901",
+      "name": "Derio",
+      "population": 7162,
+      "lat": 43.291353,
+      "lon": -2.886809
+    },
+    {
+      "code": "48026",
+      "name": "Dima",
+      "population": 1505,
+      "lat": 43.143326,
+      "lon": -2.751896
+    },
+    {
+      "code": "48027",
+      "name": "Durango",
+      "population": 29857,
+      "lat": 43.167128,
+      "lon": -2.632027
+    },
+    {
+      "code": "48028",
+      "name": "Ea",
+      "population": 838,
+      "lat": 43.380142,
+      "lon": -2.585818
+    },
+    {
+      "code": "48031",
+      "name": "Elantxobe",
+      "population": 348,
+      "lat": 43.403266,
+      "lon": -2.639734
+    },
+    {
+      "code": "48032",
+      "name": "Elorrio",
+      "population": 7293,
+      "lat": 43.130639,
+      "lon": -2.542298
+    },
+    {
+      "code": "48902",
+      "name": "Erandio",
+      "population": 24675,
+      "lat": 43.302887,
+      "lon": -2.975458
+    },
+    {
+      "code": "48033",
+      "name": "Ereño",
+      "population": 272,
+      "lat": 43.355715,
+      "lon": -2.623066
+    },
+    {
+      "code": "48034",
+      "name": "Ermua",
+      "population": 15616,
+      "lat": 43.185868,
+      "lon": -2.502261
+    },
+    {
+      "code": "48079",
+      "name": "Errigoiti",
+      "population": 510,
+      "lat": 43.318805,
+      "lon": -2.725475
+    },
+    {
+      "code": "48029",
+      "name": "Etxebarri",
+      "population": 11950,
+      "lat": 43.246218,
+      "lon": -2.892285
+    },
+    {
+      "code": "48030",
+      "name": "Etxebarria",
+      "population": 772,
+      "lat": 43.254518,
+      "lon": -2.476586
+    },
+    {
+      "code": "48906",
+      "name": "Forua",
+      "population": 948,
+      "lat": 43.334454,
+      "lon": -2.675138
+    },
+    {
+      "code": "48035",
+      "name": "Fruiz",
+      "population": 576,
+      "lat": 43.327776,
+      "lon": -2.784996
+    },
+    {
+      "code": "48036",
+      "name": "Galdakao",
+      "population": 24768,
+      "lat": 43.231094,
+      "lon": -2.84005
+    },
+    {
+      "code": "48037",
+      "name": "Galdames",
+      "population": 823,
+      "lat": 43.253968,
+      "lon": -3.097991
+    },
+    {
+      "code": "48038",
+      "name": "Gamiz-Fika",
+      "population": 1384,
+      "lat": 43.327049,
+      "lon": -2.819087
+    },
+    {
+      "code": "48039",
+      "name": "Garai",
+      "population": 343,
+      "lat": 43.193875,
+      "lon": -2.611394
+    },
+    {
+      "code": "48040",
+      "name": "Gatika",
+      "population": 1632,
+      "lat": 43.36308,
+      "lon": -2.873884
+    },
+    {
+      "code": "48041",
+      "name": "Gautegiz Arteaga",
+      "population": 880,
+      "lat": 43.353154,
+      "lon": -2.649241
+    },
+    {
+      "code": "48046",
+      "name": "Gernika-Lumo",
+      "population": 17009,
+      "lat": 43.315408,
+      "lon": -2.678635
+    },
+    {
+      "code": "48044",
+      "name": "Getxo",
+      "population": 76155,
+      "lat": 43.343241,
+      "lon": -3.00766
+    },
+    {
+      "code": "48047",
+      "name": "Gizaburuaga",
+      "population": 196,
+      "lat": 43.330715,
+      "lon": -2.538043
+    },
+    {
+      "code": "48042",
+      "name": "Gordexola",
+      "population": 1708,
+      "lat": 43.17984,
+      "lon": -3.073783
+    },
+    {
+      "code": "48043",
+      "name": "Gorliz",
+      "population": 6014,
+      "lat": 43.415411,
+      "lon": -2.932652
+    },
+    {
+      "code": "48045",
+      "name": "Güeñes",
+      "population": 6753,
+      "lat": 43.210447,
+      "lon": -3.095162
+    },
+    {
+      "code": "48048",
+      "name": "Ibarrangelu",
+      "population": 680,
+      "lat": 43.390423,
+      "lon": -2.631764
+    },
+    {
+      "code": "48094",
+      "name": "Igorre",
+      "population": 4329,
+      "lat": 43.164402,
+      "lon": -2.778505
+    },
+    {
+      "code": "48049",
+      "name": "Ispaster",
+      "population": 714,
+      "lat": 43.362032,
+      "lon": -2.544622
+    },
+    {
+      "code": "48910",
+      "name": "Iurreta",
+      "population": 3868,
+      "lat": 43.176621,
+      "lon": -2.633239
+    },
+    {
+      "code": "48050",
+      "name": "Izurtza",
+      "population": 229,
+      "lat": 43.153627,
+      "lon": -2.641035
+    },
+    {
+      "code": "48022",
+      "name": "Karrantza Harana/Valle de Carranza",
+      "population": 2706,
+      "lat": 43.225037,
+      "lon": -3.360789
+    },
+    {
+      "code": "48907",
+      "name": "Kortezubi",
+      "population": 447,
+      "lat": 43.341059,
+      "lon": -2.655462
+    },
+    {
+      "code": "48051",
+      "name": "Lanestosa",
+      "population": 246,
+      "lat": 43.220128,
+      "lon": -3.438705
+    },
+    {
+      "code": "48052",
+      "name": "Larrabetzu",
+      "population": 2040,
+      "lat": 43.260826,
+      "lon": -2.79614
+    },
+    {
+      "code": "48053",
+      "name": "Laukiz",
+      "population": 1244,
+      "lat": 43.352474,
+      "lon": -2.907287
+    },
+    {
+      "code": "48054",
+      "name": "Leioa",
+      "population": 32665,
+      "lat": 43.32781,
+      "lon": -2.98632
+    },
+    {
+      "code": "48057",
+      "name": "Lekeitio",
+      "population": 7154,
+      "lat": 43.363934,
+      "lon": -2.503136
+    },
+    {
+      "code": "48055",
+      "name": "Lemoa",
+      "population": 3579,
+      "lat": 43.205345,
+      "lon": -2.773366
+    },
+    {
+      "code": "48056",
+      "name": "Lemoiz",
+      "population": 1339,
+      "lat": 43.41218,
+      "lon": -2.902671
+    },
+    {
+      "code": "48081",
+      "name": "Lezama",
+      "population": 2460,
+      "lat": 43.274193,
+      "lon": -2.832914
+    },
+    {
+      "code": "48903",
+      "name": "Loiu",
+      "population": 2354,
+      "lat": 43.314849,
+      "lon": -2.939338
+    },
+    {
+      "code": "48058",
+      "name": "Mallabia",
+      "population": 1155,
+      "lat": 43.189861,
+      "lon": -2.529113
+    },
+    {
+      "code": "48059",
+      "name": "Mañaria",
+      "population": 533,
+      "lat": 43.137866,
+      "lon": -2.660874
+    },
+    {
+      "code": "48060",
+      "name": "Markina-Xemein",
+      "population": 5079,
+      "lat": 43.267428,
+      "lon": -2.498451
+    },
+    {
+      "code": "48061",
+      "name": "Maruri-Jatabe",
+      "population": 1071,
+      "lat": 43.379455,
+      "lon": -2.86732
+    },
+    {
+      "code": "48062",
+      "name": "Mendata",
+      "population": 382,
+      "lat": 43.281574,
+      "lon": -2.644122
+    },
+    {
+      "code": "48063",
+      "name": "Mendexa",
+      "population": 425,
+      "lat": 43.345469,
+      "lon": -2.485314
+    },
+    {
+      "code": "48064",
+      "name": "Meñaka",
+      "population": 766,
+      "lat": 43.363127,
+      "lon": -2.802742
+    },
+    {
+      "code": "48066",
+      "name": "Morga",
+      "population": 413,
+      "lat": 43.299555,
+      "lon": -2.752905
+    },
+    {
+      "code": "48068",
+      "name": "Mundaka",
+      "population": 1830,
+      "lat": 43.40756,
+      "lon": -2.698099
+    },
+    {
+      "code": "48069",
+      "name": "Mungia",
+      "population": 17990,
+      "lat": 43.354665,
+      "lon": -2.846561
+    },
+    {
+      "code": "48007",
+      "name": "Munitibar-Arbatzegi Gerrikaitz",
+      "population": 469,
+      "lat": 43.265315,
+      "lon": -2.592693
+    },
+    {
+      "code": "48908",
+      "name": "Murueta",
+      "population": 321,
+      "lat": 43.351439,
+      "lon": -2.681715
+    },
+    {
+      "code": "48071",
+      "name": "Muskiz",
+      "population": 7357,
+      "lat": 43.323291,
+      "lon": -3.124962
+    },
+    {
+      "code": "48067",
+      "name": "Muxika",
+      "population": 1546,
+      "lat": 43.292463,
+      "lon": -2.708638
+    },
+    {
+      "code": "48909",
+      "name": "Nabarniz",
+      "population": 274,
+      "lat": 43.321094,
+      "lon": -2.584419
+    },
+    {
+      "code": "48073",
+      "name": "Ondarroa",
+      "population": 8129,
+      "lat": 43.320753,
+      "lon": -2.420384
+    },
+    {
+      "code": "48075",
+      "name": "Orozko",
+      "population": 2659,
+      "lat": 43.107065,
+      "lon": -2.910948
+    },
+    {
+      "code": "48083",
+      "name": "Ortuella",
+      "population": 8616,
+      "lat": 43.310525,
+      "lon": -3.057723
+    },
+    {
+      "code": "48072",
+      "name": "Otxandio",
+      "population": 1355,
+      "lat": 43.040412,
+      "lon": -2.654743
+    },
+    {
+      "code": "48077",
+      "name": "Plentzia",
+      "population": 4392,
+      "lat": 43.404442,
+      "lon": -2.950273
+    },
+    {
+      "code": "48078",
+      "name": "Portugalete",
+      "population": 44800,
+      "lat": 43.321267,
+      "lon": -3.017225
+    },
+    {
+      "code": "48082",
+      "name": "Santurtzi",
+      "population": 46244,
+      "lat": 43.328802,
+      "lon": -3.032998
+    },
+    {
+      "code": "48084",
+      "name": "Sestao",
+      "population": 28201,
+      "lat": 43.30971,
+      "lon": -3.007627
+    },
+    {
+      "code": "48904",
+      "name": "Sondika",
+      "population": 4584,
+      "lat": 43.29513,
+      "lon": -2.931303
+    },
+    {
+      "code": "48085",
+      "name": "Sopela",
+      "population": 14923,
+      "lat": 43.381653,
+      "lon": -2.981071
+    },
+    {
+      "code": "48086",
+      "name": "Sopuerta",
+      "population": 2759,
+      "lat": 43.261564,
+      "lon": -3.154205
+    },
+    {
+      "code": "48076",
+      "name": "Sukarrieta",
+      "population": 354,
+      "lat": 43.395271,
+      "lon": -2.696534
+    },
+    {
+      "code": "48087",
+      "name": "Trucios-Turtzioz",
+      "population": 516,
+      "lat": 43.271448,
+      "lon": -3.256196
+    },
+    {
+      "code": "48088",
+      "name": "Ubide",
+      "population": 171,
+      "lat": 43.023519,
+      "lon": -2.688342
+    },
+    {
+      "code": "48065",
+      "name": "Ugao-Miraballes",
+      "population": 4176,
+      "lat": 43.180194,
+      "lon": -2.901332
+    },
+    {
+      "code": "48089",
+      "name": "Urduliz",
+      "population": 5709,
+      "lat": 43.376522,
+      "lon": -2.961048
+    },
+    {
+      "code": "48074",
+      "name": "Urduña/Orduña",
+      "population": 4202,
+      "lat": 42.994991,
+      "lon": -3.009125
+    },
+    {
+      "code": "48916",
+      "name": "Usansolo",
+      "population": 4568,
+      "lat": 43.219704,
+      "lon": -2.819576
+    },
+    {
+      "code": "48080",
+      "name": "Valle de Trápaga-Trapagaran",
+      "population": 11884,
+      "lat": 43.305386,
+      "lon": -3.038101
+    },
+    {
+      "code": "48095",
+      "name": "Zaldibar",
+      "population": 3018,
+      "lat": 43.170892,
+      "lon": -2.545594
+    },
+    {
+      "code": "48096",
+      "name": "Zalla",
+      "population": 8311,
+      "lat": 43.213546,
+      "lon": -3.134161
+    },
+    {
+      "code": "48905",
+      "name": "Zamudio",
+      "population": 3312,
+      "lat": 43.284575,
+      "lon": -2.865375
+    },
+    {
+      "code": "48097",
+      "name": "Zaratamo",
+      "population": 1608,
+      "lat": 43.211288,
+      "lon": -2.873874
+    },
+    {
+      "code": "48024",
+      "name": "Zeanuri",
+      "population": 1251,
+      "lat": 43.098176,
+      "lon": -2.749646
+    },
+    {
+      "code": "48025",
+      "name": "Zeberio",
+      "population": 1082,
+      "lat": 43.147364,
+      "lon": -2.848873
+    },
+    {
+      "code": "48913",
+      "name": "Zierbena",
+      "population": 1492,
+      "lat": 43.3459,
+      "lon": -3.088903
+    },
+    {
+      "code": "48915",
+      "name": "Ziortza-Bolibar",
+      "population": 408,
+      "lat": 43.249423,
+      "lon": -2.548432
+    }
+  ]
+}
