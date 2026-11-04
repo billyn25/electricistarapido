@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: '22'
       - name: Generar y auditar sin cambiar rutas
-        run: npm run check && node scripts/regional-contact.mjs
+        run: npm run build:release
       - name: Preparar muestra visual
         run: zip -q .cache/regional-sample.zip dist/index.html dist/assets/*.css dist/assets/*.js
       - name: Verificar todas las paginas centrales publicadas y controles norte

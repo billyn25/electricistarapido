@@ -24,7 +24,7 @@ jobs:
           node-version: '22'
       - name: Compilar, comprobar SEO y preservar contactos regionales
         run: npm run build:release
-      - name: Contrastar las 573 URLs publicadas con los archivos generados
+      - name: Contrastar las URLs consolidadas publicadas con los archivos generados
         run: node tests/seo-strengthen-live.mjs
       - name: Preparar navegador de comprobación
         run: |

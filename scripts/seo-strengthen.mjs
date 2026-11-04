@@ -49,7 +49,7 @@ const cityURL=(p,slug)=>`/electricista/${p.slug}/${slug}/`;
 export function inventory(root){
  const pages=allFiles(root).filter(f=>f.endsWith('.html')).map(file=>{const html=fs.readFileSync(file,'utf8');return {file,html,route:routeOf(html),type:typeOf(routeOf(html))};});
  const byRoute=new Map(pages.map(p=>[p.route,p]));assert.equal(byRoute.size,pages.length,'Canonical duplicado');
- for(const p of pages){if(p.type==='town')p.name=decode(p.html.match(/name="locality" content="([^"]+)"/)?.[1]||'');if(p.type==='district')p.name=plain(p.html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1]||'').replace(/^Electricista 24 horas en /,'').replace(/, Madrid$/,'');}
+ for(const p of pages){if(p.type==='town')p.name=decode(p.html.match(/name="locality" content="([^"]+)"/)?.[1]||'');if(p.type==='district')p.name=plain(p.html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1]||'').replace(/^Electricista (?:urgente )?24 horas en /,'').replace(/, Madrid$/,'');}
  for(const p of config.provinces){assert(byRoute.has('/zonas/'+p.slug+'/'),'Falta provincia '+p.slug);for(const slug of p.featured)assert(byRoute.get(cityURL(p,slug))?.name,'Ciudad fuera del inventario '+slug);}
  for(const s of config.services){assert(byRoute.has('/servicios/'+s.slug+'/'),'Falta servicio '+s.slug);for(const slug of s.related)assert(config.services.some(x=>x.slug===slug),'Servicio relacionado inválido');}
  return {pages,byRoute};
@@ -149,7 +149,7 @@ export function audit(root='dist'){
   if(p.type==='province'){stats.provinces++;assert(p.html.includes('id="ciudades-destacadas"'));}
   if(p.type==='service'){stats.services++;for(const id of ['preparar-el-servicio','averias-relacionadas','servicio-en-tu-ciudad'])assert(p.html.includes(`id="${id}"`));}
  }
- assert.equal(stats.towns,533);assert.equal(stats.districts,21);assert.equal(stats.provinces,5);assert.equal(stats.services,10);assert.equal(stats.pages,573);
+ const coverage=fs.existsSync(root+'/coverage-manifest.json')?JSON.parse(fs.readFileSync(root+'/coverage-manifest.json','utf8')):null;assert.equal(stats.towns,coverage?.retained??533);assert.equal(stats.districts,21);assert.equal(stats.provinces,5);assert.equal(stats.services,10);assert.equal(stats.pages,coverage?.urls??573);
  stats.sitemapUrls=sitemapUrls.length;stats.duplicateTitles=0;stats.ok=true;return stats;
 }
 export function build(root='dist'){

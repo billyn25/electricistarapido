@@ -96,3 +96,5 @@ nav.alphabet a { min-width: 44px; height: 44px; }
   .local-service-detail { margin-top: 10px; }
   .local-service-detail > summary { min-height: 44px; padding-block: 10px; }
 }
+/* Keep service summaries comfortable on narrow phones without truncating content. */
+@media(max-width:360px){.local-service{padding:12px 14px}.local-page .local-services-grid .local-service>p{line-height:1.5}}
